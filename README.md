@@ -2,6 +2,8 @@
 
 **Power your creativity, locally.**
 
+▶️ [Watch the 2-minute demo](https://www.youtube.com/watch?v=PdO-rVu2UkY)
+
 Pickups puts powerful open video models behind one simple app for creators and editors. Drop in a clip and remove what
 you don't want, replace a person, change the weather or the time of day, turn a Blender previz into a finished shot, or
 finish it to 4K HDR. It all runs on your own GPU through ComfyUI, and every result comes back as a new take you can
