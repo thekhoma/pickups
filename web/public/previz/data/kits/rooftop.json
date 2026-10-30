@@ -1,0 +1,728 @@
+{
+ "id": "rooftop",
+ "order": 18,
+ "label": "Rooftop",
+ "move": "Push past to the skyline",
+ "world": {
+  "shadowExtent": 14,
+  "shadowCenter": [
+   0,
+   0,
+   -1
+  ],
+  "keyDist": 60,
+  "grid": false,
+  "fogNear": 60,
+  "fogFar": 240,
+  "skyScale": 3
+ },
+ "geometry": [
+  {
+   "type": "ground",
+   "radius": 260,
+   "y": -30
+  },
+  {
+   "type": "box",
+   "name": "tower",
+   "size": [
+    14,
+    30,
+    10
+   ],
+   "pos": [
+    0,
+    -30,
+    -0.5
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "roof_deck",
+   "size": [
+    13.6,
+    0.05,
+    9.6
+   ],
+   "pos": [
+    0,
+    0,
+    -0.5
+   ],
+   "material": "path",
+   "radius": 0.01,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "parapet_N",
+   "size": [
+    14,
+    1.05,
+    0.25
+   ],
+   "pos": [
+    0,
+    0,
+    -5.4
+   ],
+   "material": "setDark"
+  },
+  {
+   "type": "box",
+   "name": "parapet_E",
+   "size": [
+    0.25,
+    1.05,
+    10
+   ],
+   "pos": [
+    6.9,
+    0,
+    -0.5
+   ],
+   "material": "setDark"
+  },
+  {
+   "type": "box",
+   "name": "parapet_W",
+   "size": [
+    0.25,
+    1.05,
+    10
+   ],
+   "pos": [
+    -6.9,
+    0,
+    -0.5
+   ],
+   "material": "setDark"
+  },
+  {
+   "type": "box",
+   "name": "stair_hut",
+   "size": [
+    3,
+    2.6,
+    2.6
+   ],
+   "pos": [
+    -4.8,
+    0,
+    3.0
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "hvac",
+   "size": [
+    2.2,
+    1.2,
+    1.4
+   ],
+   "pos": [
+    4.8,
+    0,
+    3.6
+   ],
+   "material": "setDark"
+  },
+  {
+   "type": "road",
+   "name": "street",
+   "points": [
+    [
+     -120,
+     -12
+    ],
+    [
+     120,
+     -12
+    ]
+   ],
+   "width": 10,
+   "y": -30
+  },
+  {
+   "type": "box",
+   "name": "skyline_0",
+   "size": [
+    19.3,
+    71.6,
+    15.4
+   ],
+   "pos": [
+    -150.7,
+    -30,
+    -86.0
+   ],
+   "material": "path",
+   "radius": 0.2
+  },
+  {
+   "type": "box",
+   "name": "skyline_1",
+   "size": [
+    15.0,
+    80.3,
+    12.0
+   ],
+   "pos": [
+    -136.8,
+    -30,
+    -119.5
+   ],
+   "material": "set",
+   "radius": 0.2
+  },
+  {
+   "type": "box",
+   "name": "skyline_2",
+   "size": [
+    21.5,
+    42.8,
+    17.2
+   ],
+   "pos": [
+    -119.3,
+    -30,
+    -127.5
+   ],
+   "material": "set",
+   "radius": 0.2
+  },
+  {
+   "type": "box",
+   "name": "skyline_3",
+   "size": [
+    20.0,
+    51.5,
+    16.0
+   ],
+   "pos": [
+    -107.6,
+    -30,
+    -123.9
+   ],
+   "material": "path",
+   "radius": 0.2
+  },
+  {
+   "type": "box",
+   "name": "skyline_4",
+   "size": [
+    13.0,
+    68.8,
+    10.4
+   ],
+   "pos": [
+    -96.9,
+    -30,
+    -117.6
+   ],
+   "material": "set",
+   "radius": 0.2
+  },
+  {
+   "type": "box",
+   "name": "skyline_5",
+   "size": [
+    16.8,
+    36.6,
+    13.4
+   ],
+   "pos": [
+    -83.9,
+    -30,
+    -107.3
+   ],
+   "material": "set",
+   "radius": 0.2
+  },
+  {
+   "type": "box",
+   "name": "skyline_6",
+   "size": [
+    15.7,
+    79.3,
+    12.6
+   ],
+   "pos": [
+    -66.2,
+    -30,
+    -110.0
+   ],
+   "material": "path",
+   "radius": 0.2
+  },
+  {
+   "type": "box",
+   "name": "skyline_7",
+   "size": [
+    14.4,
+    31.4,
+    11.6
+   ],
+   "pos": [
+    -49.1,
+    -30,
+    -133.4
+   ],
+   "material": "set",
+   "radius": 0.2
+  },
+  {
+   "type": "box",
+   "name": "skyline_8",
+   "size": [
+    19.1,
+    44.5,
+    15.2
+   ],
+   "pos": [
+    -39.0,
+    -30,
+    -86.8
+   ],
+   "material": "set",
+   "radius": 0.2
+  },
+  {
+   "type": "box",
+   "name": "skyline_9",
+   "size": [
+    16.0,
+    70.4,
+    12.8
+   ],
+   "pos": [
+    -27.0,
+    -30,
+    -97.0
+   ],
+   "material": "path",
+   "radius": 0.2
+  },
+  {
+   "type": "box",
+   "name": "skyline_10",
+   "size": [
+    18.8,
+    32.5,
+    15.0
+   ],
+   "pos": [
+    -10.3,
+    -30,
+    -98.1
+   ],
+   "material": "set",
+   "radius": 0.2
+  },
+  {
+   "type": "box",
+   "name": "skyline_11",
+   "size": [
+    19.5,
+    35.6,
+    15.6
+   ],
+   "pos": [
+    1.7,
+    -30,
+    -121.2
+   ],
+   "material": "set",
+   "radius": 0.2
+  },
+  {
+   "type": "box",
+   "name": "skyline_12",
+   "size": [
+    18.6,
+    30.9,
+    14.9
+   ],
+   "pos": [
+    14.5,
+    -30,
+    -110.3
+   ],
+   "material": "path",
+   "radius": 0.2
+  },
+  {
+   "type": "box",
+   "name": "skyline_13",
+   "size": [
+    12.9,
+    39.4,
+    10.3
+   ],
+   "pos": [
+    31.5,
+    -30,
+    -96.5
+   ],
+   "material": "set",
+   "radius": 0.2
+  },
+  {
+   "type": "box",
+   "name": "skyline_14",
+   "size": [
+    13.1,
+    64.1,
+    10.5
+   ],
+   "pos": [
+    44.3,
+    -30,
+    -108.0
+   ],
+   "material": "set",
+   "radius": 0.2
+  },
+  {
+   "type": "box",
+   "name": "skyline_15",
+   "size": [
+    12.7,
+    65.7,
+    10.1
+   ],
+   "pos": [
+    63.0,
+    -30,
+    -121.0
+   ],
+   "material": "path",
+   "radius": 0.2
+  },
+  {
+   "type": "box",
+   "name": "skyline_16",
+   "size": [
+    15.8,
+    65.9,
+    12.7
+   ],
+   "pos": [
+    75.1,
+    -30,
+    -80.5
+   ],
+   "material": "set",
+   "radius": 0.2
+  },
+  {
+   "type": "box",
+   "name": "skyline_17",
+   "size": [
+    17.7,
+    62.4,
+    14.2
+   ],
+   "pos": [
+    91.6,
+    -30,
+    -135.7
+   ],
+   "material": "set",
+   "radius": 0.2
+  },
+  {
+   "type": "box",
+   "name": "skyline_18",
+   "size": [
+    17.1,
+    33.4,
+    13.7
+   ],
+   "pos": [
+    105.7,
+    -30,
+    -92.6
+   ],
+   "material": "path",
+   "radius": 0.2
+  },
+  {
+   "type": "box",
+   "name": "skyline_19",
+   "size": [
+    14.1,
+    40.8,
+    11.3
+   ],
+   "pos": [
+    118.2,
+    -30,
+    -119.2
+   ],
+   "material": "set",
+   "radius": 0.2
+  },
+  {
+   "type": "box",
+   "name": "skyline_20",
+   "size": [
+    13.4,
+    47.8,
+    10.7
+   ],
+   "pos": [
+    130.2,
+    -30,
+    -125.1
+   ],
+   "material": "set",
+   "radius": 0.2
+  },
+  {
+   "type": "box",
+   "name": "skyline_21",
+   "size": [
+    20.8,
+    69.9,
+    16.7
+   ],
+   "pos": [
+    144.1,
+    -30,
+    -95.7
+   ],
+   "material": "path",
+   "radius": 0.2
+  }
+ ],
+ "items": [
+  {
+   "id": "leaner",
+   "asset": "person",
+   "pos": [
+    0,
+    -3.9
+   ],
+   "rot": 180,
+   "pose": "stand"
+  },
+  {
+   "id": "friend",
+   "asset": "person",
+   "pos": [
+    1.2,
+    -3.2
+   ],
+   "rot": 200,
+   "pose": "talk",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "asset": "table",
+   "pos": [
+    -2.5,
+    -1.5
+   ],
+   "rot": 0,
+   "id": "rt_table"
+  },
+  {
+   "asset": "cup",
+   "onTop": {
+    "of": "rt_table",
+    "offset": [
+     0.2,
+     0
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    -2.5,
+    -0.6
+   ],
+   "rot": 180,
+   "id": "rt_bench"
+  },
+  {
+   "id": "rt_sitter",
+   "asset": "person",
+   "seat": {
+    "on": "rt_bench",
+    "slot": 1
+   },
+   "pose": "sit",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    4,
+    -3.5
+   ],
+   "rot": 0,
+   "scale": 0.3,
+   "options": {
+    "seed": 5
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -5,
+    -3.5
+   ],
+   "rot": 0,
+   "scale": 0.3,
+   "options": {
+    "seed": 6
+   }
+  },
+  {
+   "asset": "building",
+   "pos": [
+    -41.3,
+    -30,
+    -43.0
+   ],
+   "rot": 0,
+   "options": {
+    "floors": 10
+   }
+  },
+  {
+   "asset": "building",
+   "pos": [
+    -30.0,
+    -30,
+    -37.5
+   ],
+   "rot": 0,
+   "options": {
+    "floors": 14
+   }
+  },
+  {
+   "asset": "building",
+   "pos": [
+    -17.7,
+    -30,
+    -40.3
+   ],
+   "rot": 0,
+   "options": {
+    "floors": 10
+   }
+  },
+  {
+   "asset": "building",
+   "pos": [
+    -7.0,
+    -30,
+    -36.6
+   ],
+   "rot": 0,
+   "options": {
+    "floors": 14
+   }
+  },
+  {
+   "asset": "building",
+   "pos": [
+    7.3,
+    -30,
+    -42.8
+   ],
+   "rot": 0,
+   "options": {
+    "floors": 14
+   }
+  },
+  {
+   "asset": "building",
+   "pos": [
+    16.1,
+    -30,
+    -40.6
+   ],
+   "rot": 0,
+   "options": {
+    "floors": 10
+   }
+  },
+  {
+   "asset": "building",
+   "pos": [
+    31.7,
+    -30,
+    -33.6
+   ],
+   "rot": 0,
+   "options": {
+    "floors": 16
+   }
+  },
+  {
+   "asset": "building",
+   "pos": [
+    41.6,
+    -30,
+    -42.3
+   ],
+   "rot": 0,
+   "options": {
+    "floors": 10
+   }
+  }
+ ],
+ "cameras": {
+  "hero": {
+   "pos": [
+    3.5,
+    2.4,
+    5.5
+   ],
+   "target": [
+    0,
+    1.0,
+    -8
+   ],
+   "fov": 46
+  },
+  "start": {
+   "pos": [
+    1.6,
+    1.65,
+    2.6
+   ],
+   "target": [
+    0.4,
+    1.4,
+    -4
+   ],
+   "fov": 42
+  },
+  "end": {
+   "pos": [
+    0.6,
+    1.9,
+    -2.2
+   ],
+   "target": [
+    0,
+    0,
+    -40
+   ],
+   "fov": 46
+  }
+ }
+}

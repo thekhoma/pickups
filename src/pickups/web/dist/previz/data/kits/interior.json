@@ -1,0 +1,421 @@
+{
+ "id": "interior",
+ "order": 3,
+ "label": "Interior",
+ "move": "Push in from behind",
+ "world": {
+  "shadowExtent": 9,
+  "shadowCenter": [
+   0,
+   0,
+   0
+  ],
+  "keyDist": 30,
+  "grid": false,
+  "fogNear": 18,
+  "fogFar": 70
+ },
+ "geometry": [
+  {
+   "type": "ground",
+   "radius": 60
+  },
+  {
+   "type": "box",
+   "name": "floor",
+   "size": [
+    8.4,
+    0.05,
+    6.4
+   ],
+   "pos": [
+    0,
+    0,
+    -0.2
+   ],
+   "material": "path",
+   "radius": 0.01,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "wall_back",
+   "size": [
+    8.4,
+    2.8,
+    0.2
+   ],
+   "pos": [
+    0,
+    0,
+    -3.3
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "wall_right",
+   "size": [
+    0.2,
+    2.8,
+    6.4
+   ],
+   "pos": [
+    4.1,
+    0,
+    -0.2
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "wall_left_a",
+   "size": [
+    0.2,
+    2.8,
+    2.0
+   ],
+   "pos": [
+    -4.1,
+    0,
+    -2.2
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "wall_left_b",
+   "size": [
+    0.2,
+    2.8,
+    1.6
+   ],
+   "pos": [
+    -4.1,
+    0,
+    2.2
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "wall_left_sill",
+   "size": [
+    0.2,
+    0.9,
+    2.8
+   ],
+   "pos": [
+    -4.1,
+    0,
+    0.0
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "wall_left_head",
+   "size": [
+    0.2,
+    0.5,
+    2.8
+   ],
+   "pos": [
+    -4.1,
+    2.3,
+    0.0
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "skirting",
+   "size": [
+    8.4,
+    0.08,
+    0.03
+   ],
+   "pos": [
+    0,
+    0.05,
+    -3.19
+   ],
+   "material": "setDark",
+   "radius": 0.005,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "wall_cabinets",
+   "size": [
+    2.4,
+    0.7,
+    0.36
+   ],
+   "pos": [
+    -2.4,
+    1.6,
+    -3.02
+   ],
+   "material": "path",
+   "radius": 0.02
+  },
+  {
+   "type": "box",
+   "name": "rug",
+   "size": [
+    2.4,
+    0.012,
+    1.7
+   ],
+   "pos": [
+    2.1,
+    0.05,
+    -0.5
+   ],
+   "material": "setDark",
+   "radius": 0.004,
+   "cast": false
+  }
+ ],
+ "items": [
+  {
+   "asset": "counter",
+   "pos": [
+    -2.4,
+    -2.56
+   ],
+   "rot": 0,
+   "id": "counter"
+  },
+  {
+   "asset": "produce",
+   "onTop": {
+    "of": "counter",
+    "offset": [
+     0.55,
+     0.12
+    ]
+   },
+   "rot": 20
+  },
+  {
+   "asset": "plate_food",
+   "onTop": {
+    "of": "counter",
+    "offset": [
+     0.95,
+     0.15
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "id": "cook",
+   "asset": "person",
+   "pos": [
+    -2.95,
+    -1.75
+   ],
+   "rot": 180,
+   "pose": "cook"
+  },
+  {
+   "asset": "sofa",
+   "pos": [
+    3.45,
+    -0.5
+   ],
+   "rot": -90,
+   "id": "sofa"
+  },
+  {
+   "id": "sitter",
+   "asset": "person",
+   "seat": {
+    "on": "sofa",
+    "slot": 1
+   },
+   "pose": "sit"
+  },
+  {
+   "asset": "table",
+   "pos": [
+    2.05,
+    -0.5
+   ],
+   "rot": 90,
+   "id": "coffee_table",
+   "scale": [
+    0.5,
+    0.6,
+    0.6
+   ]
+  },
+  {
+   "asset": "cup",
+   "onTop": {
+    "of": "coffee_table",
+    "offset": [
+     0.12,
+     -0.1
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "book",
+   "onTop": {
+    "of": "coffee_table",
+    "offset": [
+     -0.1,
+     0.05
+    ],
+    "rotZ": 90,
+    "lift": 0.021
+   },
+   "rot": 30
+  },
+  {
+   "asset": "table",
+   "pos": [
+    -0.6,
+    0.7
+   ],
+   "rot": 0,
+   "id": "table"
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    -0.6,
+    1.55
+   ],
+   "rot": 180,
+   "id": "bench",
+   "scale": [
+    0.3,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "asset": "phone",
+   "onTop": {
+    "of": "table",
+    "offset": [
+     -0.25,
+     -0.05
+    ],
+    "rotX": -90,
+    "lift": 0.005
+   },
+   "rot": 25
+  },
+  {
+   "id": "texter",
+   "asset": "person",
+   "pos": [
+    0.9,
+    1.6
+   ],
+   "rot": 60,
+   "pose": "hold_phone",
+   "props": {
+    "hand_R": "phone"
+   }
+  },
+  {
+   "asset": "window_panel",
+   "pos": [
+    -4.1,
+    0.9,
+    0.0
+   ],
+   "rot": 90,
+   "id": "window",
+   "scale": [
+    2.8,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "asset": "window_panel",
+   "pos": [
+    3.99,
+    1.25,
+    -0.5
+   ],
+   "rot": -90,
+   "id": "painting",
+   "scale": [
+    1.2,
+    0.6,
+    0.6
+   ]
+  },
+  {
+   "asset": "cat",
+   "pos": [
+    1.7,
+    0.2
+   ],
+   "rot": -40,
+   "pose": "lie"
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    3.5,
+    -2.75
+   ],
+   "rot": 0,
+   "scale": 0.15,
+   "options": {
+    "seed": 2
+   }
+  }
+ ],
+ "cameras": {
+  "hero": {
+   "pos": [
+    2.4,
+    2.3,
+    5.4
+   ],
+   "target": [
+    0.0,
+    0.95,
+    -1.0
+   ],
+   "fov": 50
+  },
+  "start": {
+   "pos": [
+    0.6,
+    1.65,
+    5.6
+   ],
+   "target": [
+    0.2,
+    1.0,
+    -1.4
+   ],
+   "fov": 46
+  },
+  "end": {
+   "pos": [
+    0.4,
+    1.4,
+    1.9
+   ],
+   "target": [
+    0.2,
+    0.95,
+    -1.6
+   ],
+   "fov": 46
+  }
+ }
+}

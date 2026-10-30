@@ -1,0 +1,501 @@
+{
+ "id": "snow_mountain",
+ "order": 16,
+ "label": "Snow Mountain",
+ "move": "Crane down to the rider",
+ "world": {
+  "shadowExtent": 28,
+  "shadowCenter": [
+   0,
+   0,
+   -2
+  ],
+  "keyDist": 90,
+  "grid": false,
+  "fogNear": 80,
+  "fogFar": 480,
+  "skyScale": 5
+ },
+ "geometry": [
+  {
+   "type": "ground",
+   "radius": 260,
+   "material": "snow"
+  },
+  {
+   "type": "mountain",
+   "name": "peak_A",
+   "pos": [
+    -50,
+    -210
+   ],
+   "size": [
+    80,
+    110
+   ],
+   "seed": 3,
+   "segments": 26
+  },
+  {
+   "type": "mountain",
+   "name": "peak_B",
+   "pos": [
+    60,
+    -250
+   ],
+   "size": [
+    95,
+    150
+   ],
+   "seed": 7,
+   "segments": 26
+  },
+  {
+   "type": "mountain",
+   "name": "peak_C",
+   "pos": [
+    160,
+    -200
+   ],
+   "size": [
+    70,
+    90
+   ],
+   "seed": 11,
+   "segments": 26
+  },
+  {
+   "type": "mountain",
+   "name": "peak_D",
+   "pos": [
+    -150,
+    -170
+   ],
+   "size": [
+    60,
+    75
+   ],
+   "seed": 13,
+   "segments": 26
+  },
+  {
+   "type": "dune",
+   "name": "drift_A",
+   "style": "mound",
+   "pos": [
+    -14,
+    -18
+   ],
+   "size": [
+    16,
+    3,
+    9
+   ],
+   "material": "snow"
+  },
+  {
+   "type": "dune",
+   "name": "drift_B",
+   "style": "mound",
+   "pos": [
+    16,
+    -22
+   ],
+   "size": [
+    20,
+    4,
+    10
+   ],
+   "material": "snow"
+  },
+  {
+   "type": "path",
+   "name": "piste",
+   "points": [
+    [
+     -6,
+     -40
+    ],
+    [
+     -2,
+     -15
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     3,
+     18
+    ]
+   ],
+   "width": 6,
+   "material": "path"
+  }
+ ],
+ "items": [
+  {
+   "asset": "board",
+   "pos": [
+    0,
+    0
+   ],
+   "rot": 160,
+   "id": "ski",
+   "scale": [
+    0.55,
+    1,
+    0.75
+   ]
+  },
+  {
+   "id": "snowboarder",
+   "asset": "person",
+   "rider": "ski"
+  },
+  {
+   "asset": "board",
+   "pos": [
+    3.5,
+    -4
+   ],
+   "rot": 200,
+   "id": "ski2",
+   "scale": [
+    0.55,
+    1,
+    0.75
+   ]
+  },
+  {
+   "id": "boarder2",
+   "asset": "person",
+   "rider": "ski2"
+  },
+  {
+   "id": "hiker",
+   "asset": "person",
+   "pos": [
+    -4,
+    3
+   ],
+   "rot": 30,
+   "pose": "walk"
+  },
+  {
+   "asset": "skis",
+   "pos": [
+    -4.6,
+    3.6
+   ],
+   "rot": 70,
+   "id": "hiker_skis"
+  },
+  {
+   "asset": "sign",
+   "pos": [
+    -2.0,
+    6.5
+   ],
+   "rot": 200,
+   "scale": 0.8
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    1.8,
+    14.4
+   ],
+   "scale": 1.18,
+   "options": {
+    "seed": 0
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -16.8,
+    12.1
+   ],
+   "scale": 1.05,
+   "options": {
+    "seed": 1
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    12.9,
+    -23.9
+   ],
+   "scale": 0.71,
+   "options": {
+    "seed": 2
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -9.3,
+    11.1
+   ],
+   "scale": 0.83,
+   "options": {
+    "seed": 3
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    0.1,
+    -12.5
+   ],
+   "scale": 1.12,
+   "options": {
+    "seed": 4
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    35.6,
+    -7.9
+   ],
+   "scale": 1.2,
+   "options": {
+    "seed": 5
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -35.0,
+    14.7
+   ],
+   "scale": 1.14,
+   "options": {
+    "seed": 6
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -27.9,
+    8.8
+   ],
+   "scale": 0.98,
+   "options": {
+    "seed": 7
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    36.4,
+    -18.4
+   ],
+   "scale": 0.97,
+   "options": {
+    "seed": 8
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    30.6,
+    5.1
+   ],
+   "scale": 0.85,
+   "options": {
+    "seed": 9
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -33.5,
+    21.7
+   ],
+   "scale": 0.94,
+   "options": {
+    "seed": 10
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    39.7,
+    -22.2
+   ],
+   "scale": 1.11,
+   "options": {
+    "seed": 11
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    25.1,
+    20.6
+   ],
+   "scale": 0.71,
+   "options": {
+    "seed": 12
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -10.2,
+    -27.2
+   ],
+   "scale": 1.08,
+   "options": {
+    "seed": 13
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -11.6,
+    22.8
+   ],
+   "scale": 0.89,
+   "options": {
+    "seed": 14
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    21.9,
+    17.7
+   ],
+   "scale": 0.82,
+   "options": {
+    "seed": 15
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    4.5,
+    22.7
+   ],
+   "scale": 0.96,
+   "options": {
+    "seed": 16
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -11.2,
+    -15.3
+   ],
+   "scale": 1.09,
+   "options": {
+    "seed": 17
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -24.6,
+    3.2
+   ],
+   "scale": 0.98,
+   "options": {
+    "seed": 18
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    4.3,
+    -22.9
+   ],
+   "scale": 1.03,
+   "options": {
+    "seed": 19
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    33.3,
+    -12.5
+   ],
+   "scale": 0.87,
+   "options": {
+    "seed": 20
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    32.7,
+    1.8
+   ],
+   "scale": 0.84,
+   "options": {
+    "seed": 21
+   }
+  },
+  {
+   "asset": "skis",
+   "pos": [
+    1.6,
+    1.4
+   ],
+   "rot": 165,
+   "id": "skis_1"
+  },
+  {
+   "id": "skier",
+   "asset": "person",
+   "rider": "skis_1"
+  }
+ ],
+ "cameras": {
+  "hero": {
+   "pos": [
+    6,
+    2.6,
+    11
+   ],
+   "target": [
+    0,
+    1.6,
+    -6
+   ],
+   "fov": 42
+  },
+  "start": {
+   "pos": [
+    5,
+    14,
+    22
+   ],
+   "target": [
+    0,
+    4,
+    -40
+   ],
+   "fov": 46
+  },
+  "end": {
+   "pos": [
+    3.0,
+    1.4,
+    6.5
+   ],
+   "target": [
+    0,
+    1.0,
+    0
+   ],
+   "fov": 42
+  }
+ }
+}

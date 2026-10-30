@@ -1,0 +1,150 @@
+{
+ "id": "ocean",
+ "order": 8,
+ "label": "Ocean",
+ "move": "Push in from behind",
+ "world": {
+  "shadowExtent": 16,
+  "shadowCenter": [
+   0,
+   0,
+   0
+  ],
+  "keyDist": 50,
+  "grid": false,
+  "fogNear": 40,
+  "fogFar": 300,
+  "skyScale": 4
+ },
+ "geometry": [
+  {
+   "type": "ground",
+   "radius": 400,
+   "material": "sand"
+  },
+  {
+   "type": "water",
+   "name": "sea",
+   "shape": "rect",
+   "size": [
+    900,
+    450
+   ],
+   "pos": [
+    0,
+    -225.6
+   ],
+   "lines": 90,
+   "lineYaw": 0,
+   "nearLines": 70,
+   "horizon": 70
+  }
+ ],
+ "items": [
+  {
+   "id": "watcher",
+   "asset": "person",
+   "pos": [
+    0,
+    2.2
+   ],
+   "rot": 180,
+   "pose": "stand"
+  },
+  {
+   "asset": "boat",
+   "pos": [
+    -14,
+    -46
+   ],
+   "rot": 70,
+   "scale": 3
+  },
+  {
+   "asset": "rock",
+   "pos": [
+    5,
+    1.4
+   ],
+   "scale": 1.2,
+   "rot": 30,
+   "options": {
+    "seed": 9
+   }
+  },
+  {
+   "asset": "rock",
+   "pos": [
+    6.4,
+    2.6
+   ],
+   "scale": 0.6,
+   "rot": 0,
+   "options": {
+    "seed": 13
+   }
+  },
+  {
+   "asset": "rock",
+   "pos": [
+    -7,
+    3.4
+   ],
+   "scale": 1.8,
+   "rot": 80,
+   "options": {
+    "seed": 17
+   }
+  },
+  {
+   "asset": "dog",
+   "pos": [
+    1.3,
+    3.2
+   ],
+   "rot": 200,
+   "pose": "sit"
+  }
+ ],
+ "cameras": {
+  "hero": {
+   "pos": [
+    0.6,
+    1.8,
+    9.5
+   ],
+   "target": [
+    0,
+    1.4,
+    -12
+   ],
+   "fov": 42
+  },
+  "start": {
+   "pos": [
+    0.5,
+    1.75,
+    10.5
+   ],
+   "target": [
+    0,
+    1.4,
+    -12
+   ],
+   "fov": 42
+  },
+  "end": {
+   "pos": [
+    0.35,
+    1.65,
+    4.6
+   ],
+   "target": [
+    0,
+    1.45,
+    -12
+   ],
+   "fov": 42
+  }
+ }
+}

@@ -1,0 +1,180 @@
+man sitting in a car
+man sitting a car
+a man in a car
+a woman driving a car
+a man driving
+a taxi driver
+a bus driver
+a truck driver in the city
+a couple in a car
+a family in an suv
+a kid in the back seat
+a child in the back seat of a van
+a woman in the passenger seat
+a man in the driver's seat with a woman in the passenger seat
+a man behind the wheel of a pickup truck
+a driver leaning out the window
+two kids on the bus
+a man riding the bus
+a woman sitting in a parked car on the street
+a man standing next to a car
+a man leaning on a car
+a woman washing a car
+a man sitting on the hood of a car
+a dog in a car
+woman walking a dog in the park
+a man and his dog walking down the street
+a man jogging with his dog
+a girl walking her dog on the beach
+a boy and a dog in the forest
+a cat sitting on a bench
+a dog sitting next to a man
+a woman with a cat
+two people sitting on a bench in the city
+three people sitting on a bench
+a couple sitting on a bench by the lake
+someone sitting
+a man sitting on a bench drinking coffee
+a woman drinking coffee
+a man texting
+a girl on the phone
+a man holding a phone
+a woman holding a cup
+a woman sitting at a table in a cafe
+a man waving at a woman
+two friends talking in the park
+a man running in the city
+a woman jogging along the river
+a kid jumping in the backyard
+a man lying down in the grass
+a woman kneeling next to a dog
+a man crouching behind a car
+a cyclist in the city
+a man riding a bike
+three kids riding bikes in the suburbs
+a skateboarder in the city
+a girl skating
+a man rowing a boat on the lake
+a woman in a kayak
+a crowd of people in the city
+a few people walking in the park
+five people standing in front of a house
+ten people
+two dogs in the park
+a big dog next to a small car
+a tall man and a short woman
+a tiny house in the desert
+a giant tree in the forest
+a man standing in front of a house
+a woman walking past a tall building
+a man near a fountain in the park
+a man on the beach
+a woman in the desert
+a man on a country road
+a couple in the kitchen
+close up of a man texting
+wide shot of a woman walking a dog in the park
+low angle of a man running
+push in on a man sitting on a bench
+orbit around a car in the desert
+a man walking, tracking shot
+a man in a red hat
+a man playing guitar on the street
+a dragon in the city
+a woman swimming in the ocean
+a man sitting on a sofa reading a book
+a man cooking in the kitchen
+a woman typing on a laptop
+a kid kicking a ball in the park
+a woman eating breakfast
+a man carrying boxes
+a woman washing dishes
+two people sitting on a sofa
+# time of day and weather (spec.world)
+a man walking in the park at night
+a woman on the beach at sunset
+two people talking in the city in the rain
+a foggy forest
+a man in a car on a snowy evening
+a cyclist on a cloudy day in the suburbs
+# camera moves for the kit cards (Lake, River) and the app's move field
+a woman standing by the lake, low dolly along the shoreline
+a man fishing by the river, crane up to reveal the river
+a dog in the park, orbit
+a man walking down the street, tracking shot
+close up of a woman in a car, pull out
+# counts, adjectives, unknown words
+five children playing in the field
+a huge dog next to a tiny cat
+a giraffe and a man in the park
+a woman holding an umbrella and a coffee cup
+# library v1.3.1 held-prop slots
+a guitarist on stage
+two guitarists on stage
+a man playing the guitar in the park
+a woman lifting a box
+a kid kicking a ball in the street
+# library v1.4: pairs (two-person phrases)
+a couple hugging in the park
+two people hugging on the beach
+a man hugging a woman
+a man hugging
+a man kissing a woman on the beach
+two men shaking hands in the office
+a man shaking hands with a woman
+two boxers fighting in the gym
+newlyweds walking in the park
+a couple sitting on a bench
+# library v1.4: kit-ball flag (sports_field) and new props and poses
+a kid kicking a ball on the soccer field
+a woman holding an umbrella in the rain
+a man swinging a bat
+a woman playing tennis
+a kid flying a kite in the field
+a woman pushing a cart in the store
+a skier on the mountain
+a man skiing
+a man sleeping in bed
+a woman sitting on the bed in the bedroom
+a man singing on stage
+a woman holding a phone and a cup
+# library v1.4: new animals
+a cow in the field
+a giraffe drinking at the lake
+an elephant and a bird in the park
+a horse in the field
+a bird flying over the lake
+a cow eating grass in the field
+two cows grazing in the field
+a bird perched on a bench
+a woman holding an umbrella and a coffee cup on the street
+# library v1.4: place stand-ins (no own kit yet, nearest kit)
+a man in the bathroom
+kids on the skating rink
+a woman at the cemetery
+# Pickups UI examples
+A park with a bench and a person sitting at the bench. The camera is pushing in from behind and rotates around until we see them in front as they take a sip of coffee from their coffee cup.
+A car parked in the suburbs in front of a house. The camera tracks alongside and pushes in.
+A person standing in front of a house. The camera pushes in.
+Inside a house, a person sitting. The camera pushes in from the doorway.
+A person walking in the city. The camera follows from behind.
+A car on the outskirts. The camera circles around to the front.
+A person standing in the desert. The camera pulls wide.
+A dog in the forest. The camera pushes in.
+A person standing at the ocean. The camera moves in from behind.
+A cat by the lake. The camera orbits around.
+# round A: camera presets and the house / doorway sentences
+In the house, a woman sitting
+The camera pulls wide on a man walking in the park
+The camera circles two people talking
+a man walking in the park, close-up
+a man walking in the park, wide shot
+a man walking in the park, close to wide
+a man walking in the park, dolly in
+a man walking in the park, dolly out
+a man walking in the park, the camera orbits
+a man walking in the park, overhead
+a man walking in the park, point of view
+a man walking in the park, tracking shot
+a man walking in the park, dolly along
+a man walking in the park, locked off

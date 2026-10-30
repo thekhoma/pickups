@@ -1,0 +1,457 @@
+{
+ "id": "field",
+ "order": 15,
+ "label": "Field",
+ "move": "Wide to medium",
+ "world": {
+  "shadowExtent": 30,
+  "shadowCenter": [
+   0,
+   0,
+   -4
+  ],
+  "keyDist": 80,
+  "grid": false,
+  "fogNear": 40,
+  "fogFar": 200,
+  "skyScale": 3
+ },
+ "geometry": [
+  {
+   "type": "ground",
+   "radius": 220
+  },
+  {
+   "type": "path",
+   "name": "farm_track",
+   "points": [
+    [
+     -40,
+     14
+    ],
+    [
+     -10,
+     10.5
+    ],
+    [
+     0,
+     10.3
+    ],
+    [
+     20,
+     12
+    ],
+    [
+     50,
+     18
+    ]
+   ],
+   "width": 3,
+   "material": "path"
+  },
+  {
+   "type": "dune",
+   "name": "hill_A",
+   "style": "mound",
+   "pos": [
+    -30,
+    -55
+   ],
+   "size": [
+    40,
+    9,
+    24
+   ],
+   "rot": 10,
+   "material": "ground"
+  },
+  {
+   "type": "dune",
+   "name": "hill_B",
+   "style": "mound",
+   "pos": [
+    35,
+    -65
+   ],
+   "size": [
+    50,
+    12,
+    26
+   ],
+   "rot": -20,
+   "material": "ground"
+  },
+  {
+   "type": "dune",
+   "name": "hill_C",
+   "style": "mound",
+   "pos": [
+    0,
+    -90
+   ],
+   "size": [
+    70,
+    16,
+    30
+   ],
+   "rot": 0,
+   "material": "ground"
+  },
+  {
+   "type": "box",
+   "name": "barn",
+   "size": [
+    9,
+    5.5,
+    12
+   ],
+   "pos": [
+    -26,
+    0,
+    -6
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "barn_roof",
+   "size": [
+    9.6,
+    0.4,
+    12.6
+   ],
+   "pos": [
+    -26,
+    5.5,
+    -6
+   ],
+   "material": "setDark"
+  }
+ ],
+ "items": [
+  {
+   "asset": "horse",
+   "pos": [
+    0,
+    0
+   ],
+   "rot": 120,
+   "id": "horse",
+   "pose": "walk"
+  },
+  {
+   "id": "rider",
+   "asset": "person",
+   "rider": "horse"
+  },
+  {
+   "asset": "horse",
+   "pos": [
+    7,
+    -6
+   ],
+   "rot": -30,
+   "id": "grazer",
+   "pose": "graze"
+  },
+  {
+   "id": "farmer",
+   "asset": "person",
+   "pos": [
+    3.2,
+    2.4
+   ],
+   "rot": -140,
+   "pose": "point"
+  },
+  {
+   "asset": "dog",
+   "pos": [
+    2.0,
+    3.0
+   ],
+   "rot": -100,
+   "pose": "sit"
+  },
+  {
+   "asset": "house",
+   "pos": [
+    -16,
+    -22
+   ],
+   "rot": 25,
+   "options": {
+    "storeys": 1
+   }
+  },
+  {
+   "asset": "truck",
+   "pos": [
+    -9,
+    -15
+   ],
+   "rot": 60
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -16.6,
+    -50.8
+   ],
+   "scale": 1.01,
+   "options": {
+    "seed": 0
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -6.4,
+    -53.6
+   ],
+   "scale": 1.13,
+   "options": {
+    "seed": 1
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -28.9,
+    -44.6
+   ],
+   "scale": 0.81,
+   "options": {
+    "seed": 2
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -23.8,
+    -56.6
+   ],
+   "scale": 0.87,
+   "options": {
+    "seed": 3
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    29.2,
+    -57.6
+   ],
+   "scale": 1.19,
+   "options": {
+    "seed": 4
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    54.7,
+    -59.9
+   ],
+   "scale": 1.25,
+   "options": {
+    "seed": 5
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    36.9,
+    -43.3
+   ],
+   "scale": 0.81,
+   "options": {
+    "seed": 6
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -5.2,
+    -44.9
+   ],
+   "scale": 0.95,
+   "options": {
+    "seed": 7
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -33.1,
+    -57.6
+   ],
+   "scale": 0.93,
+   "options": {
+    "seed": 8
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    34.5,
+    -56.1
+   ],
+   "scale": 1.01,
+   "options": {
+    "seed": 9
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    17.2,
+    -32.1
+   ],
+   "scale": 0.95,
+   "options": {
+    "seed": 10
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -54.7,
+    -31.0
+   ],
+   "scale": 1.22,
+   "options": {
+    "seed": 11
+   }
+  },
+  {
+   "asset": "fence",
+   "pos": [
+    0,
+    8.5
+   ],
+   "rot": 0,
+   "options": {
+    "sections": 25
+   }
+  },
+  {
+   "asset": "fence",
+   "pos": [
+    22,
+    -8.5
+   ],
+   "rot": 90,
+   "options": {
+    "sections": 13
+   }
+  },
+  {
+   "asset": "fence",
+   "pos": [
+    -4,
+    -9.5
+   ],
+   "rot": 0,
+   "options": {
+    "sections": 10
+   },
+   "id": "pasture_fence"
+  },
+  {
+   "asset": "cow",
+   "pos": [
+    -3,
+    -12.5
+   ],
+   "rot": 30,
+   "pose": "graze",
+   "id": "cow_1"
+  },
+  {
+   "asset": "cow",
+   "pos": [
+    0.5,
+    -14.5
+   ],
+   "rot": -70,
+   "pose": "stand",
+   "id": "cow_2"
+  },
+  {
+   "asset": "cow",
+   "pos": [
+    -7.5,
+    -13.5
+   ],
+   "rot": 110,
+   "pose": "graze",
+   "id": "cow_3"
+  },
+  {
+   "asset": "bird",
+   "pos": [
+    1.2,
+    3.9,
+    -4
+   ],
+   "rot": -80,
+   "pose": "fly",
+   "airborne": true,
+   "id": "bird_1"
+  },
+  {
+   "asset": "bird",
+   "pos": [
+    2.3,
+    4.3,
+    -3.2
+   ],
+   "rot": -70,
+   "pose": "fly",
+   "airborne": true,
+   "id": "bird_2"
+  }
+ ],
+ "cameras": {
+  "hero": {
+   "pos": [
+    7,
+    2.8,
+    7.6
+   ],
+   "target": [
+    0,
+    1.3,
+    -1
+   ],
+   "fov": 42
+  },
+  "start": {
+   "pos": [
+    14,
+    7,
+    26
+   ],
+   "target": [
+    0,
+    1.2,
+    -6
+   ],
+   "fov": 42
+  },
+  "end": {
+   "pos": [
+    4.5,
+    1.9,
+    6.5
+   ],
+   "target": [
+    0,
+    1.5,
+    0
+   ],
+   "fov": 40
+  }
+ }
+}

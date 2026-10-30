@@ -1,0 +1,4489 @@
+[
+ {
+  "text": "man sitting in a car",
+  "expect": {
+   "place": "car_interior",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "drive",
+     "relations": [
+      {
+       "type": "in",
+       "target": "p1",
+       "seats": [
+        "driver"
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "car",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "man sitting a car",
+  "expect": {
+   "place": "car_interior",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "drive",
+     "relations": [
+      {
+       "type": "in",
+       "target": "p1",
+       "seats": [
+        "driver"
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "car",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man in a car",
+  "expect": {
+   "place": "car_interior",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "drive",
+     "relations": [
+      {
+       "type": "in",
+       "target": "p1",
+       "seats": [
+        "driver"
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "car",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a woman driving a car",
+  "expect": {
+   "place": "car_interior",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "drive",
+     "relations": [
+      {
+       "type": "in",
+       "target": "p1",
+       "seats": [
+        "driver"
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "car",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man driving",
+  "expect": {
+   "place": "car_interior",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "drive",
+     "relations": [
+      {
+       "type": "in",
+       "target": "p1",
+       "seats": [
+        "driver"
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "car",
+     "count": 1,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a taxi driver",
+  "expect": {
+   "place": "car_interior",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "drive",
+     "relations": [
+      {
+       "type": "in",
+       "target": "p1",
+       "seats": [
+        "driver"
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "car",
+     "count": 1,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a bus driver",
+  "expect": {
+   "place": "city",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "drive",
+     "relations": [
+      {
+       "type": "in",
+       "target": "p1",
+       "seats": [
+        "driver"
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "bus",
+     "count": 1,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a truck driver in the city",
+  "expect": {
+   "place": "city",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "drive",
+     "relations": [
+      {
+       "type": "in",
+       "target": "p1",
+       "seats": [
+        "driver"
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "truck",
+     "count": 1,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a couple in a car",
+  "expect": {
+   "place": "car_interior",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 2,
+     "pose": "drive",
+     "presets": [
+      "adult",
+      "adult"
+     ],
+     "relations": [
+      {
+       "type": "in",
+       "target": "p1",
+       "seats": [
+        "driver",
+        "passenger"
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "car",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a family in an suv",
+  "expect": {
+   "place": "car_interior",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 3,
+     "pose": "drive",
+     "presets": [
+      "adult",
+      "adult",
+      "child"
+     ],
+     "relations": [
+      {
+       "type": "in",
+       "target": "p1",
+       "seats": [
+        "driver",
+        "passenger",
+        "rear_R"
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "suv",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a kid in the back seat",
+  "expect": {
+   "place": "car_interior",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "sit_passenger",
+     "preset": "child",
+     "relations": [
+      {
+       "type": "in",
+       "target": "p1",
+       "seats": [
+        "rear_R"
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "car",
+     "count": 1,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a child in the back seat of a van",
+  "expect": {
+   "place": "car_interior",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "sit_passenger",
+     "preset": "child",
+     "relations": [
+      {
+       "type": "in",
+       "target": "p1",
+       "seats": [
+        "rear_R"
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "van",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a woman in the passenger seat",
+  "expect": {
+   "place": "car_interior",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "sit_passenger",
+     "relations": [
+      {
+       "type": "in",
+       "target": "p1",
+       "seats": [
+        "passenger"
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "car",
+     "count": 1,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man in the driver's seat with a woman in the passenger seat",
+  "expect": {
+   "place": "car_interior",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "drive",
+     "relations": [
+      {
+       "type": "near",
+       "target": "a2",
+       "side": "beside"
+      },
+      {
+       "type": "in",
+       "target": "p1",
+       "seats": [
+        "driver"
+       ]
+      }
+     ]
+    },
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "sit_passenger",
+     "relations": [
+      {
+       "type": "in",
+       "target": "p1",
+       "seats": [
+        "passenger"
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "car",
+     "count": 1,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man behind the wheel of a pickup truck",
+  "expect": {
+   "place": "car_interior",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "drive",
+     "relations": [
+      {
+       "type": "in",
+       "target": "p1",
+       "seats": [
+        "driver"
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "truck",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a driver leaning out the window",
+  "expect": {
+   "place": "car_interior",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "lean_window",
+     "relations": [
+      {
+       "type": "in",
+       "target": "p1",
+       "seats": [
+        "driver"
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "car",
+     "count": 1,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "two kids on the bus",
+  "expect": {
+   "place": "city",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 2,
+     "pose": "sit_passenger",
+     "preset": "child",
+     "relations": [
+      {
+       "type": "in",
+       "target": "p1",
+       "seats": [
+        "passenger",
+        "row1_L_win"
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "bus",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man riding the bus",
+  "expect": {
+   "place": "city",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "sit_passenger",
+     "relations": [
+      {
+       "type": "in",
+       "target": "p1",
+       "seats": [
+        "passenger"
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "bus",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a woman sitting in a parked car on the street",
+  "expect": {
+   "place": "city",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "drive",
+     "relations": [
+      {
+       "type": "in",
+       "target": "p1",
+       "seats": [
+        "driver"
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "car",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man standing next to a car",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "stand",
+     "relations": [
+      {
+       "type": "near",
+       "target": "p1",
+       "side": "beside"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "car",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man leaning on a car",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "stand",
+     "relations": [
+      {
+       "type": "near",
+       "target": "p1",
+       "side": "against"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "car",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a woman washing a car",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "cook",
+     "relations": [
+      {
+       "type": "near",
+       "target": "p1",
+       "side": "beside"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "car",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man sitting on the hood of a car",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "stand",
+     "relations": [
+      {
+       "type": "near",
+       "target": "p1",
+       "side": "beside"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "car",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a dog in a car",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "dog",
+     "count": 1,
+     "pose": "stand",
+     "relations": [
+      {
+       "type": "near",
+       "target": "p1",
+       "side": "beside"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "car",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "woman walking a dog in the park",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "walk",
+     "relations": [
+      {
+       "type": "walks",
+       "target": "a2"
+      }
+     ]
+    },
+    {
+     "asset": "dog",
+     "count": 1,
+     "pose": "walk"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man and his dog walking down the street",
+  "expect": {
+   "place": "city",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "walk",
+     "relations": [
+      {
+       "type": "walks",
+       "target": "a2"
+      }
+     ]
+    },
+    {
+     "asset": "dog",
+     "count": 1,
+     "pose": "walk"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man jogging with his dog",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "jog",
+     "relations": [
+      {
+       "type": "walks",
+       "target": "a2"
+      }
+     ]
+    },
+    {
+     "asset": "dog",
+     "count": 1,
+     "pose": "run"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a girl walking her dog on the beach",
+  "expect": {
+   "place": "ocean",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "walk",
+     "preset": "child",
+     "relations": [
+      {
+       "type": "walks",
+       "target": "a2"
+      }
+     ]
+    },
+    {
+     "asset": "dog",
+     "count": 1,
+     "pose": "walk"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a boy and a dog in the forest",
+  "expect": {
+   "place": "forest",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "stand",
+     "preset": "child"
+    },
+    {
+     "asset": "dog",
+     "count": 1,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a cat sitting on a bench",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "cat",
+     "count": 1,
+     "pose": "sit",
+     "relations": [
+      {
+       "type": "on",
+       "target": "p1",
+       "slots": [
+        1
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "bench",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a dog sitting next to a man",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "dog",
+     "count": 1,
+     "pose": "sit",
+     "relations": [
+      {
+       "type": "near",
+       "target": "a2",
+       "side": "beside"
+      }
+     ]
+    },
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a2"
+   }
+  }
+ },
+ {
+  "text": "a woman with a cat",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "stand",
+     "relations": [
+      {
+       "type": "near",
+       "target": "a2",
+       "side": "beside"
+      }
+     ]
+    },
+    {
+     "asset": "cat",
+     "count": 1,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "two people sitting on a bench in the city",
+  "expect": {
+   "place": "city",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 2,
+     "pose": "sit",
+     "relations": [
+      {
+       "type": "on",
+       "target": "p1",
+       "slots": [
+        0,
+        2
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "bench",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "three people sitting on a bench",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 3,
+     "pose": "sit",
+     "relations": [
+      {
+       "type": "on",
+       "target": "p1",
+       "slots": [
+        0,
+        1,
+        2
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "bench",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a couple sitting on a bench by the lake",
+  "expect": {
+   "place": "lake",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 2,
+     "pose": "sit",
+     "presets": [
+      "adult",
+      "adult"
+     ],
+     "relations": [
+      {
+       "type": "on",
+       "target": "p1",
+       "slots": [
+        0,
+        2
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "bench",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "someone sitting",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "sit",
+     "relations": [
+      {
+       "type": "on",
+       "target": "p1",
+       "slots": [
+        1
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "bench",
+     "count": 1,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man sitting on a bench drinking coffee",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "sit",
+     "relations": [
+      {
+       "type": "on",
+       "target": "p1",
+       "slots": [
+        1
+       ]
+      },
+      {
+       "type": "holds",
+       "target": "p2"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "bench",
+     "count": 1
+    },
+    {
+     "asset": "cup",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a woman drinking coffee",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "sip",
+     "relations": [
+      {
+       "type": "holds",
+       "target": "p1"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "cup",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man texting",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "hold_phone",
+     "relations": [
+      {
+       "type": "holds",
+       "target": "p1"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "phone",
+     "count": 1,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a girl on the phone",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "hold_phone",
+     "preset": "child",
+     "relations": [
+      {
+       "type": "holds",
+       "target": "p1"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "phone",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man holding a phone",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "hold_phone",
+     "relations": [
+      {
+       "type": "holds",
+       "target": "p1"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "phone",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a woman holding a cup",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "hold",
+     "relations": [
+      {
+       "type": "holds",
+       "target": "p1"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "cup",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a woman sitting at a table in a cafe",
+  "expect": {
+   "place": "restaurant",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "sit",
+     "relations": [
+      {
+       "type": "near",
+       "target": "p1",
+       "side": "front"
+      },
+      {
+       "type": "on",
+       "target": "p2",
+       "slots": [
+        1
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "table",
+     "count": 1
+    },
+    {
+     "asset": "bench",
+     "count": 1,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man waving at a woman",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "wave",
+     "relations": [
+      {
+       "type": "facing",
+       "target": "a2"
+      }
+     ]
+    },
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "two friends talking in the park",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 2,
+     "pose": "talk",
+     "formation": "facing"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man running in the city",
+  "expect": {
+   "place": "city",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "run"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a woman jogging along the river",
+  "expect": {
+   "place": "river",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "jog"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a kid jumping in the backyard",
+  "expect": {
+   "place": "house",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "jump",
+     "preset": "child"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man lying down in the grass",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "lie_down"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a woman kneeling next to a dog",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "kneel",
+     "relations": [
+      {
+       "type": "near",
+       "target": "a2",
+       "side": "beside"
+      }
+     ]
+    },
+    {
+     "asset": "dog",
+     "count": 1,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man crouching behind a car",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "crouch",
+     "relations": [
+      {
+       "type": "near",
+       "target": "p1",
+       "side": "behind"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "car",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a cyclist in the city",
+  "expect": {
+   "place": "city",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "ride_bike",
+     "relations": [
+      {
+       "type": "rides",
+       "target": "p1"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "bicycle",
+     "count": 1,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man riding a bike",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "ride_bike",
+     "relations": [
+      {
+       "type": "rides",
+       "target": "p1"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "bicycle",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "three kids riding bikes in the suburbs",
+  "expect": {
+   "place": "suburbs",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 3,
+     "pose": "ride_bike",
+     "preset": "child",
+     "relations": [
+      {
+       "type": "rides",
+       "target": "p1"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "bicycle",
+     "count": 3
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a skateboarder in the city",
+  "expect": {
+   "place": "city",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "ride_skate",
+     "relations": [
+      {
+       "type": "rides",
+       "target": "p1"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "skateboard",
+     "count": 1,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a girl skating",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "ride_skate",
+     "preset": "child",
+     "relations": [
+      {
+       "type": "rides",
+       "target": "p1"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "skateboard",
+     "count": 1,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man rowing a boat on the lake",
+  "expect": {
+   "place": "lake",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "sit_boat",
+     "relations": [
+      {
+       "type": "rides",
+       "target": "p1"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "boat",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a woman in a kayak",
+  "expect": {
+   "place": "lake",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "sit_boat",
+     "relations": [
+      {
+       "type": "rides",
+       "target": "p1"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "boat",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a crowd of people in the city",
+  "expect": {
+   "place": "city",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 12,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a few people walking in the park",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 3,
+     "pose": "walk"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "five people standing in front of a house",
+  "expect": {
+   "place": "house",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 5,
+     "pose": "stand",
+     "relations": [
+      {
+       "type": "near",
+       "target": "p1",
+       "side": "front"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "house",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "ten people",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 10,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "two dogs in the park",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "dog",
+     "count": 2,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a big dog next to a small car",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "dog",
+     "count": 1,
+     "pose": "stand",
+     "size": 1.25,
+     "relations": [
+      {
+       "type": "near",
+       "target": "p1",
+       "side": "beside"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "car",
+     "count": 1,
+     "size": 0.75
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a tall man and a short woman",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "stand",
+     "size": 1.12
+    },
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "stand",
+     "size": 0.9
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a tiny house in the desert",
+  "expect": {
+   "place": "desert",
+   "actors": [],
+   "props": [
+    {
+     "asset": "house",
+     "count": 1,
+     "size": 0.5
+    }
+   ],
+   "camera": {
+    "subject": "p1"
+   }
+  }
+ },
+ {
+  "text": "a giant tree in the forest",
+  "expect": {
+   "place": "forest",
+   "actors": [],
+   "props": [
+    {
+     "asset": "tree",
+     "count": 1,
+     "size": 2
+    }
+   ],
+   "camera": {
+    "subject": "p1"
+   }
+  }
+ },
+ {
+  "text": "a man standing in front of a house",
+  "expect": {
+   "place": "house",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "stand",
+     "relations": [
+      {
+       "type": "near",
+       "target": "p1",
+       "side": "front"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "house",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a woman walking past a tall building",
+  "expect": {
+   "place": "city",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "walk",
+     "relations": [
+      {
+       "type": "near",
+       "target": "p1",
+       "side": "beside"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "building",
+     "count": 1,
+     "size": 1.12
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man near a fountain in the park",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "stand",
+     "relations": [
+      {
+       "type": "near",
+       "target": "p1",
+       "side": "beside"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "fountain",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man on the beach",
+  "expect": {
+   "place": "ocean",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a woman in the desert",
+  "expect": {
+   "place": "desert",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man on a country road",
+  "expect": {
+   "place": "outskirts",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a couple in the kitchen",
+  "expect": {
+   "place": "kitchen",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 2,
+     "pose": "stand",
+     "presets": [
+      "adult",
+      "adult"
+     ]
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "close up of a man texting",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "hold_phone",
+     "relations": [
+      {
+       "type": "holds",
+       "target": "p1"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "phone",
+     "count": 1,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1",
+    "shot": "close"
+   }
+  }
+ },
+ {
+  "text": "wide shot of a woman walking a dog in the park",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "walk",
+     "relations": [
+      {
+       "type": "walks",
+       "target": "a2"
+      }
+     ]
+    },
+    {
+     "asset": "dog",
+     "count": 1,
+     "pose": "walk"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1",
+    "shot": "wide"
+   }
+  }
+ },
+ {
+  "text": "low angle of a man running",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "run"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1",
+    "angle": "low"
+   }
+  }
+ },
+ {
+  "text": "push in on a man sitting on a bench",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "sit",
+     "relations": [
+      {
+       "type": "on",
+       "target": "p1",
+       "slots": [
+        1
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "bench",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1",
+    "move": "push_in"
+   }
+  }
+ },
+ {
+  "text": "orbit around a car in the desert",
+  "expect": {
+   "place": "desert",
+   "actors": [],
+   "props": [
+    {
+     "asset": "car",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "p1",
+    "move": "orbit"
+   }
+  }
+ },
+ {
+  "text": "a man walking, tracking shot",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "walk"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1",
+    "move": "track"
+   }
+  }
+ },
+ {
+  "text": "a man in a red hat",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   },
+   "unmatched": [
+    "red",
+    "hat"
+   ]
+  }
+ },
+ {
+  "text": "a man playing guitar on the street",
+  "expect": {
+   "place": "city",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "play_guitar",
+     "relations": [
+      {
+       "type": "holds",
+       "target": "p1",
+       "hand": "strap"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "guitar",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a dragon in the city",
+  "expect": {
+   "place": "city",
+   "actors": [],
+   "props": [],
+   "camera": {},
+   "unmatched": [
+    "dragon"
+   ]
+  }
+ },
+ {
+  "text": "a woman swimming in the ocean",
+  "expect": {
+   "place": "ocean",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   },
+   "unmatched": [
+    "swimming"
+   ]
+  }
+ },
+ {
+  "text": "a man sitting on a sofa reading a book",
+  "expect": {
+   "place": "interior",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "sit",
+     "relations": [
+      {
+       "type": "on",
+       "target": "p1",
+       "slots": [
+        1
+       ]
+      },
+      {
+       "type": "holds",
+       "target": "p2",
+       "hand": "L"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "sofa",
+     "count": 1
+    },
+    {
+     "asset": "book",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man cooking in the kitchen",
+  "expect": {
+   "place": "kitchen",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "cook",
+     "relations": [
+      {
+       "type": "near",
+       "target": "p1",
+       "side": "front"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "counter",
+     "count": 1,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a woman typing on a laptop",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "type",
+     "relations": [
+      {
+       "type": "near",
+       "target": "p2",
+       "side": "front"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "laptop",
+     "count": 1,
+     "relations": [
+      {
+       "type": "on",
+       "target": "p2"
+      }
+     ]
+    },
+    {
+     "asset": "table",
+     "count": 1,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a kid kicking a ball in the park",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "kick",
+     "preset": "child",
+     "relations": [
+      {
+       "type": "holds",
+       "target": "p1",
+       "hand": "foot_R"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "ball",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a woman eating breakfast",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "eat",
+     "relations": [
+      {
+       "type": "holds",
+       "target": "p1",
+       "hand": "L"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "plate_food",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man carrying boxes",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "carry",
+     "relations": [
+      {
+       "type": "holds",
+       "target": "p1",
+       "hand": "hands"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "bag_box",
+     "count": 2
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a woman washing dishes",
+  "expect": {
+   "place": "kitchen",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "cook",
+     "relations": [
+      {
+       "type": "near",
+       "target": "p1",
+       "side": "front"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "counter",
+     "count": 1,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   },
+   "unmatched": [
+    "dishes"
+   ]
+  }
+ },
+ {
+  "text": "two people sitting on a sofa",
+  "expect": {
+   "place": "interior",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 2,
+     "pose": "sit",
+     "relations": [
+      {
+       "type": "on",
+       "target": "p1",
+       "slots": [
+        0,
+        2
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "sofa",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man walking in the park at night",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "walk"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   },
+   "world": {
+    "time": "night"
+   }
+  }
+ },
+ {
+  "text": "a woman on the beach at sunset",
+  "expect": {
+   "place": "ocean",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   },
+   "world": {
+    "time": "golden"
+   }
+  }
+ },
+ {
+  "text": "two people talking in the city in the rain",
+  "expect": {
+   "place": "city",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 2,
+     "pose": "talk",
+     "formation": "facing"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   },
+   "world": {
+    "weather": "rain"
+   }
+  }
+ },
+ {
+  "text": "a foggy forest",
+  "expect": {
+   "place": "forest",
+   "actors": [],
+   "props": [],
+   "camera": {},
+   "world": {
+    "weather": "fog"
+   }
+  }
+ },
+ {
+  "text": "a man in a car on a snowy evening",
+  "expect": {
+   "place": "car_interior",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "drive",
+     "relations": [
+      {
+       "type": "in",
+       "target": "p1",
+       "seats": [
+        "driver"
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "car",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   },
+   "world": {
+    "time": "dusk",
+    "weather": "snow"
+   }
+  }
+ },
+ {
+  "text": "a cyclist on a cloudy day in the suburbs",
+  "expect": {
+   "place": "suburbs",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "ride_bike",
+     "relations": [
+      {
+       "type": "rides",
+       "target": "p1"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "bicycle",
+     "count": 1,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   },
+   "world": {
+    "time": "day",
+    "weather": "overcast"
+   }
+  }
+ },
+ {
+  "text": "a woman standing by the lake, low dolly along the shoreline",
+  "expect": {
+   "place": "lake",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1",
+    "angle": "low",
+    "move": "dolly_along"
+   }
+  }
+ },
+ {
+  "text": "a man fishing by the river, crane up to reveal the river",
+  "expect": {
+   "place": "river",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1",
+    "move": "crane_reveal"
+   },
+   "unmatched": [
+    "fishing"
+   ]
+  }
+ },
+ {
+  "text": "a dog in the park, orbit",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "dog",
+     "count": 1,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1",
+    "move": "orbit"
+   }
+  }
+ },
+ {
+  "text": "a man walking down the street, tracking shot",
+  "expect": {
+   "place": "city",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "walk"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1",
+    "move": "track"
+   }
+  }
+ },
+ {
+  "text": "close up of a woman in a car, pull out",
+  "expect": {
+   "place": "car_interior",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "drive",
+     "relations": [
+      {
+       "type": "in",
+       "target": "p1",
+       "seats": [
+        "driver"
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "car",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1",
+    "shot": "close",
+    "move": "pull_out"
+   }
+  }
+ },
+ {
+  "text": "five children playing in the field",
+  "expect": {
+   "place": "field",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 5,
+     "pose": "stand",
+     "preset": "child"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a huge dog next to a tiny cat",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "dog",
+     "count": 1,
+     "pose": "stand",
+     "size": 1.6,
+     "relations": [
+      {
+       "type": "near",
+       "target": "a2",
+       "side": "beside"
+      }
+     ]
+    },
+    {
+     "asset": "cat",
+     "count": 1,
+     "pose": "stand",
+     "size": 0.5
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a giraffe and a man in the park",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "giraffe",
+     "count": 1,
+     "pose": "stand"
+    },
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a2"
+   }
+  }
+ },
+ {
+  "text": "a woman holding an umbrella and a coffee cup",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "hold_umbrella",
+     "relations": [
+      {
+       "type": "holds",
+       "target": "p1"
+      },
+      {
+       "type": "holds",
+       "target": "p2",
+       "hand": "L"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "umbrella",
+     "count": 1
+    },
+    {
+     "asset": "cup",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a guitarist on stage",
+  "expect": {
+   "place": "stage",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "play_guitar",
+     "relations": [
+      {
+       "type": "holds",
+       "target": "p1",
+       "hand": "strap"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "guitar",
+     "count": 1,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "two guitarists on stage",
+  "expect": {
+   "place": "stage",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 2,
+     "pose": "play_guitar",
+     "relations": [
+      {
+       "type": "holds",
+       "target": "p1",
+       "hand": "strap"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "guitar",
+     "count": 2,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man playing the guitar in the park",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "play_guitar",
+     "relations": [
+      {
+       "type": "holds",
+       "target": "p1",
+       "hand": "strap"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "guitar",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a woman lifting a box",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "carry",
+     "relations": [
+      {
+       "type": "holds",
+       "target": "p1",
+       "hand": "hands"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "bag_box",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a kid kicking a ball in the street",
+  "expect": {
+   "place": "city",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "kick",
+     "preset": "child",
+     "relations": [
+      {
+       "type": "holds",
+       "target": "p1",
+       "hand": "foot_R"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "ball",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a couple hugging in the park",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 2,
+     "pose": "hug",
+     "presets": [
+      "adult",
+      "adult"
+     ],
+     "pair": "hug:hug/hug"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "two people hugging on the beach",
+  "expect": {
+   "place": "ocean",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 2,
+     "pose": "hug",
+     "pair": "hug:hug/hug"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man hugging a woman",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "hug",
+     "relations": [
+      {
+       "type": "pair",
+       "target": "a2",
+       "pair": "hug"
+      }
+     ]
+    },
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "hug"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man hugging",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "hug",
+     "relations": [
+      {
+       "type": "pair",
+       "target": "a2",
+       "pair": "hug"
+      }
+     ]
+    },
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "hug"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man kissing a woman on the beach",
+  "expect": {
+   "place": "ocean",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "kiss",
+     "relations": [
+      {
+       "type": "pair",
+       "target": "a2",
+       "pair": "kiss"
+      }
+     ]
+    },
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "kiss"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "two men shaking hands in the office",
+  "expect": {
+   "place": "office",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 2,
+     "pose": "shake_hands",
+     "pair": "shake_hands:shake_hands/shake_hands"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man shaking hands with a woman",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "shake_hands",
+     "relations": [
+      {
+       "type": "pair",
+       "target": "a2",
+       "pair": "shake_hands"
+      }
+     ]
+    },
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "shake_hands"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "two boxers fighting in the gym",
+  "expect": {
+   "place": "gym",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "fight_punch",
+     "relations": [
+      {
+       "type": "pair",
+       "target": "a2",
+       "pair": "fight"
+      }
+     ]
+    },
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "fight_guard"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "newlyweds walking in the park",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "walk",
+     "relations": [
+      {
+       "type": "pair",
+       "target": "a2",
+       "pair": "couple"
+      }
+     ]
+    },
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "walk"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a couple sitting on a bench",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 2,
+     "pose": "sit",
+     "presets": [
+      "adult",
+      "adult"
+     ],
+     "relations": [
+      {
+       "type": "on",
+       "target": "p1",
+       "slots": [
+        0,
+        2
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "bench",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a kid kicking a ball on the soccer field",
+  "expect": {
+   "place": "sports_field",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "kick",
+     "preset": "child",
+     "relations": [
+      {
+       "type": "holds",
+       "target": "p1",
+       "hand": "foot_R"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "ball",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a woman holding an umbrella in the rain",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "hold_umbrella",
+     "relations": [
+      {
+       "type": "holds",
+       "target": "p1"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "umbrella",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   },
+   "world": {
+    "weather": "rain"
+   }
+  }
+ },
+ {
+  "text": "a man swinging a bat",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "swing",
+     "relations": [
+      {
+       "type": "holds",
+       "target": "p1",
+       "hand": "L"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "bat_stick",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a woman playing tennis",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "forehand",
+     "relations": [
+      {
+       "type": "holds",
+       "target": "p1"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "racket",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a kid flying a kite in the field",
+  "expect": {
+   "place": "field",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "fly_kite",
+     "preset": "child",
+     "relations": [
+      {
+       "type": "holds",
+       "target": "p1",
+       "hand": "airborne"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "kite",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a woman pushing a cart in the store",
+  "expect": {
+   "place": "store",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "push_cart",
+     "relations": [
+      {
+       "type": "holds",
+       "target": "p1",
+       "hand": "push"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "cart",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a skier on the mountain",
+  "expect": {
+   "place": "snow_mountain",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "ride_ski",
+     "relations": [
+      {
+       "type": "rides",
+       "target": "p1"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "skis",
+     "count": 1,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man skiing",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "ride_ski",
+     "relations": [
+      {
+       "type": "rides",
+       "target": "p1"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "skis",
+     "count": 1,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man sleeping in bed",
+  "expect": {
+   "place": "bedroom",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "lie_down",
+     "relations": [
+      {
+       "type": "on",
+       "target": "p1"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "bed",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a woman sitting on the bed in the bedroom",
+  "expect": {
+   "place": "bedroom",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "sit",
+     "relations": [
+      {
+       "type": "on",
+       "target": "p1",
+       "slots": [
+        1
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "bed",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man singing on stage",
+  "expect": {
+   "place": "stage",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "sing",
+     "relations": [
+      {
+       "type": "holds",
+       "target": "p1"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "microphone",
+     "count": 1,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a woman holding a phone and a cup",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "hold_phone",
+     "relations": [
+      {
+       "type": "holds",
+       "target": "p1"
+      },
+      {
+       "type": "holds",
+       "target": "p2",
+       "hand": "L"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "phone",
+     "count": 1
+    },
+    {
+     "asset": "cup",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a cow in the field",
+  "expect": {
+   "place": "field",
+   "actors": [
+    {
+     "asset": "cow",
+     "count": 1,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a giraffe drinking at the lake",
+  "expect": {
+   "place": "lake",
+   "actors": [
+    {
+     "asset": "giraffe",
+     "count": 1,
+     "pose": "drink"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "an elephant and a bird in the park",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "elephant",
+     "count": 1,
+     "pose": "stand"
+    },
+    {
+     "asset": "bird",
+     "count": 1,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a horse in the field",
+  "expect": {
+   "place": "field",
+   "actors": [],
+   "props": [
+    {
+     "asset": "horse",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "p1"
+   }
+  }
+ },
+ {
+  "text": "a bird flying over the lake",
+  "expect": {
+   "place": "lake",
+   "actors": [
+    {
+     "asset": "bird",
+     "count": 1,
+     "pose": "fly"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a cow eating grass in the field",
+  "expect": {
+   "place": "field",
+   "actors": [
+    {
+     "asset": "cow",
+     "count": 1,
+     "pose": "eat"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "two cows grazing in the field",
+  "expect": {
+   "place": "field",
+   "actors": [
+    {
+     "asset": "cow",
+     "count": 2,
+     "pose": "eat"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a bird perched on a bench",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "bird",
+     "count": 1,
+     "pose": "sit",
+     "relations": [
+      {
+       "type": "on",
+       "target": "p1",
+       "slots": [
+        1
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "bench",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a woman holding an umbrella and a coffee cup on the street",
+  "expect": {
+   "place": "city",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "hold_umbrella",
+     "relations": [
+      {
+       "type": "holds",
+       "target": "p1"
+      },
+      {
+       "type": "holds",
+       "target": "p2",
+       "hand": "L"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "umbrella",
+     "count": 1
+    },
+    {
+     "asset": "cup",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a man in the bathroom",
+  "expect": {
+   "place": "interior (standin)",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "kids on the skating rink",
+  "expect": {
+   "place": "sports_field (standin)",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 3,
+     "pose": "stand",
+     "preset": "child"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "a woman at the cemetery",
+  "expect": {
+   "place": "park (standin)",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "A park with a bench and a person sitting at the bench. The camera is pushing in from behind and rotates around until we see them in front as they take a sip of coffee from their coffee cup.",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "sit",
+     "relations": [
+      {
+       "type": "on",
+       "target": "p2",
+       "slots": [
+        1
+       ]
+      },
+      {
+       "type": "holds",
+       "target": "p3"
+      },
+      {
+       "type": "holds",
+       "target": "p4"
+      },
+      {
+       "type": "near",
+       "target": "p5",
+       "side": "beside"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "bench",
+     "count": 1
+    },
+    {
+     "asset": "bench",
+     "count": 1
+    },
+    {
+     "asset": "cup",
+     "count": 1,
+     "implied": true
+    },
+    {
+     "asset": "cup",
+     "count": 1
+    },
+    {
+     "asset": "cup",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1",
+    "angle": "behind",
+    "move": "push_in"
+   },
+   "unmatched": [
+    "until",
+    "we",
+    "see",
+    "front",
+    "take"
+   ]
+  }
+ },
+ {
+  "text": "A car parked in the suburbs in front of a house. The camera tracks alongside and pushes in.",
+  "expect": {
+   "place": "suburbs",
+   "actors": [],
+   "props": [
+    {
+     "asset": "car",
+     "count": 1,
+     "relations": [
+      {
+       "type": "near",
+       "target": "p2",
+       "side": "front"
+      }
+     ]
+    },
+    {
+     "asset": "house",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "p1",
+    "move": "track"
+   }
+  }
+ },
+ {
+  "text": "A person standing in front of a house. The camera pushes in.",
+  "expect": {
+   "place": "house",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "stand",
+     "relations": [
+      {
+       "type": "near",
+       "target": "p1",
+       "side": "front"
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "house",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "a1",
+    "move": "push_in"
+   }
+  }
+ },
+ {
+  "text": "Inside a house, a person sitting. The camera pushes in from the doorway.",
+  "expect": {
+   "place": "interior",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "sit",
+     "relations": [
+      {
+       "type": "on",
+       "target": "p1",
+       "slots": [
+        1
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "bench",
+     "count": 1,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1",
+    "move": "push_in",
+    "from": "doorway"
+   }
+  }
+ },
+ {
+  "text": "A person walking in the city. The camera follows from behind.",
+  "expect": {
+   "place": "city",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "walk"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1",
+    "angle": "behind",
+    "move": "follow"
+   }
+  }
+ },
+ {
+  "text": "A car on the outskirts. The camera circles around to the front.",
+  "expect": {
+   "place": "outskirts",
+   "actors": [],
+   "props": [
+    {
+     "asset": "car",
+     "count": 1
+    }
+   ],
+   "camera": {
+    "subject": "p1",
+    "move": "orbit"
+   },
+   "unmatched": [
+    "front"
+   ]
+  }
+ },
+ {
+  "text": "A person standing in the desert. The camera pulls wide.",
+  "expect": {
+   "place": "desert",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1",
+    "shot": "wide",
+    "move": "pull_out"
+   }
+  }
+ },
+ {
+  "text": "A dog in the forest. The camera pushes in.",
+  "expect": {
+   "place": "forest",
+   "actors": [
+    {
+     "asset": "dog",
+     "count": 1,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1",
+    "move": "push_in"
+   }
+  }
+ },
+ {
+  "text": "A person standing at the ocean. The camera moves in from behind.",
+  "expect": {
+   "place": "ocean",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1",
+    "angle": "behind",
+    "move": "push_in"
+   }
+  }
+ },
+ {
+  "text": "A cat by the lake. The camera orbits around.",
+  "expect": {
+   "place": "lake",
+   "actors": [
+    {
+     "asset": "cat",
+     "count": 1,
+     "pose": "stand"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1",
+    "move": "orbit"
+   }
+  }
+ },
+ {
+  "text": "In the house, a woman sitting",
+  "expect": {
+   "place": "interior",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "sit",
+     "relations": [
+      {
+       "type": "on",
+       "target": "p1",
+       "slots": [
+        1
+       ]
+      }
+     ]
+    }
+   ],
+   "props": [
+    {
+     "asset": "bench",
+     "count": 1,
+     "implied": true
+    }
+   ],
+   "camera": {
+    "subject": "a1"
+   }
+  }
+ },
+ {
+  "text": "The camera pulls wide on a man walking in the park",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "walk"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1",
+    "shot": "wide",
+    "move": "pull_out"
+   }
+  }
+ },
+ {
+  "text": "The camera circles two people talking",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 2,
+     "pose": "talk",
+     "formation": "facing"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1",
+    "move": "orbit"
+   }
+  }
+ },
+ {
+  "text": "a man walking in the park, close-up",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "walk"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1",
+    "shot": "close"
+   }
+  }
+ },
+ {
+  "text": "a man walking in the park, wide shot",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "walk"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1",
+    "shot": "wide"
+   }
+  }
+ },
+ {
+  "text": "a man walking in the park, close to wide",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "walk"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1",
+    "shot": "close",
+    "move": "pull_out"
+   }
+  }
+ },
+ {
+  "text": "a man walking in the park, dolly in",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "walk"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1",
+    "move": "push_in"
+   }
+  }
+ },
+ {
+  "text": "a man walking in the park, dolly out",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "walk"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1",
+    "move": "pull_out"
+   }
+  }
+ },
+ {
+  "text": "a man walking in the park, the camera orbits",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "walk"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1",
+    "move": "orbit"
+   }
+  }
+ },
+ {
+  "text": "a man walking in the park, overhead",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "walk"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1",
+    "angle": "overhead"
+   }
+  }
+ },
+ {
+  "text": "a man walking in the park, point of view",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "walk"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1",
+    "angle": "pov"
+   }
+  }
+ },
+ {
+  "text": "a man walking in the park, tracking shot",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "walk"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1",
+    "move": "track"
+   }
+  }
+ },
+ {
+  "text": "a man walking in the park, dolly along",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "walk"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1",
+    "move": "dolly_along"
+   }
+  }
+ },
+ {
+  "text": "a man walking in the park, locked off",
+  "expect": {
+   "place": "park",
+   "actors": [
+    {
+     "asset": "person",
+     "count": 1,
+     "pose": "walk"
+    }
+   ],
+   "props": [],
+   "camera": {
+    "subject": "a1",
+    "move": "static"
+   }
+  }
+ }
+]

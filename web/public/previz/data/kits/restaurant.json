@@ -1,0 +1,1454 @@
+{
+ "id": "restaurant",
+ "order": 12,
+ "label": "Restaurant",
+ "move": "Push in",
+ "world": {
+  "shadowExtent": 9,
+  "shadowCenter": [
+   0,
+   0,
+   0
+  ],
+  "keyDist": 30,
+  "grid": false,
+  "fogNear": 20,
+  "fogFar": 80
+ },
+ "geometry": [
+  {
+   "type": "ground",
+   "radius": 70
+  },
+  {
+   "type": "box",
+   "name": "floor",
+   "size": [
+    10,
+    0.05,
+    8.4
+   ],
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "material": "path",
+   "radius": 0.01,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "wall_back",
+   "size": [
+    10,
+    3.0,
+    0.2
+   ],
+   "pos": [
+    0,
+    0,
+    -4.3
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "wall_left",
+   "size": [
+    0.2,
+    0.85,
+    8.4
+   ],
+   "pos": [
+    -5.1,
+    0,
+    0
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "wall_right",
+   "size": [
+    0.2,
+    3.0,
+    8.4
+   ],
+   "pos": [
+    5.1,
+    0,
+    0
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "rug",
+   "size": [
+    7.4,
+    0.012,
+    4.4
+   ],
+   "pos": [
+    0.3,
+    0.05,
+    0.1
+   ],
+   "material": "setDark",
+   "radius": 0.004,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "wall_left_top",
+   "size": [
+    0.2,
+    0.55,
+    8.4
+   ],
+   "pos": [
+    -5.1,
+    2.45,
+    0
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "wall_left_pier_back",
+   "size": [
+    0.2,
+    1.6,
+    0.25
+   ],
+   "pos": [
+    -5.1,
+    0.85,
+    -4.075
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "wall_left_pier_front",
+   "size": [
+    0.2,
+    1.6,
+    2.0
+   ],
+   "pos": [
+    -5.1,
+    0.85,
+    3.2
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "window_mullion_a",
+   "size": [
+    0.12,
+    1.6,
+    0.08
+   ],
+   "pos": [
+    -5.04,
+    0.85,
+    -1.9
+   ],
+   "material": "setDark",
+   "radius": 0.01
+  },
+  {
+   "type": "box",
+   "name": "window_mullion_b",
+   "size": [
+    0.12,
+    1.6,
+    0.08
+   ],
+   "pos": [
+    -5.04,
+    0.85,
+    0.15
+   ],
+   "material": "setDark",
+   "radius": 0.01
+  },
+  {
+   "type": "box",
+   "name": "window_sill",
+   "size": [
+    0.3,
+    0.05,
+    6.15
+   ],
+   "pos": [
+    -4.9,
+    0.85,
+    -0.875
+   ],
+   "material": "setDark",
+   "radius": 0.01
+  },
+  {
+   "type": "box",
+   "name": "night_outside",
+   "size": [
+    0.3,
+    4.2,
+    10
+   ],
+   "pos": [
+    -7.2,
+    0,
+    0
+   ],
+   "material": "exterior",
+   "radius": 0.01,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "night_yard",
+   "size": [
+    2.2,
+    0.03,
+    10
+   ],
+   "pos": [
+    -6.1,
+    0,
+    0
+   ],
+   "material": "exterior",
+   "radius": 0.005,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "booth_back_a",
+   "size": [
+    1.46,
+    1.25,
+    0.1
+   ],
+   "pos": [
+    -4.25,
+    0,
+    -4.12
+   ],
+   "material": "setDark",
+   "radius": 0.02
+  },
+  {
+   "type": "box",
+   "name": "booth_back_b",
+   "size": [
+    1.46,
+    0.95,
+    0.1
+   ],
+   "pos": [
+    -4.25,
+    0,
+    -1.92
+   ],
+   "material": "setDark",
+   "radius": 0.02
+  },
+  {
+   "type": "box",
+   "name": "light_rail_a",
+   "size": [
+    10,
+    0.12,
+    0.14
+   ],
+   "pos": [
+    0,
+    2.78,
+    -3.05
+   ],
+   "material": "setDark",
+   "radius": 0.01,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "light_rail_b",
+   "size": [
+    10,
+    0.12,
+    0.14
+   ],
+   "pos": [
+    0,
+    2.78,
+    -1.2
+   ],
+   "material": "setDark",
+   "radius": 0.01,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "lamp_cord_0",
+   "size": [
+    0.02,
+    0.5,
+    0.02
+   ],
+   "pos": [
+    -4.25,
+    2.3,
+    -3.05
+   ],
+   "material": "setDark",
+   "radius": 0.005,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "lamp_shade_0",
+   "size": [
+    0.34,
+    0.16,
+    0.34
+   ],
+   "pos": [
+    -4.25,
+    2.14,
+    -3.05
+   ],
+   "material": "lamp",
+   "radius": 0.04,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "lamp_cord_1",
+   "size": [
+    0.02,
+    0.5,
+    0.02
+   ],
+   "pos": [
+    -1.3,
+    2.3,
+    -3.05
+   ],
+   "material": "setDark",
+   "radius": 0.005,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "lamp_shade_1",
+   "size": [
+    0.34,
+    0.16,
+    0.34
+   ],
+   "pos": [
+    -1.3,
+    2.14,
+    -3.05
+   ],
+   "material": "lamp",
+   "radius": 0.04,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "lamp_cord_2",
+   "size": [
+    0.02,
+    0.5,
+    0.02
+   ],
+   "pos": [
+    1.4,
+    2.3,
+    -3.05
+   ],
+   "material": "setDark",
+   "radius": 0.005,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "lamp_shade_2",
+   "size": [
+    0.34,
+    0.16,
+    0.34
+   ],
+   "pos": [
+    1.4,
+    2.14,
+    -3.05
+   ],
+   "material": "lamp",
+   "radius": 0.04,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "lamp_cord_3",
+   "size": [
+    0.02,
+    0.5,
+    0.02
+   ],
+   "pos": [
+    2.4,
+    2.3,
+    -3.05
+   ],
+   "material": "setDark",
+   "radius": 0.005,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "lamp_shade_3",
+   "size": [
+    0.34,
+    0.16,
+    0.34
+   ],
+   "pos": [
+    2.4,
+    2.14,
+    -3.05
+   ],
+   "material": "lamp",
+   "radius": 0.04,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "lamp_cord_4",
+   "size": [
+    0.02,
+    0.5,
+    0.02
+   ],
+   "pos": [
+    3.4,
+    2.3,
+    -3.05
+   ],
+   "material": "setDark",
+   "radius": 0.005,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "lamp_shade_4",
+   "size": [
+    0.34,
+    0.16,
+    0.34
+   ],
+   "pos": [
+    3.4,
+    2.14,
+    -3.05
+   ],
+   "material": "lamp",
+   "radius": 0.04,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "lamp_cord_5",
+   "size": [
+    0.02,
+    0.5,
+    0.02
+   ],
+   "pos": [
+    -2.6,
+    2.3,
+    -1.2
+   ],
+   "material": "setDark",
+   "radius": 0.005,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "lamp_shade_5",
+   "size": [
+    0.34,
+    0.16,
+    0.34
+   ],
+   "pos": [
+    -2.6,
+    2.14,
+    -1.2
+   ],
+   "material": "lamp",
+   "radius": 0.04,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "lamp_cord_6",
+   "size": [
+    0.02,
+    0.5,
+    0.02
+   ],
+   "pos": [
+    0.4,
+    2.3,
+    -1.2
+   ],
+   "material": "setDark",
+   "radius": 0.005,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "lamp_shade_6",
+   "size": [
+    0.34,
+    0.16,
+    0.34
+   ],
+   "pos": [
+    0.4,
+    2.14,
+    -1.2
+   ],
+   "material": "lamp",
+   "radius": 0.04,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "lamp_cord_7",
+   "size": [
+    0.02,
+    0.5,
+    0.02
+   ],
+   "pos": [
+    3.2,
+    2.3,
+    -1.2
+   ],
+   "material": "setDark",
+   "radius": 0.005,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "lamp_shade_7",
+   "size": [
+    0.34,
+    0.16,
+    0.34
+   ],
+   "pos": [
+    3.2,
+    2.14,
+    -1.2
+   ],
+   "material": "lamp",
+   "radius": 0.04,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "stool_base_0",
+   "size": [
+    0.3,
+    0.03,
+    0.3
+   ],
+   "pos": [
+    0.9,
+    0,
+    -2.72
+   ],
+   "material": "setDark",
+   "radius": 0.01
+  },
+  {
+   "type": "box",
+   "name": "stool_post_0",
+   "size": [
+    0.07,
+    0.58,
+    0.07
+   ],
+   "pos": [
+    0.9,
+    0.03,
+    -2.72
+   ],
+   "material": "setDark",
+   "radius": 0.01
+  },
+  {
+   "type": "box",
+   "name": "stool_seat_0",
+   "size": [
+    0.38,
+    0.07,
+    0.38
+   ],
+   "pos": [
+    0.9,
+    0.61,
+    -2.72
+   ],
+   "material": "setDark",
+   "radius": 0.03
+  },
+  {
+   "type": "box",
+   "name": "stool_base_1",
+   "size": [
+    0.3,
+    0.03,
+    0.3
+   ],
+   "pos": [
+    1.65,
+    0,
+    -2.72
+   ],
+   "material": "setDark",
+   "radius": 0.01
+  },
+  {
+   "type": "box",
+   "name": "stool_post_1",
+   "size": [
+    0.07,
+    0.58,
+    0.07
+   ],
+   "pos": [
+    1.65,
+    0.03,
+    -2.72
+   ],
+   "material": "setDark",
+   "radius": 0.01
+  },
+  {
+   "type": "box",
+   "name": "stool_seat_1",
+   "size": [
+    0.38,
+    0.07,
+    0.38
+   ],
+   "pos": [
+    1.65,
+    0.61,
+    -2.72
+   ],
+   "material": "setDark",
+   "radius": 0.03
+  },
+  {
+   "type": "box",
+   "name": "stool_base_2",
+   "size": [
+    0.3,
+    0.03,
+    0.3
+   ],
+   "pos": [
+    2.4,
+    0,
+    -2.72
+   ],
+   "material": "setDark",
+   "radius": 0.01
+  },
+  {
+   "type": "box",
+   "name": "stool_post_2",
+   "size": [
+    0.07,
+    0.58,
+    0.07
+   ],
+   "pos": [
+    2.4,
+    0.03,
+    -2.72
+   ],
+   "material": "setDark",
+   "radius": 0.01
+  },
+  {
+   "type": "box",
+   "name": "stool_seat_2",
+   "size": [
+    0.38,
+    0.07,
+    0.38
+   ],
+   "pos": [
+    2.4,
+    0.61,
+    -2.72
+   ],
+   "material": "setDark",
+   "radius": 0.03
+  },
+  {
+   "type": "box",
+   "name": "stool_base_3",
+   "size": [
+    0.3,
+    0.03,
+    0.3
+   ],
+   "pos": [
+    3.15,
+    0,
+    -2.72
+   ],
+   "material": "setDark",
+   "radius": 0.01
+  },
+  {
+   "type": "box",
+   "name": "stool_post_3",
+   "size": [
+    0.07,
+    0.58,
+    0.07
+   ],
+   "pos": [
+    3.15,
+    0.03,
+    -2.72
+   ],
+   "material": "setDark",
+   "radius": 0.01
+  },
+  {
+   "type": "box",
+   "name": "stool_seat_3",
+   "size": [
+    0.38,
+    0.07,
+    0.38
+   ],
+   "pos": [
+    3.15,
+    0.61,
+    -2.72
+   ],
+   "material": "setDark",
+   "radius": 0.03
+  },
+  {
+   "type": "box",
+   "name": "stool_base_4",
+   "size": [
+    0.3,
+    0.03,
+    0.3
+   ],
+   "pos": [
+    3.9,
+    0,
+    -2.72
+   ],
+   "material": "setDark",
+   "radius": 0.01
+  },
+  {
+   "type": "box",
+   "name": "stool_post_4",
+   "size": [
+    0.07,
+    0.58,
+    0.07
+   ],
+   "pos": [
+    3.9,
+    0.03,
+    -2.72
+   ],
+   "material": "setDark",
+   "radius": 0.01
+  },
+  {
+   "type": "box",
+   "name": "stool_seat_4",
+   "size": [
+    0.38,
+    0.07,
+    0.38
+   ],
+   "pos": [
+    3.9,
+    0.61,
+    -2.72
+   ],
+   "material": "setDark",
+   "radius": 0.03
+  }
+ ],
+ "items": [
+  {
+   "asset": "bench",
+   "pos": [
+    -4.25,
+    -3.85
+   ],
+   "rot": 0,
+   "id": "booth_a",
+   "scale": [
+    0.9,
+    1,
+    1
+   ],
+   "booth": true
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    -4.25,
+    -2.2
+   ],
+   "rot": 180,
+   "id": "booth_b",
+   "scale": [
+    0.9,
+    1,
+    1
+   ],
+   "booth": true
+  },
+  {
+   "asset": "table",
+   "pos": [
+    -4.25,
+    -3.05
+   ],
+   "rot": 0,
+   "id": "booth_t",
+   "scale": [
+    0.8,
+    1,
+    0.8
+   ],
+   "booth": true
+  },
+  {
+   "asset": "cup",
+   "onTop": {
+    "of": "booth_t",
+    "offset": [
+     0.2,
+     0.05
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "table",
+   "pos": [
+    -2.6,
+    -1.2
+   ],
+   "rot": 0,
+   "id": "t0",
+   "scale": [
+    0.8,
+    1,
+    0.8
+   ]
+  },
+  {
+   "asset": "plate_food",
+   "onTop": {
+    "of": "t0",
+    "offset": [
+     -0.18,
+     0.12
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "cup",
+   "onTop": {
+    "of": "t0",
+    "offset": [
+     0.2,
+     -0.1
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    -2.6,
+    -0.44999999999999996
+   ],
+   "rot": 180,
+   "id": "c0a",
+   "scale": [
+    0.3,
+    1,
+    1
+   ]
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    -2.6,
+    -1.95
+   ],
+   "rot": 0,
+   "id": "c0b",
+   "scale": [
+    0.3,
+    1,
+    1
+   ]
+  },
+  {
+   "asset": "table",
+   "pos": [
+    0.4,
+    -1.2
+   ],
+   "rot": 0,
+   "id": "t1",
+   "scale": [
+    0.8,
+    1,
+    0.8
+   ]
+  },
+  {
+   "asset": "plate_food",
+   "onTop": {
+    "of": "t1",
+    "offset": [
+     -0.18,
+     0.12
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "cup",
+   "onTop": {
+    "of": "t1",
+    "offset": [
+     0.2,
+     -0.1
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    0.4,
+    -0.44999999999999996
+   ],
+   "rot": 180,
+   "id": "c1a",
+   "scale": [
+    0.3,
+    1,
+    1
+   ]
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    0.4,
+    -1.95
+   ],
+   "rot": 0,
+   "id": "c1b",
+   "scale": [
+    0.3,
+    1,
+    1
+   ]
+  },
+  {
+   "asset": "table",
+   "pos": [
+    3.2,
+    -1.2
+   ],
+   "rot": 0,
+   "id": "t2",
+   "scale": [
+    0.8,
+    1,
+    0.8
+   ]
+  },
+  {
+   "asset": "plate_food",
+   "onTop": {
+    "of": "t2",
+    "offset": [
+     -0.18,
+     0.12
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "cup",
+   "onTop": {
+    "of": "t2",
+    "offset": [
+     0.2,
+     -0.1
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    3.2,
+    -0.44999999999999996
+   ],
+   "rot": 180,
+   "id": "c2a",
+   "scale": [
+    0.3,
+    1,
+    1
+   ]
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    3.2,
+    -1.95
+   ],
+   "rot": 0,
+   "id": "c2b",
+   "scale": [
+    0.3,
+    1,
+    1
+   ]
+  },
+  {
+   "asset": "table",
+   "pos": [
+    -1.2,
+    1.4
+   ],
+   "rot": 0,
+   "id": "t3",
+   "scale": [
+    0.8,
+    1,
+    0.8
+   ]
+  },
+  {
+   "asset": "plate_food",
+   "onTop": {
+    "of": "t3",
+    "offset": [
+     -0.18,
+     0.12
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "cup",
+   "onTop": {
+    "of": "t3",
+    "offset": [
+     0.2,
+     -0.1
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    -1.2,
+    2.15
+   ],
+   "rot": 180,
+   "id": "c3a",
+   "scale": [
+    0.3,
+    1,
+    1
+   ]
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    -1.2,
+    0.6499999999999999
+   ],
+   "rot": 0,
+   "id": "c3b",
+   "scale": [
+    0.3,
+    1,
+    1
+   ]
+  },
+  {
+   "asset": "table",
+   "pos": [
+    1.8,
+    1.4
+   ],
+   "rot": 0,
+   "id": "t4",
+   "scale": [
+    0.8,
+    1,
+    0.8
+   ]
+  },
+  {
+   "asset": "plate_food",
+   "onTop": {
+    "of": "t4",
+    "offset": [
+     -0.18,
+     0.12
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "cup",
+   "onTop": {
+    "of": "t4",
+    "offset": [
+     0.2,
+     -0.1
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    1.8,
+    2.15
+   ],
+   "rot": 180,
+   "id": "c4a",
+   "scale": [
+    0.3,
+    1,
+    1
+   ]
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    1.8,
+    0.6499999999999999
+   ],
+   "rot": 0,
+   "id": "c4b",
+   "scale": [
+    0.3,
+    1,
+    1
+   ]
+  },
+  {
+   "id": "diner_c0a",
+   "asset": "person",
+   "seat": {
+    "on": "c0a",
+    "slot": 1
+   },
+   "pose": "sit",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "diner_c0b",
+   "asset": "person",
+   "seat": {
+    "on": "c0b",
+    "slot": 1
+   },
+   "pose": "sit",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "diner_c1a",
+   "asset": "person",
+   "seat": {
+    "on": "c1a",
+    "slot": 1
+   },
+   "pose": "sit",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "diner_c2b",
+   "asset": "person",
+   "seat": {
+    "on": "c2b",
+    "slot": 1
+   },
+   "pose": "sit",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "diner_c3a",
+   "asset": "person",
+   "seat": {
+    "on": "c3a",
+    "slot": 1
+   },
+   "pose": "sit",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "diner_c4b",
+   "asset": "person",
+   "seat": {
+    "on": "c4b",
+    "slot": 1
+   },
+   "pose": "sit",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "waiter",
+   "asset": "person",
+   "pos": [
+    0.9,
+    0.1
+   ],
+   "rot": 100,
+   "pose": "serve",
+   "props": {
+    "hand_R": "plate_food"
+   }
+  },
+  {
+   "asset": "counter",
+   "pos": [
+    2.4,
+    -3.55
+   ],
+   "rot": 0,
+   "id": "bar",
+   "scale": [
+    1.4,
+    1.15,
+    1
+   ]
+  },
+  {
+   "id": "barista",
+   "asset": "person",
+   "pos": [
+    2.8,
+    -4.6
+   ],
+   "rot": 0,
+   "pose": "stand",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "asset": "counter",
+   "pos": [
+    -1.3,
+    -3.55
+   ],
+   "rot": 0,
+   "id": "pass",
+   "scale": [
+    0.7,
+    1.15,
+    1
+   ],
+   "options": {
+    "hob": false
+   }
+  },
+  {
+   "asset": "cup",
+   "onTop": {
+    "of": "bar",
+    "offset": [
+     -0.8,
+     0.15
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "cup",
+   "onTop": {
+    "of": "bar",
+    "offset": [
+     -0.3,
+     0.15
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "window_panel",
+   "pos": [
+    -0.2,
+    1.4,
+    -4.18
+   ],
+   "rot": 0,
+   "scale": [
+    1.0,
+    0.6,
+    0.6
+   ]
+  },
+  {
+   "asset": "sign",
+   "pos": [
+    5.0,
+    -3.9
+   ],
+   "rot": -30,
+   "scale": 0.6
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    4.6,
+    3.4
+   ],
+   "rot": 0,
+   "scale": 0.18,
+   "options": {
+    "seed": 4
+   }
+  }
+ ],
+ "cameras": {
+  "hero": {
+   "pos": [
+    2.8,
+    2.6,
+    7.2
+   ],
+   "target": [
+    0.3,
+    0.9,
+    -0.8
+   ],
+   "fov": 48
+  },
+  "start": {
+   "pos": [
+    0.8,
+    1.6,
+    7.4
+   ],
+   "target": [
+    0.4,
+    1.0,
+    -0.6
+   ],
+   "fov": 44
+  },
+  "end": {
+   "pos": [
+    0.6,
+    1.35,
+    3.6
+   ],
+   "target": [
+    0.4,
+    0.95,
+    -0.6
+   ],
+   "fov": 44
+  },
+  "booth_start": {
+   "pos": [
+    1.9,
+    1.85,
+    3.3
+   ],
+   "target": [
+    -1.6,
+    1.2,
+    -3.0
+   ],
+   "fov": 50
+  },
+  "booth_end": {
+   "pos": [
+    -1.2,
+    1.55,
+    -0.2
+   ],
+   "target": [
+    -4.0,
+    1.15,
+    -3.6
+   ],
+   "fov": 38
+  }
+ },
+ "windowWall": {
+  "normal": [
+   1,
+   0
+  ],
+  "at": -5.0,
+  "span": [
+   -3.95,
+   2.2
+  ],
+  "y": [
+   0.85,
+   2.45
+  ]
+ }
+}

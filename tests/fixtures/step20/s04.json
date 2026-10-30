@@ -1,0 +1,107 @@
+{
+ "spec": {
+  "notes": "A man sitting on a bench in the park. The camera pushes in.",
+  "duration_s": 4.041666666666667,
+  "lens": {
+   "focal_mm": 35.0,
+   "film_gauge_mm": 36
+  },
+  "camera": {
+   "keys": [
+    {
+     "pos": [
+      3.35,
+      1.685,
+      3.977
+     ],
+     "look": [
+      0.0,
+      1.335,
+      0.0
+     ]
+    },
+    {
+     "pos": [
+      1.063,
+      1.685,
+      2.912
+     ],
+     "look": [
+      0.0,
+      1.335,
+      0.0
+     ]
+    }
+   ],
+   "handheld": null
+  },
+  "subjects": [
+   {
+    "kind": "humanoid",
+    "pos": [
+     0.0,
+     0.46,
+     0.0
+    ]
+   }
+  ]
+ },
+ "framing": {
+  "subject": [
+   0.4795,
+   0.4347,
+   0.5197,
+   0.5735
+  ],
+  "horizon": 0.3218,
+  "view": {
+   "share": {
+    "trees": 0.127,
+    "a path": 0.038
+   },
+   "outside": [],
+   "actors": [
+    0,
+    1
+   ],
+   "x": {
+    "trees": 0.5,
+    "a path": 0.44
+   },
+   "blocked": 0.0,
+   "bare": 0.811
+  },
+  "place": "Park",
+  "camera": {
+   "height_m": 2.56,
+   "pitch_deg": -7.0,
+   "focal_mm": 30
+  },
+  "subjects": [
+   {
+    "kind": "person",
+    "x": 0.5,
+    "distance_m": 15.1,
+    "in_view": true,
+    "doing": "sit",
+    "word": "man"
+   }
+  ],
+  "light": {
+   "dir": "camera left"
+  }
+ },
+ "cast": [
+  {
+   "id": "cast_24c3cedd06",
+   "name": "Marcus",
+   "kind": "person",
+   "line": "a man in his 60s with a short gray beard, navy wool peacoat, gray flat cap, brown corduroy trousers, brown leather shoes"
+  }
+ ],
+ "user_look": "",
+ "before": {
+  "positive": "A real photograph, a still frame from a live-action commercial shot on a large-format 65mm digital cinema camera. EXACTLY 1 person in frame: Marcus in the centre.\n\nMarcus: centre of frame, about 15 metres from camera, sitting. Every grey figure in the layout is a real person and every grey shape is a real object: trees, a path.\n\nCamera at about 2.6 metres above the ground, level, 30mm lens, natural perspective, background slightly soft.\n\nMarcus is the one in image 3: a man in his 60s with a short gray beard, navy wool peacoat, gray flat cap, brown corduroy trousers, brown leather shoes.\n\nReal grass with worn patches and fallen leaves, packed gravel and dirt paths, real trees with rough bark.\n\nLate-afternoon sun from camera left, about 30 degrees high. The light falls directly on the subjects and the ground around them. Exposed for the main subject; shadows stay open, with readable texture in the ground and foreground, never pure black.\n\nTactile realism: readable colour, soft highlight roll-off, truthful skin colour, restrained fine grain over a sharp image. Texture comes from real surfaces and light, never a filter. Any signs or screens have no readable letters.\n\nIf any surface looks clean, plastic, grey, untextured or rendered, the image is wrong.",
+  "motion": "A man sitting on a bench in the park. The camera tracks to the left and pushes in."
+ }
+}

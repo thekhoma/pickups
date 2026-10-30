@@ -1,0 +1,1502 @@
+{
+ "version": 1,
+ "note": "Rule data for runtime/grammar.js. Hand written. Entity words come from library_manifest.json (words); this file adds places, camera words, numbers, prepositions, verbs, roles, seat phrases, sizes and stopwords. Camera words stay separate from scene words. world_words: time of day and weather words, kept apart from scene words like the camera words. v1.4: pairs come from the manifest (pairs, pair_phrases); skier and ski ride the skis model.",
+ "default_place": "park",
+ "places": {
+  "park": "park",
+  "garden": "park",
+  "playground": "park",
+  "lawn": "park",
+  "grass": "park",
+  "city": "city",
+  "downtown": "city",
+  "street": "city",
+  "sidewalk": "city",
+  "pavement": "city",
+  "plaza": "city",
+  "square": "city",
+  "town": "city",
+  "avenue": "city",
+  "alley": "city",
+  "crosswalk": "city",
+  "intersection": "city",
+  "parking lot": "city",
+  "bus stop": "city",
+  "corner": "city",
+  "suburb": "suburbs",
+  "suburbs": "suburbs",
+  "neighborhood": "suburbs",
+  "neighbourhood": "suburbs",
+  "cul de sac": "suburbs",
+  "residential street": "suburbs",
+  "home": "house",
+  "front yard": "house",
+  "yard": "house",
+  "backyard": "house",
+  "porch": "house",
+  "driveway": "house",
+  "front door": "house",
+  "room": "interior",
+  "kitchen": "kitchen",
+  "office": "office",
+  "living room": "interior",
+  "cafe": "restaurant",
+  "coffee shop": "restaurant",
+  "restaurant": "restaurant",
+  "bar": "restaurant",
+  "indoors": "interior",
+  "interior": "interior",
+  "inside the house": "interior",
+  "inside a house": "interior",
+  "in the house": "interior",
+  "in a house": "interior",
+  "lobby": "interior",
+  "classroom": "interior",
+  "forest": "forest",
+  "woods": "forest",
+  "woodland": "forest",
+  "trail": "forest",
+  "jungle": "forest",
+  "lake": "lake",
+  "pond": "lake",
+  "dock": "lake",
+  "pier": "lake",
+  "lakeside": "lake",
+  "ocean": "ocean",
+  "sea": "ocean",
+  "beach": "ocean",
+  "shore": "ocean",
+  "coast": "ocean",
+  "seaside": "ocean",
+  "river": "river",
+  "stream": "river",
+  "creek": "river",
+  "riverbank": "river",
+  "bridge": "river",
+  "canal": "river",
+  "desert": "desert",
+  "dune": "desert",
+  "dunes": "desert",
+  "wasteland": "desert",
+  "outskirts": "outskirts",
+  "countryside": "outskirts",
+  "country road": "outskirts",
+  "farm": "field",
+  "field": "field",
+  "road": "outskirts",
+  "highway": "highway",
+  "edge of town": "outskirts",
+  "back road": "outskirts",
+  "dirt road": "outskirts",
+  "car interior": "car_interior",
+  "meadow": "field",
+  "pasture": "field",
+  "freeway": "highway",
+  "motorway": "highway",
+  "interstate": "highway",
+  "workplace": "office",
+  "cubicle": "office",
+  "caf\u00e9": "restaurant",
+  "diner": "restaurant",
+  "rooftop": "rooftop",
+  "roof": "rooftop",
+  "mountain": "snow_mountain",
+  "mountains": "snow_mountain",
+  "snow": "snow_mountain",
+  "ski slope": "snow_mountain",
+  "slope": "snow_mountain",
+  "stadium": "sports_field",
+  "sports field": "sports_field",
+  "soccer field": "sports_field",
+  "football field": "sports_field",
+  "pitch": "sports_field",
+  "court": "sports_field",
+  "stage": "stage",
+  "concert": "stage",
+  "gig": "stage",
+  "theater": "stage",
+  "theatre": "stage",
+  "station": "station",
+  "train station": "station",
+  "platform": "station",
+  "subway": "station",
+  "airport": "station",
+  "store": "store",
+  "shop": "store",
+  "supermarket": "store",
+  "grocery store": "store",
+  "market": "store"
+ },
+ "implied_places": {
+  "house": "house",
+  "building": "city",
+  "boat": "lake",
+  "bus": "city",
+  "sofa": "interior",
+  "counter": "kitchen",
+  "train": "city",
+  "bed": "bedroom",
+  "gym_set": "gym"
+ },
+ "camera": {
+  "close up": {
+   "shot": "close"
+  },
+  "closeup": {
+   "shot": "close"
+  },
+  "close-up": {
+   "shot": "close"
+  },
+  "close shot": {
+   "shot": "close"
+  },
+  "extreme close up": {
+   "shot": "extreme_close"
+  },
+  "medium shot": {
+   "shot": "medium"
+  },
+  "mid shot": {
+   "shot": "medium"
+  },
+  "medium": {
+   "shot": "medium"
+  },
+  "wide shot": {
+   "shot": "wide"
+  },
+  "wide": {
+   "shot": "wide"
+  },
+  "close to wide": {
+   "shot": "close",
+   "move": "pull_out"
+  },
+  "long shot": {
+   "shot": "wide"
+  },
+  "establishing shot": {
+   "shot": "wide"
+  },
+  "full shot": {
+   "shot": "full"
+  },
+  "low angle": {
+   "angle": "low"
+  },
+  "high angle": {
+   "angle": "high"
+  },
+  "from above": {
+   "angle": "high"
+  },
+  "overhead": {
+   "angle": "overhead"
+  },
+  "top down": {
+   "angle": "overhead"
+  },
+  "birds eye": {
+   "angle": "overhead"
+  },
+  "bird's eye": {
+   "angle": "overhead"
+  },
+  "eye level": {
+   "angle": "eye"
+  },
+  "from behind": {
+   "angle": "behind"
+  },
+  "from the side": {
+   "angle": "side"
+  },
+  "from the front": {
+   "angle": "front"
+  },
+  "pov": {
+   "angle": "pov"
+  },
+  "point of view": {
+   "angle": "pov"
+  },
+  "through the windshield": {
+   "angle": "through_windshield"
+  },
+  "over the shoulder": {
+   "angle": "over_shoulder"
+  },
+  "push in": {
+   "move": "push_in"
+  },
+  "dolly in": {
+   "move": "push_in"
+  },
+  "zoom in": {
+   "move": "push_in"
+  },
+  "pull out": {
+   "move": "pull_out"
+  },
+  "pull back": {
+   "move": "pull_out"
+  },
+  "dolly out": {
+   "move": "pull_out"
+  },
+  "zoom out": {
+   "move": "pull_out"
+  },
+  "orbit": {
+   "move": "orbit"
+  },
+  "orbiting": {
+   "move": "orbit"
+  },
+  "circle around": {
+   "move": "orbit"
+  },
+  "360": {
+   "move": "orbit"
+  },
+  "circles": {
+   "move": "orbit"
+  },
+  "rotates": {
+   "move": "orbit"
+  },
+  "go around": {
+   "move": "orbit"
+  },
+  "zooms": {
+   "move": "push_in"
+  },
+  "zooms in": {
+   "move": "push_in"
+  },
+  "zooms out": {
+   "move": "pull_out"
+  },
+  "moves": {},
+  "move in": {
+   "move": "push_in"
+  },
+  "move out": {
+   "move": "pull_out"
+  },
+  "moves in": {
+   "move": "push_in"
+  },
+  "moves out": {
+   "move": "pull_out"
+  },
+  "from the doorway": {
+   "move": "push_in",
+   "from": "doorway"
+  },
+  "pan": {
+   "move": "pan"
+  },
+  "pan left": {
+   "move": "pan"
+  },
+  "pan right": {
+   "move": "pan"
+  },
+  "tracking shot": {
+   "move": "track"
+  },
+  "tracking": {
+   "move": "track"
+  },
+  "track alongside": {
+   "move": "track"
+  },
+  "follow shot": {
+   "move": "follow"
+  },
+  "follow cam": {
+   "move": "follow"
+  },
+  "crane up": {
+   "move": "crane_up"
+  },
+  "crane": {
+   "move": "crane_up"
+  },
+  "crane shot": {
+   "move": "crane_up"
+  },
+  "crane up to reveal": {
+   "move": "crane_reveal"
+  },
+  "crane reveal": {
+   "move": "crane_reveal"
+  },
+  "reveal": {},
+  "low dolly": {
+   "move": "dolly_along",
+   "angle": "low"
+  },
+  "dolly along": {
+   "move": "dolly_along"
+  },
+  "lateral dolly": {
+   "move": "dolly_along"
+  },
+  "dolly": {
+   "move": "push_in"
+  },
+  "crane down": {
+   "move": "crane_down"
+  },
+  "cranes down": {
+   "move": "crane_down"
+  },
+  "flying over": {
+   "move": "aerial"
+  },
+  "flies over": {
+   "move": "aerial"
+  },
+  "drone shot": {
+   "move": "aerial"
+  },
+  "drone": {
+   "move": "aerial"
+  },
+  "aerial": {
+   "move": "aerial"
+  },
+  "aerial shot": {
+   "move": "aerial"
+  },
+  "rack focus": {
+   "chip": "Rack focus"
+  },
+  "kit move": {
+   "move": "kit"
+  },
+  "card move": {
+   "move": "kit"
+  },
+  "static": {
+   "move": "static"
+  },
+  "locked off": {
+   "move": "static"
+  },
+  "shot": {},
+  "camera": {},
+  "angle": {},
+  "first person": {
+   "angle": "pov"
+  },
+  "first-person": {
+   "angle": "pov"
+  }
+ },
+ "numbers": {
+  "one": 1,
+  "two": 2,
+  "three": 3,
+  "four": 4,
+  "five": 5,
+  "six": 6,
+  "seven": 7,
+  "eight": 8,
+  "nine": 9,
+  "ten": 10,
+  "eleven": 11,
+  "twelve": 12,
+  "fifteen": 15,
+  "twenty": 20,
+  "thirty": 30,
+  "dozen": 12,
+  "both": 2
+ },
+ "quantifiers": {
+  "a couple of": 2,
+  "a pair of": 2,
+  "couple of": 2,
+  "pair of": 2,
+  "a few": 3,
+  "few": 3,
+  "several": 4,
+  "some": 3,
+  "many": 8,
+  "lots of": 8,
+  "a lot of": 8,
+  "a group of": 5,
+  "group of": 5,
+  "a bunch of": 5,
+  "a crowd of": 12,
+  "crowd of": 12,
+  "dozens of": 24,
+  "a dozen": 12,
+  "a handful of": 4,
+  "a line of": 5,
+  "a row of": 5
+ },
+ "plural_default": {
+  "person": 3,
+  "other": 2
+ },
+ "max_count": {
+  "person": 40,
+  "animal": 8,
+  "other": 12
+ },
+ "group_nouns": {
+  "couple": {
+   "count": 2,
+   "presets": [
+    "adult",
+    "adult"
+   ],
+   "genders": [
+    "male",
+    "female"
+   ]
+  },
+  "family": {
+   "count": 3,
+   "presets": [
+    "adult",
+    "adult",
+    "child"
+   ],
+   "genders": [
+    "male",
+    "female",
+    null
+   ]
+  },
+  "crowd": {
+   "count": 12,
+   "presets": null
+  },
+  "group": {
+   "count": 5,
+   "presets": null
+  },
+  "friends": {
+   "count": 2,
+   "presets": null
+  },
+  "pair": {
+   "count": 2,
+   "presets": null
+  },
+  "team": {
+   "count": 5,
+   "presets": null
+  },
+  "kids": {
+   "count": 3,
+   "presets": [
+    "child",
+    "child",
+    "child"
+   ]
+  }
+ },
+ "person_words": {
+  "man": {
+   "gender": "male"
+  },
+  "guy": {
+   "gender": "male"
+  },
+  "gentleman": {
+   "gender": "male"
+  },
+  "dad": {
+   "gender": "male"
+  },
+  "father": {
+   "gender": "male"
+  },
+  "husband": {
+   "gender": "male"
+  },
+  "boyfriend": {
+   "gender": "male"
+  },
+  "grandpa": {
+   "gender": "male"
+  },
+  "woman": {
+   "gender": "female"
+  },
+  "lady": {
+   "gender": "female"
+  },
+  "mom": {
+   "gender": "female"
+  },
+  "mother": {
+   "gender": "female"
+  },
+  "wife": {
+   "gender": "female"
+  },
+  "girlfriend": {
+   "gender": "female"
+  },
+  "grandma": {
+   "gender": "female"
+  },
+  "boy": {
+   "gender": "male",
+   "preset": "child"
+  },
+  "girl": {
+   "gender": "female",
+   "preset": "child"
+  },
+  "child": {
+   "preset": "child"
+  },
+  "kid": {
+   "preset": "child"
+  },
+  "son": {
+   "gender": "male",
+   "preset": "child"
+  },
+  "daughter": {
+   "gender": "female",
+   "preset": "child"
+  },
+  "toddler": {
+   "preset": "child"
+  },
+  "teen": {
+   "preset": "child"
+  },
+  "teenager": {
+   "preset": "child"
+  },
+  "person": {},
+  "people": {},
+  "adult": {},
+  "someone": {},
+  "somebody": {},
+  "friend": {},
+  "stranger": {},
+  "pedestrian": {},
+  "tourist": {},
+  "commuter": {},
+  "jogger": {
+   "pose": "jog"
+  },
+  "runner": {
+   "pose": "run"
+  },
+  "walker": {
+   "pose": "walk"
+  },
+  "cyclist": {
+   "rides": "bicycle"
+  },
+  "biker": {
+   "rides": "bicycle"
+  },
+  "skater": {
+   "rides": "skateboard"
+  },
+  "skateboarder": {
+   "rides": "skateboard"
+  },
+  "rower": {
+   "rides": "boat"
+  },
+  "kayaker": {
+   "rides": "boat"
+  },
+  "student": {},
+  "worker": {},
+  "businessman": {
+   "gender": "male"
+  },
+  "businesswoman": {
+   "gender": "female"
+  },
+  "officer": {},
+  "cop": {},
+  "doctor": {},
+  "waiter": {},
+  "waitress": {
+   "gender": "female"
+  },
+  "actor": {},
+  "actress": {
+   "gender": "female"
+  },
+  "character": {},
+  "figure": {},
+  "mannequin": {},
+  "dancer": {},
+  "skier": {
+   "rides": "skis",
+   "pose": "ride_ski"
+  }
+ },
+ "roles": {
+  "driver": {
+   "seat": "driver"
+  },
+  "taxi driver": {
+   "seat": "driver",
+   "vehicle": "car"
+  },
+  "cab driver": {
+   "seat": "driver",
+   "vehicle": "car"
+  },
+  "uber driver": {
+   "seat": "driver",
+   "vehicle": "car"
+  },
+  "cabbie": {
+   "seat": "driver",
+   "vehicle": "car"
+  },
+  "chauffeur": {
+   "seat": "driver",
+   "vehicle": "car"
+  },
+  "bus driver": {
+   "seat": "driver",
+   "vehicle": "bus"
+  },
+  "truck driver": {
+   "seat": "driver",
+   "vehicle": "truck"
+  },
+  "trucker": {
+   "seat": "driver",
+   "vehicle": "truck"
+  },
+  "van driver": {
+   "seat": "driver",
+   "vehicle": "van"
+  },
+  "delivery driver": {
+   "seat": "driver",
+   "vehicle": "van"
+  },
+  "passenger": {
+   "seat": "passenger"
+  },
+  "bus passenger": {
+   "seat": "passenger",
+   "vehicle": "bus"
+  },
+  "commuter on the bus": {
+   "seat": "passenger",
+   "vehicle": "bus"
+  }
+ },
+ "seat_phrases": {
+  "in the driver's seat": "driver",
+  "in the drivers seat": "driver",
+  "driver's seat": "driver",
+  "drivers seat": "driver",
+  "behind the wheel": "driver",
+  "at the wheel": "driver",
+  "in the passenger seat": "passenger",
+  "passenger seat": "passenger",
+  "front seat": "passenger",
+  "in the front seat": "passenger",
+  "riding shotgun": "passenger",
+  "shotgun": "passenger",
+  "in the back seat": "rear",
+  "in the backseat": "rear",
+  "back seat": "rear",
+  "backseat": "rear",
+  "rear seat": "rear",
+  "in the back": "rear",
+  "in the rear": "rear"
+ },
+ "lean_phrases": [
+  "leaning out the window",
+  "leans out the window",
+  "lean out the window",
+  "leaning out of the window",
+  "arm out the window",
+  "elbow on the window",
+  "elbow out the window",
+  "elbow on the door",
+  "resting his arm on the window",
+  "resting her arm on the window",
+  "resting his elbow on the window",
+  "resting her elbow on the window"
+ ],
+ "outside_phrases": {
+  "on the hood": "near",
+  "on the roof": "near",
+  "on top of": "near",
+  "leaning on": "against",
+  "leaning against": "against",
+  "leans on": "against",
+  "leans against": "against"
+ },
+ "prepositions": {
+  "in": "in",
+  "inside": "in",
+  "into": "in",
+  "within": "in",
+  "aboard": "in",
+  "inside of": "in",
+  "on": "on",
+  "onto": "on",
+  "upon": "on",
+  "atop": "on",
+  "at": "at",
+  "with": "with",
+  "alongside": "with",
+  "together with": "with",
+  "next to": "near",
+  "beside": "near",
+  "besides": "near",
+  "by": "near",
+  "near": "near",
+  "nearby": "near",
+  "close to": "near",
+  "by the side of": "near",
+  "behind": "behind",
+  "in front of": "front",
+  "across from": "across",
+  "opposite": "across",
+  "facing": "facing",
+  "toward": "toward",
+  "towards": "toward",
+  "around": "around",
+  "under": "under",
+  "underneath": "under",
+  "below": "under",
+  "beneath": "under",
+  "against": "against",
+  "outside": "outside",
+  "outside of": "outside",
+  "past": "past",
+  "along": "along",
+  "across": "along",
+  "through": "through",
+  "down": "along",
+  "up": "along",
+  "from": "from",
+  "out of": "from",
+  "of": "of",
+  "to": "to"
+ },
+ "verbs": {
+  "stand": {
+   "pose": "stand"
+  },
+  "wait": {
+   "pose": "stand"
+  },
+  "pose": {
+   "pose": "stand"
+  },
+  "idle": {
+   "pose": "stand"
+  },
+  "walk": {
+   "pose": "walk",
+   "obj": {
+    "animal": "walks",
+    "person": "with"
+   }
+  },
+  "stroll": {
+   "pose": "walk",
+   "obj": {
+    "animal": "walks"
+   }
+  },
+  "wander": {
+   "pose": "walk"
+  },
+  "hike": {
+   "pose": "walk"
+  },
+  "cross": {
+   "pose": "walk"
+  },
+  "approach": {
+   "pose": "walk",
+   "obj": {
+    "any": "toward"
+   }
+  },
+  "jog": {
+   "pose": "jog",
+   "obj": {
+    "animal": "walks"
+   }
+  },
+  "run": {
+   "pose": "run",
+   "obj": {
+    "animal": "walks"
+   }
+  },
+  "sprint": {
+   "pose": "run"
+  },
+  "race": {
+   "pose": "run"
+  },
+  "chase": {
+   "pose": "run",
+   "obj": {
+    "any": "toward"
+   }
+  },
+  "sit": {
+   "pose": "sit",
+   "obj": {
+    "vehicle": "in",
+    "furniture": "on"
+   }
+  },
+  "seat": {
+   "pose": "sit"
+  },
+  "rest": {
+   "pose": "sit"
+  },
+  "lie": {
+   "pose": "lie_down"
+  },
+  "sleep": {
+   "pose": "lie_down"
+  },
+  "nap": {
+   "pose": "lie_down"
+  },
+  "lay": {
+   "pose": "lie_down"
+  },
+  "kneel": {
+   "pose": "kneel"
+  },
+  "crouch": {
+   "pose": "crouch"
+  },
+  "squat": {
+   "pose": "crouch"
+  },
+  "pet": {
+   "pose": "crouch",
+   "obj": {
+    "animal": "near"
+   }
+  },
+  "feed": {
+   "pose": "crouch",
+   "obj": {
+    "animal": "near"
+   }
+  },
+  "jump": {
+   "pose": "jump"
+  },
+  "hop": {
+   "pose": "jump"
+  },
+  "leap": {
+   "pose": "jump"
+  },
+  "wave": {
+   "pose": "wave",
+   "obj": {
+    "any": "facing"
+   }
+  },
+  "greet": {
+   "pose": "wave",
+   "obj": {
+    "any": "facing"
+   }
+  },
+  "drink": {
+   "pose": "sip",
+   "implies": "cup"
+  },
+  "sip": {
+   "pose": "sip",
+   "implies": "cup"
+  },
+  "text": {
+   "pose": "hold_phone",
+   "implies": "phone"
+  },
+  "scroll": {
+   "pose": "hold_phone",
+   "implies": "phone"
+  },
+  "call": {
+   "pose": "hold_phone",
+   "implies": "phone"
+  },
+  "phone": {
+   "pose": "hold_phone",
+   "implies": "phone"
+  },
+  "hold": {
+   "pose": "hold",
+   "obj": {
+    "handheld": "holds",
+    "any": "near"
+   }
+  },
+  "carry": {
+   "pose": "carry",
+   "obj": {
+    "handheld": "holds",
+    "any": "near"
+   }
+  },
+  "grab": {
+   "obj": {
+    "handheld": "holds"
+   }
+  },
+  "use": {
+   "obj": {
+    "handheld": "holds"
+   }
+  },
+  "check": {
+   "obj": {
+    "handheld": "holds"
+   }
+  },
+  "look": {
+   "pose": "stand",
+   "obj": {
+    "handheld": "holds",
+    "any": "facing"
+   }
+  },
+  "watch": {
+   "pose": "stand",
+   "obj": {
+    "any": "facing"
+   }
+  },
+  "drive": {
+   "pose": "drive",
+   "obj": {
+    "vehicle": "in"
+   },
+   "implies_vehicle": "car",
+   "seat": "driver"
+  },
+  "ride": {
+   "obj": {
+    "rideable": "rides",
+    "vehicle": "in",
+    "animal": "near"
+   }
+  },
+  "cycle": {
+   "rides": "bicycle"
+  },
+  "bike": {
+   "rides": "bicycle"
+  },
+  "skate": {
+   "rides": "skateboard"
+  },
+  "skateboard": {
+   "rides": "skateboard"
+  },
+  "row": {
+   "rides": "boat"
+  },
+  "paddle": {
+   "rides": "boat"
+  },
+  "kayak": {
+   "rides": "boat"
+  },
+  "canoe": {
+   "rides": "boat"
+  },
+  "sail": {
+   "rides": "boat"
+  },
+  "boat": {
+   "rides": "boat"
+  },
+  "lean": {
+   "pose": "stand",
+   "obj": {
+    "any": "against"
+   }
+  },
+  "talk": {
+   "pose": "talk",
+   "obj": {
+    "person": "facing"
+   },
+   "mutual": "facing"
+  },
+  "chat": {
+   "pose": "talk",
+   "obj": {
+    "person": "facing"
+   },
+   "mutual": "facing"
+  },
+  "argue": {
+   "pose": "talk",
+   "obj": {
+    "person": "facing"
+   },
+   "mutual": "facing"
+  },
+  "meet": {
+   "pose": "stand",
+   "obj": {
+    "person": "facing"
+   },
+   "mutual": "facing"
+  },
+  "hug": {
+   "pose": "stand",
+   "obj": {
+    "person": "facing"
+   },
+   "mutual": "facing"
+  },
+  "dance": {
+   "pose": "dance"
+  },
+  "play": {
+   "pose": "stand",
+   "obj": {
+    "animal": "near",
+    "handheld": "holds",
+    "any": "near"
+   }
+  },
+  "park": {
+   "parked": true
+  },
+  "stop": {
+   "parked": true
+  },
+  "drive by": {
+   "pose": "drive"
+  },
+  "ski": {
+   "rides": "skis",
+   "pose": "ride_ski"
+  },
+  "graze": {
+   "pose": "eat"
+  },
+  "peck": {
+   "pose": "eat"
+  },
+  "perch": {
+   "pose": "sit"
+  }
+ },
+ "sizes": {
+  "tall": 1.12,
+  "big": 1.25,
+  "large": 1.25,
+  "huge": 1.6,
+  "giant": 2.0,
+  "enormous": 1.8,
+  "massive": 1.8,
+  "small": 0.75,
+  "little": 0.8,
+  "tiny": 0.5,
+  "short": 0.9,
+  "miniature": 0.4,
+  "oversized": 1.5
+ },
+ "size_limits": {
+  "person": [
+   0.55,
+   1.4
+  ],
+  "other": [
+   0.3,
+   3.0
+  ]
+ },
+ "determiners": [
+  "a",
+  "an",
+  "the",
+  "this",
+  "that",
+  "these",
+  "those",
+  "his",
+  "her",
+  "their",
+  "its",
+  "my",
+  "our",
+  "your",
+  "another",
+  "each",
+  "every",
+  "one's"
+ ],
+ "conjunctions": [
+  "and",
+  "&",
+  "plus",
+  "while",
+  "as",
+  "then",
+  "but",
+  "or"
+ ],
+ "pronouns": {
+  "he": "male",
+  "she": "female",
+  "they": null,
+  "him": "male",
+  "them": null
+ },
+ "stopwords": [
+  "is",
+  "are",
+  "was",
+  "were",
+  "be",
+  "being",
+  "been",
+  "who",
+  "which",
+  "that",
+  "there",
+  "here",
+  "just",
+  "very",
+  "slowly",
+  "quickly",
+  "fast",
+  "together",
+  "other",
+  "alone",
+  "it",
+  "its",
+  "himself",
+  "herself",
+  "themselves",
+  "someone's",
+  "during",
+  "today",
+  "scene",
+  "of",
+  "over",
+  "up",
+  "down",
+  "out",
+  "off",
+  "away",
+  "back",
+  "again",
+  "parked",
+  "moving",
+  "while",
+  "busy",
+  "empty",
+  "quiet",
+  "old",
+  "young",
+  "elderly",
+  "new",
+  "lone",
+  "single",
+  "dark",
+  "bright",
+  "cold",
+  "warm",
+  "cinematic",
+  "previz",
+  "previs",
+  "show",
+  "me",
+  "make",
+  "create",
+  "render",
+  "film",
+  "image",
+  "picture",
+  "please",
+  "has",
+  "have",
+  "having",
+  "doing",
+  "does",
+  "do",
+  "going",
+  "goes",
+  "go",
+  "gets",
+  "get",
+  "getting",
+  "something",
+  "somewhere",
+  "around",
+  "about",
+  "towards",
+  "toward"
+ ],
+ "lemma_exceptions": {
+  "people": "person",
+  "persons": "person",
+  "men": "man",
+  "women": "woman",
+  "children": "child",
+  "kids": "kid",
+  "guys": "guy",
+  "ladies": "lady",
+  "gentlemen": "gentleman",
+  "wolves": "wolf",
+  "puppies": "puppy",
+  "buses": "bus",
+  "busses": "bus",
+  "benches": "bench",
+  "boxes": "box",
+  "taxis": "taxi",
+  "lorries": "lorry",
+  "families": "family",
+  "teeth": "tooth",
+  "feet": "foot",
+  "mice": "mouse",
+  "geese": "goose",
+  "couches": "couch",
+  "coaches": "coach",
+  "sandwiches": "sandwich",
+  "glasses": "glass",
+  "bushes": "bush",
+  "dunes": "dune",
+  "lying": "lie",
+  "lay": "lie",
+  "lies": "lie",
+  "laying": "lie",
+  "lain": "lie",
+  "sat": "sit",
+  "ran": "run",
+  "rode": "ride",
+  "ridden": "ride",
+  "drove": "drive",
+  "driven": "drive",
+  "stood": "stand",
+  "held": "hold",
+  "went": "go",
+  "took": "take",
+  "sitting": "sit",
+  "running": "run",
+  "jogging": "jog",
+  "sipping": "sip",
+  "chatting": "chat",
+  "skating": "skate",
+  "driving": "drive",
+  "riding": "ride",
+  "waving": "wave",
+  "texting": "text",
+  "biking": "bike",
+  "cycling": "cycle",
+  "rowing": "row",
+  "paddling": "paddle",
+  "kayaking": "kayak",
+  "canoeing": "canoe",
+  "sailing": "sail",
+  "hugging": "hug",
+  "petting": "pet",
+  "shopping": "shop",
+  "stopping": "stop",
+  "hopping": "hop",
+  "dancing": "dance",
+  "chasing": "chase",
+  "racing": "race",
+  "skateboarding": "skateboard",
+  "boating": "boat",
+  "hiking": "hike",
+  "sleeping": "sleep",
+  "napping": "nap",
+  "using": "use",
+  "parked": "parked",
+  "parking": "parked",
+  "walked": "walk",
+  "waited": "wait",
+  "leaning": "lean",
+  "leant": "lean",
+  "leaned": "lean",
+  "seated": "sit",
+  "sits": "sit",
+  "is": "is",
+  "was": "was",
+  "has": "has",
+  "does": "does",
+  "bus": "bus",
+  "glass": "glass",
+  "dress": "dress",
+  "this": "this",
+  "always": "always",
+  "across": "across",
+  "towards": "toward",
+  "as": "as",
+  "its": "its",
+  "his": "his",
+  "hers": "her",
+  "yours": "your",
+  "pickups": "pickup",
+  "suvs": "suv",
+  "phones": "phone",
+  "jeeps": "jeep",
+  "sedans": "sedan",
+  "pedestrians": "pedestrian",
+  "tourists": "tourist",
+  "students": "student",
+  "friends": "friends",
+  "kids'": "kid"
+ },
+ "world_words": {
+  "night": {
+   "time": "night"
+  },
+  "at night": {
+   "time": "night"
+  },
+  "nighttime": {
+   "time": "night"
+  },
+  "midnight": {
+   "time": "night"
+  },
+  "dusk": {
+   "time": "dusk"
+  },
+  "twilight": {
+   "time": "dusk"
+  },
+  "evening": {
+   "time": "dusk"
+  },
+  "sunset": {
+   "time": "golden"
+  },
+  "sunrise": {
+   "time": "golden"
+  },
+  "dawn": {
+   "time": "golden"
+  },
+  "golden hour": {
+   "time": "golden"
+  },
+  "morning": {
+   "time": "day"
+  },
+  "day": {
+   "time": "day"
+  },
+  "daytime": {
+   "time": "day"
+  },
+  "afternoon": {
+   "time": "day"
+  },
+  "noon": {
+   "time": "day"
+  },
+  "rain": {
+   "weather": "rain"
+  },
+  "rainy": {
+   "weather": "rain"
+  },
+  "raining": {
+   "weather": "rain"
+  },
+  "in the rain": {
+   "weather": "rain"
+  },
+  "storm": {
+   "weather": "rain"
+  },
+  "stormy": {
+   "weather": "rain"
+  },
+  "fog": {
+   "weather": "fog"
+  },
+  "foggy": {
+   "weather": "fog"
+  },
+  "mist": {
+   "weather": "fog"
+  },
+  "misty": {
+   "weather": "fog"
+  },
+  "haze": {
+   "weather": "fog"
+  },
+  "hazy": {
+   "weather": "fog"
+  },
+  "snowy": {
+   "weather": "snow"
+  },
+  "snowing": {
+   "weather": "snow"
+  },
+  "overcast": {
+   "weather": "overcast"
+  },
+  "cloudy": {
+   "weather": "overcast"
+  },
+  "grey day": {
+   "weather": "overcast"
+  },
+  "sunny": {
+   "weather": "clear"
+  },
+  "clear": {
+   "weather": "clear"
+  }
+ },
+ "action_slots": {
+  "_note": "held-prop slot per pose (library v1.3.1 ACTION_PROPS): hand_R default, L = left hand, hands = two-handed, foot_R = at the toe, strap = guitar mount, push = cart handle, airborne = kite in the air on a line (library v1.4)",
+  "kick": "foot_R",
+  "carry": "hands",
+  "play_guitar": "strap",
+  "eat": "L",
+  "read": "L",
+  "push_cart": "push",
+  "swing": "L",
+  "fly_kite": "airborne"
+ },
+ "prop_poses": {
+  "_note": "a held prop that changes a neutral pose (stand, play) into its action pose",
+  "guitar": "play_guitar",
+  "book": "read",
+  "umbrella": "hold_umbrella",
+  "racket": "forehand",
+  "bat_stick": "swing",
+  "kite": "fly_kite",
+  "cart": "push_cart",
+  "microphone": "sing"
+ }
+}

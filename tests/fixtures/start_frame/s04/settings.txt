@@ -1,0 +1,27 @@
+Shot s04  run v2  (2026-10-23 13:55:53 PT)
+Prompt file: FOR_DIRECTOR/s04/prompt_v2.txt (used verbatim)
+Negative file: FOR_DIRECTOR/s04/negative.txt
+Negative: 3D render, CGI, clay render, grey mannequin, plastic skin, untextured surfaces, flat even lighting, video game, illustration, HDR, oversharpened, smeared face, text, letters, logos, watermark, rain, fog, haze, extra people, extra fingers
+Seed: 1234
+Model: UNET qwen_image_2.1_int8_convrot + QwenImage21Cache; CLIP qwen3vl_8b_int8_convrot (qwen_image); VAE qwen_image_2.1_vae_bf16
+Canny control: rd_sf_test/s04_canny_soft_w050.png = canny_soft dimmed to 50% brightness (approximates depth weighted above canny)
+Control strength note: Qwen 2.1 reference latents have no per-image strength input; depth is full strength, canny weight is baked into the PNG brightness.
+Arm A: old_start_frame.png copied as-is, no regen.
+
+[B] Fresh: image_1 depth, image_2 canny (weighted as below), image_3+ refs (identity). euler / simple, 30 steps, CFG 3.0, denoise 1.0, TextEncodeQwenImage21 resolution 1536
+  output: FOR_DIRECTOR/s04/s04_B_seed1234.png
+  prompt_id: b2a1c798-486e-4456-aa10-aa96014eca61  status: success
+  exec time: 132.32 s  wall: 133.0 s  peak device VRAM (polled 2 s, includes resident models): 22.6 GB
+  run API JSON: workflows/run_v2/s04_v2_B_api.json
+
+[C1] Hybrid C1: steps 1-21 of 30 with depth + canny + refs, steps 22-30 refs only (DisableNoise, same latent). euler / simple, CFG 3.0 both stages, resolution 1536
+  output: FOR_DIRECTOR/s04/s04_C1_seed1234.png
+  prompt_id: 7344430c-cca7-410e-971b-96826ebeaa85  status: success
+  exec time: 115.304 s  wall: 115.7 s  peak device VRAM (polled 2 s, includes resident models): 24.2 GB
+  run API JSON: workflows/run_v2/s04_v2_C1_api.json
+
+[A2] A2: Qwen 2.1 edit, image_1 previz frame0, then refs. euler / simple, 25 steps, CFG 3.0 (raised from A's 1.0 so the negative applies), resolution 1536
+  output: FOR_DIRECTOR/s04/s04_A2_seed1234.png
+  prompt_id: 4863922a-367e-4633-b4ac-3e454c56623d  status: success
+  exec time: 79.983 s  wall: 80.6 s  peak device VRAM (polled 2 s, includes resident models): 21.7 GB
+  run API JSON: workflows/run_v2/s04_v2_A2_api.json

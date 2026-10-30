@@ -1,0 +1,284 @@
+{
+ "id": "bedroom",
+ "order": 23,
+ "label": "Bedroom",
+ "move": "Slow push in to the bed",
+ "world": {
+  "shadowExtent": 8,
+  "shadowCenter": [
+   0,
+   0,
+   0
+  ],
+  "keyDist": 30,
+  "grid": false,
+  "fogNear": 20,
+  "fogFar": 80
+ },
+ "geometry": [
+  {
+   "type": "ground",
+   "radius": 70
+  },
+  {
+   "type": "box",
+   "name": "floor",
+   "size": [
+    5.6,
+    0.05,
+    5.0
+   ],
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "material": "path",
+   "radius": 0.01,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "wall_back",
+   "size": [
+    5.6,
+    2.8,
+    0.2
+   ],
+   "pos": [
+    0,
+    0,
+    -2.6
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "wall_left",
+   "size": [
+    0.2,
+    2.8,
+    5.0
+   ],
+   "pos": [
+    -2.9,
+    0,
+    0
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "wall_right",
+   "size": [
+    0.2,
+    2.8,
+    5.0
+   ],
+   "pos": [
+    2.9,
+    0,
+    0
+   ],
+   "material": "set"
+  }
+ ],
+ "items": [
+  {
+   "asset": "bed",
+   "pos": [
+    0,
+    -1.395
+   ],
+   "rot": 0,
+   "id": "bed"
+  },
+  {
+   "asset": "cabinet",
+   "pos": [
+    -1.18,
+    -2.22
+   ],
+   "rot": 0,
+   "id": "night_L",
+   "scale": [
+    0.55,
+    0.3,
+    0.7
+   ]
+  },
+  {
+   "asset": "cabinet",
+   "pos": [
+    1.18,
+    -2.22
+   ],
+   "rot": 0,
+   "id": "night_R",
+   "scale": [
+    0.55,
+    0.3,
+    0.7
+   ]
+  },
+  {
+   "asset": "candle",
+   "onTop": {
+    "of": "night_L",
+    "offset": [
+     0.05,
+     0.02
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "vase",
+   "onTop": {
+    "of": "night_R",
+    "offset": [
+     0,
+     0.02
+    ]
+   },
+   "rot": 0,
+   "scale": 0.8
+  },
+  {
+   "asset": "toy",
+   "onTop": {
+    "of": "bed",
+    "offset": [
+     0.45,
+     -0.6
+    ]
+   },
+   "rot": -20
+  },
+  {
+   "asset": "cabinet",
+   "pos": [
+    2.45,
+    -0.6
+   ],
+   "rot": -90,
+   "id": "wardrobe",
+   "scale": [
+    1.3,
+    1.1,
+    1.0
+   ]
+  },
+  {
+   "id": "sleeper",
+   "asset": "person",
+   "pos": [
+    -0.38,
+    0.55,
+    -1.245
+   ],
+   "rot": 0,
+   "pose": "lie_down"
+  },
+  {
+   "id": "sitter",
+   "asset": "person",
+   "seat": {
+    "on": "bed",
+    "slot": "L"
+   },
+   "pose": "sit",
+   "props": {
+    "hand_R": "phone"
+   }
+  },
+  {
+   "id": "visitor",
+   "asset": "person",
+   "pos": [
+    1.6,
+    1.4
+   ],
+   "rot": -140,
+   "pose": "talk"
+  },
+  {
+   "asset": "cat",
+   "pos": [
+    -1.6,
+    1.0
+   ],
+   "rot": 40,
+   "pose": "sit"
+  },
+  {
+   "asset": "window_panel",
+   "pos": [
+    -2.78,
+    0.8,
+    -0.6
+   ],
+   "rot": 90,
+   "scale": [
+    1.0,
+    1.0,
+    1
+   ]
+  },
+  {
+   "asset": "window_panel",
+   "pos": [
+    0,
+    1.25,
+    -2.58
+   ],
+   "rot": 0,
+   "scale": [
+    0.8,
+    0.65,
+    0.8
+   ]
+  }
+ ],
+ "cameras": {
+  "hero": {
+   "pos": [
+    2.2,
+    2.3,
+    4.6
+   ],
+   "target": [
+    -0.2,
+    0.7,
+    -1.2
+   ],
+   "fov": 50
+  },
+  "start": {
+   "pos": [
+    1.2,
+    1.6,
+    4.4
+   ],
+   "target": [
+    0,
+    0.8,
+    -1.2
+   ],
+   "fov": 44
+  },
+  "end": {
+   "pos": [
+    0.7,
+    1.3,
+    1.6
+   ],
+   "target": [
+    -0.2,
+    0.75,
+    -1.4
+   ],
+   "fov": 44
+  }
+ }
+}

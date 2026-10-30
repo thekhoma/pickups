@@ -1,0 +1,6 @@
+{
+    "name": "pickups-w1-test",
+    "version": "0.1.0",
+    "description": "Pickups W1 test plugin for DaVinci Resolve Studio",
+    "main": "main.js"
+}

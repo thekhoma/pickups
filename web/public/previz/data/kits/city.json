@@ -1,0 +1,709 @@
+{
+ "id": "city",
+ "order": 4,
+ "label": "City",
+ "move": "Follow from behind",
+ "world": {
+  "shadowExtent": 48,
+  "shadowCenter": [
+   0,
+   0,
+   -8
+  ],
+  "keyDist": 110,
+  "grid": false,
+  "fogNear": 40,
+  "fogFar": 160,
+  "skyScale": 3
+ },
+ "geometry": [
+  {
+   "type": "ground",
+   "radius": 180
+  },
+  {
+   "type": "road",
+   "points": [
+    [
+     0,
+     45
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     -30
+    ]
+   ],
+   "width": 10
+  },
+  {
+   "type": "path",
+   "name": "sidewalk_E",
+   "points": [
+    [
+     7.5,
+     45
+    ],
+    [
+     7.5,
+     -30
+    ]
+   ],
+   "width": 5
+  },
+  {
+   "type": "path",
+   "name": "sidewalk_W",
+   "points": [
+    [
+     -7.5,
+     45
+    ],
+    [
+     -7.5,
+     -30
+    ]
+   ],
+   "width": 5
+  },
+  {
+   "type": "path",
+   "name": "alley",
+   "points": [
+    [
+     10,
+     -6
+    ],
+    [
+     22,
+     -6
+    ]
+   ],
+   "width": 4,
+   "material": "road"
+  },
+  {
+   "type": "box",
+   "name": "plaza",
+   "size": [
+    42,
+    0.03,
+    32
+   ],
+   "pos": [
+    0,
+    0,
+    -46
+   ],
+   "material": "path",
+   "radius": 0.01,
+   "cast": false
+  }
+ ],
+ "items": [
+  {
+   "asset": "building",
+   "pos": [
+    16,
+    22
+   ],
+   "rot": -90,
+   "options": {
+    "floors": 7
+   }
+  },
+  {
+   "asset": "building",
+   "pos": [
+    16,
+    4
+   ],
+   "rot": -90,
+   "options": {
+    "floors": 11
+   }
+  },
+  {
+   "asset": "building",
+   "pos": [
+    16,
+    -16
+   ],
+   "rot": -90,
+   "options": {
+    "floors": 8
+   }
+  },
+  {
+   "asset": "building",
+   "pos": [
+    -16,
+    21
+   ],
+   "rot": 90,
+   "options": {
+    "floors": 9
+   }
+  },
+  {
+   "asset": "building",
+   "pos": [
+    -16,
+    3
+   ],
+   "rot": 90,
+   "options": {
+    "floors": 6
+   }
+  },
+  {
+   "asset": "building",
+   "pos": [
+    -16,
+    -15
+   ],
+   "rot": 90,
+   "options": {
+    "floors": 12
+   }
+  },
+  {
+   "asset": "post",
+   "pos": [
+    -9,
+    26
+   ],
+   "rot": 0,
+   "scale": [
+    0.8,
+    5.0,
+    0.8
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    9,
+    26
+   ],
+   "rot": 0,
+   "scale": [
+    0.8,
+    5.0,
+    0.8
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    -9,
+    14
+   ],
+   "rot": 0,
+   "scale": [
+    0.8,
+    5.0,
+    0.8
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    9,
+    14
+   ],
+   "rot": 0,
+   "scale": [
+    0.8,
+    5.0,
+    0.8
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    -9,
+    2
+   ],
+   "rot": 0,
+   "scale": [
+    0.8,
+    5.0,
+    0.8
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    9,
+    2
+   ],
+   "rot": 0,
+   "scale": [
+    0.8,
+    5.0,
+    0.8
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    -9,
+    -10
+   ],
+   "rot": 0,
+   "scale": [
+    0.8,
+    5.0,
+    0.8
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    9,
+    -10
+   ],
+   "rot": 0,
+   "scale": [
+    0.8,
+    5.0,
+    0.8
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    -9,
+    -22
+   ],
+   "rot": 0,
+   "scale": [
+    0.8,
+    5.0,
+    0.8
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    9,
+    -22
+   ],
+   "rot": 0,
+   "scale": [
+    0.8,
+    5.0,
+    0.8
+   ]
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -9.3,
+    26
+   ],
+   "scale": 0.55,
+   "options": {
+    "seed": 6.0
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    9.3,
+    26
+   ],
+   "scale": 0.55,
+   "options": {
+    "seed": 6.0
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -9.3,
+    14
+   ],
+   "scale": 0.55,
+   "options": {
+    "seed": 2.4
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    9.3,
+    14
+   ],
+   "scale": 0.55,
+   "options": {
+    "seed": 2.4
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -9.3,
+    2
+   ],
+   "scale": 0.55,
+   "options": {
+    "seed": -1.2
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    9.3,
+    2
+   ],
+   "scale": 0.55,
+   "options": {
+    "seed": -1.2
+   }
+  },
+  {
+   "asset": "car",
+   "pos": [
+    2.6,
+    12
+   ],
+   "rot": 180
+  },
+  {
+   "asset": "bus",
+   "pos": [
+    -2.6,
+    -1
+   ],
+   "rot": 0
+  },
+  {
+   "asset": "van",
+   "pos": [
+    2.6,
+    -16
+   ],
+   "rot": 180
+  },
+  {
+   "asset": "suv",
+   "pos": [
+    -2.6,
+    24
+   ],
+   "rot": 0
+  },
+  {
+   "asset": "truck",
+   "pos": [
+    2.6,
+    30
+   ],
+   "rot": 180
+  },
+  {
+   "asset": "bicycle",
+   "pos": [
+    4.6,
+    -6
+   ],
+   "rot": 180,
+   "id": "bike"
+  },
+  {
+   "id": "cyclist",
+   "asset": "person",
+   "rider": "bike"
+  },
+  {
+   "id": "walker",
+   "asset": "person",
+   "pos": [
+    7.2,
+    5.5
+   ],
+   "rot": 180,
+   "pose": "walk"
+  },
+  {
+   "id": "texter",
+   "asset": "person",
+   "pos": [
+    8.0,
+    -4.5
+   ],
+   "rot": 10,
+   "pose": "hold_phone",
+   "props": {
+    "hand_R": "phone"
+   }
+  },
+  {
+   "id": "alley_guy",
+   "asset": "person",
+   "pos": [
+    13.5,
+    -6.2
+   ],
+   "rot": -100,
+   "pose": "stand"
+  },
+  {
+   "asset": "post",
+   "pos": [
+    15.5,
+    -7.4
+   ],
+   "rot": 0,
+   "scale": [
+    2.2,
+    1.0,
+    2.2
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    15.5,
+    -4.8
+   ],
+   "rot": 0,
+   "scale": [
+    2.2,
+    1.0,
+    2.2
+   ]
+  },
+  {
+   "asset": "fountain",
+   "pos": [
+    0,
+    -45
+   ],
+   "rot": 0
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    -6,
+    -45
+   ],
+   "rot": 90,
+   "id": "pb1"
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    6,
+    -45
+   ],
+   "rot": -90,
+   "id": "pb2"
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    0,
+    -38.5
+   ],
+   "rot": 180,
+   "id": "pb3"
+  },
+  {
+   "id": "plaza_sitter",
+   "asset": "person",
+   "seat": {
+    "on": "pb1",
+    "slot": 0
+   },
+   "pose": "sit"
+  },
+  {
+   "id": "plaza_kid",
+   "asset": "person",
+   "pos": [
+    3.0,
+    -40.5
+   ],
+   "rot": 230,
+   "pose": "run",
+   "scale": 0.7
+  },
+  {
+   "id": "plaza_dogwalker",
+   "asset": "person",
+   "pos": [
+    -3.5,
+    -51
+   ],
+   "rot": 60,
+   "pose": "walk"
+  },
+  {
+   "asset": "dog",
+   "pos": [
+    -2.2,
+    -50.3
+   ],
+   "rot": 60,
+   "id": "pdog",
+   "pose": "walk"
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -13,
+    -36
+   ],
+   "scale": 0.8,
+   "options": {
+    "seed": 1
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    13,
+    -36
+   ],
+   "scale": 0.8,
+   "options": {
+    "seed": 2
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -13,
+    -56
+   ],
+   "scale": 0.8,
+   "options": {
+    "seed": 3
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    13,
+    -56
+   ],
+   "scale": 0.8,
+   "options": {
+    "seed": 4
+   }
+  }
+ ],
+ "links": [
+  {
+   "type": "leash",
+   "from": [
+    "plaza_dogwalker",
+    "attach_hand_R"
+   ],
+   "to": [
+    "pdog",
+    "attach_leash"
+   ],
+   "sag": 0.18
+  }
+ ],
+ "cameras": {
+  "hero": {
+   "pos": [
+    6.2,
+    2.0,
+    12.5
+   ],
+   "target": [
+    7.2,
+    1.4,
+    1.0
+   ],
+   "fov": 46
+  },
+  "start": {
+   "pos": [
+    7.3,
+    1.7,
+    11.5
+   ],
+   "target": [
+    7.2,
+    1.3,
+    3.0
+   ],
+   "fov": 44
+  },
+  "end": {
+   "pos": [
+    7.3,
+    1.75,
+    8.5
+   ],
+   "target": [
+    7.2,
+    1.2,
+    -6
+   ],
+   "fov": 44
+  },
+  "avenue": {
+   "pos": [
+    -6,
+    15,
+    42
+   ],
+   "target": [
+    0,
+    3,
+    0
+   ],
+   "fov": 44
+  },
+  "sidewalk": {
+   "pos": [
+    6.2,
+    2.0,
+    12.5
+   ],
+   "target": [
+    7.2,
+    1.4,
+    1.0
+   ],
+   "fov": 46
+  },
+  "alley": {
+   "pos": [
+    8.2,
+    1.7,
+    -6.0
+   ],
+   "target": [
+    20,
+    1.6,
+    -6.0
+   ],
+   "fov": 50
+  },
+  "plaza": {
+   "pos": [
+    12,
+    5.5,
+    -28
+   ],
+   "target": [
+    0,
+    1.0,
+    -45
+   ],
+   "fov": 46
+  }
+ }
+}

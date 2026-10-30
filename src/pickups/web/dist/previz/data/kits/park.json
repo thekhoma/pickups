@@ -1,0 +1,389 @@
+{
+ "id": "park",
+ "order": 0,
+ "label": "Park",
+ "move": "From behind, around to the front",
+ "world": {
+  "shadowExtent": 16,
+  "shadowCenter": [
+   0,
+   0,
+   -1
+  ],
+  "grid": true,
+  "fogNear": 22,
+  "fogFar": 80
+ },
+ "geometry": [
+  {
+   "type": "ground",
+   "radius": 90
+  },
+  {
+   "type": "path",
+   "name": "path",
+   "points": [
+    [
+     -16,
+     8
+    ],
+    [
+     -7,
+     4.2
+    ],
+    [
+     0,
+     1.6
+    ],
+    [
+     6,
+     -0.6
+    ],
+    [
+     16,
+     -3.5
+    ]
+   ],
+   "width": 1.8
+  },
+  {
+   "type": "path",
+   "name": "parking",
+   "points": [
+    [
+     -2.5,
+     -4.6
+    ],
+    [
+     2.5,
+     -4.6
+    ],
+    [
+     7.5,
+     -4.6
+    ]
+   ],
+   "width": 2.8
+  }
+ ],
+ "items": [
+  {
+   "asset": "tree",
+   "pos": [
+    -5.2,
+    -5.6
+   ],
+   "scale": 1.0,
+   "options": {
+    "seed": 0.3
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    8.8,
+    -4.2
+   ],
+   "scale": 1.15,
+   "options": {
+    "seed": 1.2
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -9.0,
+    -0.8
+   ],
+   "scale": 0.9,
+   "options": {
+    "seed": 2.0
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -15,
+    -11
+   ],
+   "scale": 1.1,
+   "options": {
+    "seed": 0.7
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    3,
+    -15
+   ],
+   "scale": 1.0,
+   "options": {
+    "seed": 2.6
+   }
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    -0.6,
+    -0.55
+   ],
+   "rot": 8,
+   "id": "bench"
+  },
+  {
+   "id": "adult",
+   "asset": "person",
+   "pos": [
+    1.05,
+    0.25
+   ],
+   "rot": 18,
+   "pose": {
+    "spine": [
+     -2,
+     0,
+     0
+    ],
+    "chest": [
+     2,
+     0,
+     0
+    ],
+    "neck": [
+     4,
+     -8,
+     0
+    ],
+    "head": [
+     -2,
+     -6,
+     0
+    ],
+    "shoulder_L": [
+     2,
+     4,
+     7
+    ],
+    "elbow_L": [
+     -10,
+     0,
+     0
+    ],
+    "wrist_L": [
+     -4,
+     0,
+     3
+    ],
+    "shoulder_R": [
+     -18,
+     -10,
+     -8
+    ],
+    "elbow_R": [
+     -92,
+     10,
+     0
+    ],
+    "wrist_R": [
+     0,
+     0,
+     -6
+    ],
+    "hip_L": [
+     0,
+     6,
+     4
+    ],
+    "ankle_L": [
+     0,
+     0,
+     -3
+    ],
+    "hip_R": [
+     0,
+     -10,
+     -3
+    ],
+    "ankle_R": [
+     0,
+     0,
+     3
+    ]
+   },
+   "props": {
+    "hand_R": "cup"
+   },
+   "upright": true
+  },
+  {
+   "id": "child",
+   "asset": "person",
+   "pos": [
+    -4.7,
+    3.75
+   ],
+   "rot": 110,
+   "pose": {
+    "spine": [
+     3,
+     6,
+     0
+    ],
+    "chest": [
+     0,
+     -10,
+     0
+    ],
+    "neck": [
+     0,
+     4,
+     0
+    ],
+    "hip_L": [
+     -24,
+     2,
+     2
+    ],
+    "knee_L": [
+     4,
+     0,
+     0
+    ],
+    "ankle_L": [
+     4,
+     0,
+     0
+    ],
+    "hip_R": [
+     18,
+     -2,
+     -2
+    ],
+    "knee_R": [
+     14,
+     0,
+     0
+    ],
+    "ankle_R": [
+     -8,
+     0,
+     0
+    ],
+    "shoulder_L": [
+     24,
+     0,
+     6
+    ],
+    "elbow_L": [
+     -14,
+     0,
+     0
+    ],
+    "shoulder_R": [
+     -40,
+     0,
+     -12
+    ],
+    "elbow_R": [
+     -30,
+     0,
+     0
+    ],
+    "wrist_R": [
+     -5,
+     0,
+     0
+    ]
+   },
+   "scale": 0.7
+  },
+  {
+   "asset": "dog",
+   "pos": [
+    -3.35,
+    3.2
+   ],
+   "rot": 110,
+   "id": "dog",
+   "pose": "walk"
+  },
+  {
+   "asset": "car",
+   "pos": [
+    2.6,
+    -4.6
+   ],
+   "rot": 90,
+   "id": "car"
+  }
+ ],
+ "links": [
+  {
+   "type": "leash",
+   "from": [
+    "child",
+    "attach_hand_R"
+   ],
+   "to": [
+    "dog",
+    "attach_leash"
+   ],
+   "sag": 0.18
+  }
+ ],
+ "cameras": {
+  "hero": {
+   "pos": [
+    8.4,
+    6.2,
+    10.2
+   ],
+   "target": [
+    0.0,
+    0.9,
+    -1.6
+   ],
+   "fov": 38
+  },
+  "low": {
+   "pos": [
+    4.6,
+    0.3,
+    7.0
+   ],
+   "target": [
+    -2.2,
+    1.85,
+    -0.6
+   ],
+   "fov": 50
+  },
+  "start": {
+   "pos": [
+    -0.6,
+    1.6,
+    -4.6
+   ],
+   "target": [
+    1.05,
+    1.05,
+    0.25
+   ],
+   "fov": 42
+  },
+  "end": {
+   "pos": [
+    2.7,
+    1.55,
+    5.2
+   ],
+   "target": [
+    1.05,
+    1.05,
+    0.25
+   ],
+   "fov": 42
+  }
+ }
+}

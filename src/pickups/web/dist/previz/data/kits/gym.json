@@ -1,0 +1,416 @@
+{
+ "id": "gym",
+ "order": 22,
+ "label": "Gym",
+ "move": "Track along the treadmills",
+ "world": {
+  "shadowExtent": 10,
+  "shadowCenter": [
+   0,
+   0,
+   0
+  ],
+  "keyDist": 30,
+  "grid": false,
+  "fogNear": 20,
+  "fogFar": 80
+ },
+ "geometry": [
+  {
+   "type": "ground",
+   "radius": 70
+  },
+  {
+   "type": "box",
+   "name": "floor",
+   "size": [
+    12.0,
+    0.05,
+    10.0
+   ],
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "material": "path",
+   "radius": 0.01,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "wall_back",
+   "size": [
+    12.0,
+    4.0,
+    0.2
+   ],
+   "pos": [
+    0,
+    0,
+    -5.1
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "wall_left",
+   "size": [
+    0.2,
+    4.0,
+    10.0
+   ],
+   "pos": [
+    -6.1,
+    0,
+    0
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "wall_right",
+   "size": [
+    0.2,
+    4.0,
+    10.0
+   ],
+   "pos": [
+    6.1,
+    0,
+    0
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "mezzanine",
+   "size": [
+    4.6,
+    1.44,
+    3.2
+   ],
+   "pos": [
+    3.4,
+    0,
+    -3.4
+   ],
+   "material": "set",
+   "radius": 0.02
+  },
+  {
+   "type": "box",
+   "name": "mat",
+   "size": [
+    3.2,
+    0.03,
+    2.4
+   ],
+   "pos": [
+    1.6,
+    0,
+    2.6
+   ],
+   "material": "setDark",
+   "radius": 0.01,
+   "cast": false
+  }
+ ],
+ "items": [
+  {
+   "asset": "gym_set",
+   "pos": [
+    -4.6,
+    -3.2
+   ],
+   "rot": 90,
+   "id": "tm0"
+  },
+  {
+   "id": "runner0",
+   "asset": "person",
+   "pos": [
+    -4.75,
+    0.212,
+    -3.2
+   ],
+   "rot": 90,
+   "pose": "jog"
+  },
+  {
+   "asset": "gym_set",
+   "pos": [
+    -4.6,
+    -1.2
+   ],
+   "rot": 90,
+   "id": "tm1"
+  },
+  {
+   "asset": "gym_set",
+   "pos": [
+    -4.6,
+    0.8
+   ],
+   "rot": 90,
+   "id": "tm2"
+  },
+  {
+   "id": "runner2",
+   "asset": "person",
+   "pos": [
+    -4.75,
+    0.212,
+    0.8
+   ],
+   "rot": 90,
+   "pose": "jog"
+  },
+  {
+   "asset": "gym_set",
+   "pos": [
+    -4.6,
+    2.8
+   ],
+   "rot": 90,
+   "id": "tm3"
+  },
+  {
+   "asset": "stairs",
+   "pos": [
+    3.4,
+    0.44
+   ],
+   "rot": 0,
+   "id": "stairs"
+  },
+  {
+   "asset": "fence",
+   "pos": [
+    1.95,
+    1.44,
+    -1.86
+   ],
+   "rot": 0,
+   "scale": [
+    0.7,
+    1,
+    1
+   ],
+   "id": "rail_1"
+  },
+  {
+   "asset": "fence",
+   "pos": [
+    4.85,
+    1.44,
+    -1.86
+   ],
+   "rot": 0,
+   "scale": [
+    0.7,
+    1,
+    1
+   ],
+   "id": "rail_2"
+  },
+  {
+   "asset": "fence",
+   "pos": [
+    1.16,
+    1.44,
+    -3.4
+   ],
+   "rot": 90,
+   "scale": [
+    1.33,
+    1,
+    1
+   ],
+   "id": "rail_3"
+  },
+  {
+   "id": "stair_climber",
+   "asset": "person",
+   "pos": [
+    3.4,
+    0.36,
+    0.02
+   ],
+   "rot": 180,
+   "pose": "walk"
+  },
+  {
+   "id": "spotter",
+   "asset": "person",
+   "pos": [
+    4.3,
+    1.44,
+    -3.6
+   ],
+   "rot": 160,
+   "pose": "stand"
+  },
+  {
+   "asset": "cabinet",
+   "pos": [
+    5.75,
+    1.5
+   ],
+   "rot": -90,
+   "id": "locker_1",
+   "scale": [
+    0.6,
+    1.1,
+    0.75
+   ]
+  },
+  {
+   "asset": "cabinet",
+   "pos": [
+    5.75,
+    2.1
+   ],
+   "rot": -90,
+   "id": "locker_2",
+   "scale": [
+    0.6,
+    1.1,
+    0.75
+   ]
+  },
+  {
+   "asset": "cabinet",
+   "pos": [
+    5.75,
+    2.7
+   ],
+   "rot": -90,
+   "id": "locker_3",
+   "scale": [
+    0.6,
+    1.1,
+    0.75
+   ]
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    1.0,
+    2.6
+   ],
+   "rot": 90,
+   "id": "wbench",
+   "scale": [
+    0.45,
+    1,
+    0.8
+   ]
+  },
+  {
+   "id": "lifter",
+   "asset": "person",
+   "seat": {
+    "on": "wbench",
+    "slot": 1
+   },
+   "pose": "sit"
+  },
+  {
+   "asset": "ball",
+   "pos": [
+    1.8,
+    3.4
+   ],
+   "rot": 0,
+   "scale": 1.15
+  },
+  {
+   "asset": "ball",
+   "pos": [
+    -1.5,
+    -3.8
+   ],
+   "rot": 0,
+   "scale": 0.3
+  },
+  {
+   "id": "trainer",
+   "pair": "shake_hands",
+   "pos": [
+    -1.4,
+    2.2
+   ],
+   "rot": 124
+  },
+  {
+   "asset": "window_panel",
+   "pos": [
+    -1.5,
+    0.5,
+    -4.98
+   ],
+   "rot": 0,
+   "scale": [
+    2.6,
+    1.6,
+    1
+   ]
+  },
+  {
+   "asset": "window_panel",
+   "pos": [
+    -4.0,
+    0.5,
+    -4.98
+   ],
+   "rot": 0,
+   "scale": [
+    2.6,
+    1.6,
+    1
+   ]
+  }
+ ],
+ "cameras": {
+  "hero": {
+   "pos": [
+    4.6,
+    2.6,
+    7.6
+   ],
+   "target": [
+    -1.0,
+    1.0,
+    -0.8
+   ],
+   "fov": 50
+  },
+  "start": {
+   "pos": [
+    -1.2,
+    1.5,
+    4.8
+   ],
+   "target": [
+    -4.4,
+    1.2,
+    1.2
+   ],
+   "fov": 44
+  },
+  "end": {
+   "pos": [
+    -1.2,
+    1.5,
+    -1.2
+   ],
+   "target": [
+    -4.4,
+    1.2,
+    -3.0
+   ],
+   "fov": 44
+  }
+ }
+}

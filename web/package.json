@@ -1,0 +1,51 @@
+{
+  "name": "pickups-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Pickups web UI: power your creativity, locally.",
+  "scripts": {
+    "dev": "vite",
+    "dev:mock": "vite --mode mock",
+    "build": "tsc --noEmit && vite build",
+    "build:mock": "tsc --noEmit && vite build --mode mock",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview",
+    "mock-media": "bash scripts/make-mock-media.sh",
+    "tour": "node scripts/record_tour.mjs",
+    "test:previz": "node --experimental-strip-types tests/previz/run.mjs",
+    "test:previz:first5": "node tests/previz/first_five.mjs",
+    "test:previz:browser": "node tests/previz/old_shot_browser.mjs",
+    "test:previz:step20": "node tests/previz/step20_browser.mjs",
+    "test:previz:step21": "node tests/previz/step21_browser.mjs",
+    "test:previz:step23": "node tests/previz/step23_browser.mjs",
+    "test:previz:step24": "node tests/previz/step23_browser.mjs",
+    "test:run9": "node tests/previz/run9_browser.mjs && node tests/previz/run9_extra.mjs",
+    "test:first-run": "node tests/onboarding/first_run_browser.mjs",
+    "test:run10":"node tests/previz/run10_browser.mjs && node tests/previz/run10_browser.mjs --width 1280 --height 800",
+    "test:panel-fit": "node tests/previz/panel_fit.mjs"
+  },
+  "dependencies": {
+    "@fontsource/geist-mono": "^5.3.0",
+    "@fontsource/instrument-sans": "^5.3.0",
+    "@fontsource/instrument-serif": "^5.3.0",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "0.170.0",
+    "zod": "3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/three": "0.170.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "playwright": "1.63.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "~5.6.3",
+    "vite": "^5.4.11"
+  }
+}

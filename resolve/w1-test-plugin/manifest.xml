@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BlackmagicDesign>
+    <Plugin>
+        <Id>com.pickups.w1test</Id>
+        <Name>Pickups W1 Test</Name>
+        <Version>0.1</Version>
+        <Description>Pickups test: can a Workflow Integration plugin open a second large window that receives clicks and keys?</Description>
+        <FilePath>main.js</FilePath>
+    </Plugin>
+</BlackmagicDesign>

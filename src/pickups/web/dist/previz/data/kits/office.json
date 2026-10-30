@@ -1,0 +1,492 @@
+{
+ "id": "office",
+ "order": 19,
+ "label": "Office",
+ "move": "Push in",
+ "world": {
+  "shadowExtent": 9,
+  "shadowCenter": [
+   0,
+   0,
+   0
+  ],
+  "keyDist": 30,
+  "grid": false,
+  "fogNear": 20,
+  "fogFar": 80
+ },
+ "geometry": [
+  {
+   "type": "ground",
+   "radius": 70
+  },
+  {
+   "type": "box",
+   "name": "floor",
+   "size": [
+    9.2,
+    0.05,
+    7.6
+   ],
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "material": "path",
+   "radius": 0.01,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "wall_back",
+   "size": [
+    9.2,
+    3.0,
+    0.2
+   ],
+   "pos": [
+    0,
+    0,
+    -3.9
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "wall_left",
+   "size": [
+    0.2,
+    3.0,
+    7.6
+   ],
+   "pos": [
+    -4.699999999999999,
+    0,
+    0
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "wall_right",
+   "size": [
+    0.2,
+    3.0,
+    7.6
+   ],
+   "pos": [
+    4.699999999999999,
+    0,
+    0
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "table_screen",
+   "size": [
+    2.2,
+    1.0,
+    0.5
+   ],
+   "pos": [
+    -1.6,
+    0,
+    -3.5
+   ],
+   "material": "setDark"
+  }
+ ],
+ "items": [
+  {
+   "asset": "table",
+   "pos": [
+    -2.6,
+    -1.4
+   ],
+   "rot": 0,
+   "id": "desk0",
+   "scale": [
+    0.9,
+    1,
+    0.8
+   ]
+  },
+  {
+   "asset": "laptop",
+   "onTop": {
+    "of": "desk0",
+    "offset": [
+     0,
+     -0.05
+    ]
+   },
+   "rot": 180
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    -2.6,
+    -0.7499999999999999
+   ],
+   "rot": 180,
+   "id": "chair0",
+   "scale": [
+    0.3,
+    1,
+    1
+   ]
+  },
+  {
+   "asset": "table",
+   "pos": [
+    0.0,
+    -1.4
+   ],
+   "rot": 0,
+   "id": "desk1",
+   "scale": [
+    0.9,
+    1,
+    0.8
+   ]
+  },
+  {
+   "asset": "laptop",
+   "onTop": {
+    "of": "desk1",
+    "offset": [
+     0,
+     -0.05
+    ]
+   },
+   "rot": 180
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    0.0,
+    -0.7499999999999999
+   ],
+   "rot": 180,
+   "id": "chair1",
+   "scale": [
+    0.3,
+    1,
+    1
+   ]
+  },
+  {
+   "asset": "table",
+   "pos": [
+    2.6,
+    -1.4
+   ],
+   "rot": 0,
+   "id": "desk2",
+   "scale": [
+    0.9,
+    1,
+    0.8
+   ]
+  },
+  {
+   "asset": "laptop",
+   "onTop": {
+    "of": "desk2",
+    "offset": [
+     0,
+     -0.05
+    ]
+   },
+   "rot": 180
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    2.6,
+    -0.7499999999999999
+   ],
+   "rot": 180,
+   "id": "chair2",
+   "scale": [
+    0.3,
+    1,
+    1
+   ]
+  },
+  {
+   "asset": "table",
+   "pos": [
+    -2.6,
+    1.4
+   ],
+   "rot": 0,
+   "id": "desk3",
+   "scale": [
+    0.9,
+    1,
+    0.8
+   ]
+  },
+  {
+   "asset": "laptop",
+   "onTop": {
+    "of": "desk3",
+    "offset": [
+     0,
+     -0.05
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    -2.6,
+    0.7499999999999999
+   ],
+   "rot": 0,
+   "id": "chair3",
+   "scale": [
+    0.3,
+    1,
+    1
+   ]
+  },
+  {
+   "asset": "table",
+   "pos": [
+    0.0,
+    1.4
+   ],
+   "rot": 0,
+   "id": "desk4",
+   "scale": [
+    0.9,
+    1,
+    0.8
+   ]
+  },
+  {
+   "asset": "laptop",
+   "onTop": {
+    "of": "desk4",
+    "offset": [
+     0,
+     -0.05
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    0.0,
+    0.7499999999999999
+   ],
+   "rot": 0,
+   "id": "chair4",
+   "scale": [
+    0.3,
+    1,
+    1
+   ]
+  },
+  {
+   "id": "worker0",
+   "asset": "person",
+   "seat": {
+    "on": "chair0",
+    "slot": 1
+   },
+   "pose": "type",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "worker2",
+   "asset": "person",
+   "seat": {
+    "on": "chair2",
+    "slot": 1
+   },
+   "pose": "type",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "worker3",
+   "asset": "person",
+   "seat": {
+    "on": "chair3",
+    "slot": 1
+   },
+   "pose": "sit",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "talker",
+   "asset": "person",
+   "pos": [
+    2.7,
+    1.2
+   ],
+   "rot": -120,
+   "pose": "talk"
+  },
+  {
+   "id": "listener",
+   "asset": "person",
+   "pos": [
+    1.8,
+    2.2
+   ],
+   "rot": 140,
+   "pose": "hold",
+   "props": {
+    "hand_R": "book"
+   }
+  },
+  {
+   "asset": "laptop",
+   "pos": [
+    -1.6,
+    1.0,
+    -3.6
+   ],
+   "rot": 0,
+   "id": "screen",
+   "scale": 3.2
+  },
+  {
+   "asset": "window_panel",
+   "pos": [
+    4.59,
+    0.9,
+    -1.4
+   ],
+   "rot": -90,
+   "scale": [
+    1.6,
+    1.0,
+    1
+   ]
+  },
+  {
+   "asset": "window_panel",
+   "pos": [
+    4.59,
+    0.9,
+    1.2
+   ],
+   "rot": -90,
+   "scale": [
+    1.6,
+    1.0,
+    1
+   ]
+  },
+  {
+   "asset": "window_panel",
+   "pos": [
+    -4.59,
+    0.0,
+    1.6
+   ],
+   "rot": 90,
+   "scale": [
+    0.9,
+    1.5,
+    1
+   ]
+  },
+  {
+   "asset": "counter",
+   "pos": [
+    2.8,
+    -3.15
+   ],
+   "rot": 0,
+   "id": "credenza",
+   "scale": [
+    0.8,
+    0.8,
+    1
+   ],
+   "options": {
+    "hob": false,
+    "sink": false
+   }
+  },
+  {
+   "asset": "plate_food",
+   "onTop": {
+    "of": "credenza",
+    "offset": [
+     0.3,
+     0.1
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    4.0,
+    -3.3
+   ],
+   "rot": 0,
+   "scale": 0.17,
+   "options": {
+    "seed": 8
+   }
+  }
+ ],
+ "cameras": {
+  "hero": {
+   "pos": [
+    3.4,
+    2.8,
+    6.6
+   ],
+   "target": [
+    0,
+    0.9,
+    -0.8
+   ],
+   "fov": 48
+  },
+  "start": {
+   "pos": [
+    0.6,
+    1.6,
+    6.6
+   ],
+   "target": [
+    0,
+    1.0,
+    -0.8
+   ],
+   "fov": 44
+  },
+  "end": {
+   "pos": [
+    0.3,
+    1.35,
+    3.2
+   ],
+   "target": [
+    -0.2,
+    0.95,
+    -1.2
+   ],
+   "fov": 44
+  }
+ }
+}

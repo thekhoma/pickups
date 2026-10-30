@@ -1,0 +1,113 @@
+{
+ "spec": {
+  "notes": "A car chase through traffic on the highway. Low angle.",
+  "duration_s": 4.041666666666667,
+  "lens": {
+   "focal_mm": 35.0,
+   "film_gauge_mm": 36
+  },
+  "camera": {
+   "keys": [
+    {
+     "pos": [
+      3.35,
+      1.25,
+      6.177
+     ],
+     "look": [
+      0.0,
+      0.9,
+      2.2
+     ]
+    },
+    {
+     "pos": [
+      1.063,
+      1.25,
+      5.112
+     ],
+     "look": [
+      0.0,
+      0.9,
+      2.2
+     ]
+    }
+   ],
+   "handheld": null
+  },
+  "subjects": [
+   {
+    "kind": "car",
+    "pos": [
+     0.0,
+     0.0,
+     2.2
+    ]
+   }
+  ]
+ },
+ "framing": {
+  "subject": [
+   0.3404,
+   0.2979,
+   0.6596,
+   0.6862
+  ],
+  "horizon": 0.5214,
+  "view": {
+   "share": {
+    "a post": 0.014,
+    "cars": 0.002,
+    "the road": 0.339
+   },
+   "outside": [
+    "a tunnel",
+    "boxes",
+    "people"
+   ],
+   "actors": [
+    0
+   ],
+   "x": {
+    "a post": 0.14,
+    "cars": 0.65,
+    "the road": 0.44
+   },
+   "blocked": 0.0,
+   "bare": 0.58
+  },
+  "place": "Highway",
+  "camera": {
+   "height_m": 0.62,
+   "pitch_deg": 0.7,
+   "focal_mm": 33
+  },
+  "subjects": [
+   {
+    "kind": "vehicle",
+    "x": 0.5,
+    "distance_m": 8.6,
+    "in_view": true,
+    "doing": "drive",
+    "word": "car",
+    "speed_ms": 16.0
+   }
+  ],
+  "light": {
+   "dir": "camera right"
+  }
+ },
+ "cast": [
+  {
+   "id": "cast_87c89444b6",
+   "name": "Red sedan",
+   "kind": "prop",
+   "line": "Car reference sheet on a plain light gray studio background: the same glossy cherry red modern four-door sports sedan with black wheels show"
+  }
+ ],
+ "user_look": "",
+ "before": {
+  "positive": "A real photograph, a still frame from a live-action commercial shot on a large-format 65mm digital cinema camera. EXACTLY 1 vehicle in frame: Red sedan in the centre.\n\nRed sedan: centre of frame, about 9 metres from camera, driving. Every grey vehicle in the layout is a real car on a real road, and every other grey shape is a real object: the road, a post.\n\nCamera at about 62 cm above the ground, level, 33mm lens, natural perspective, background slightly soft, filmed from a camera car driving alongside at about 58 km/h, road and background streaking with motion blur, wheels blurred.\n\nRed sedan is the one in image 3: Car reference sheet on a plain light gray studio background: the same glossy cherry red modern four-door sports sedan with black wheels show.\n\nWorn asphalt with tyre marks and cracks, concrete barriers with grime, dry roadside grass, a post made of real, used materials.\n\nLate-afternoon sun from camera right, about 30 degrees high. The light falls directly on the subjects and the ground around them. Exposed for the main subject; shadows stay open, with readable texture in the ground and foreground, never pure black.\n\nTactile realism: readable colour, soft highlight roll-off, truthful skin colour, restrained fine grain over a sharp image. Texture comes from real surfaces and light, never a filter. Any signs or screens have no readable letters.\n\nIf any surface looks clean, plastic, grey, untextured or rendered, the image is wrong.",
+  "motion": "A car chase through traffic on the highway. Low angle. Filmed from a camera car driving alongside at the same speed, about 58 km/h, the road and background streaming past."
+ }
+}

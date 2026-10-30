@@ -1,0 +1,430 @@
+{
+ "id": "car_interior",
+ "order": 11,
+ "label": "Car interior",
+ "move": "Push in through the windshield",
+ "note": "In-vehicle preset: a person driving a car parked on a road (outskirts world). Built from library models only; the driver is seated with seatInVehicle (inVehicle item field).",
+ "world": {
+  "shadowExtent": 14,
+  "shadowCenter": [
+   -1.8,
+   0,
+   0
+  ],
+  "keyDist": 50,
+  "grid": false,
+  "fogNear": 30,
+  "fogFar": 130,
+  "skyScale": 2
+ },
+ "geometry": [
+  {
+   "type": "ground",
+   "radius": 160
+  },
+  {
+   "type": "road",
+   "name": "road",
+   "points": [
+    [
+     0,
+     -90
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     0,
+     90
+    ]
+   ],
+   "width": 7.5
+  }
+ ],
+ "items": [
+  {
+   "asset": "car",
+   "pos": [
+    -1.8,
+    0
+   ],
+   "rot": 0,
+   "id": "car"
+  },
+  {
+   "id": "driver",
+   "asset": "person",
+   "pose": "drive",
+   "inVehicle": {
+    "of": "car",
+    "seat": "driver"
+   }
+  },
+  {
+   "asset": "house",
+   "pos": [
+    22,
+    -38
+   ],
+   "rot": -20,
+   "options": {
+    "storeys": 1
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    12,
+    -14
+   ],
+   "rot": 0,
+   "scale": 1.15,
+   "options": {
+    "seed": 2
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -14,
+    -22
+   ],
+   "rot": 0,
+   "scale": 1.0,
+   "options": {
+    "seed": 3
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    16,
+    18
+   ],
+   "rot": 0,
+   "scale": 0.95,
+   "options": {
+    "seed": 5
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -19,
+    9
+   ],
+   "rot": 0,
+   "scale": 1.2,
+   "options": {
+    "seed": 1
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    30,
+    -6
+   ],
+   "rot": 0,
+   "scale": 1.1,
+   "options": {
+    "seed": 4
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -30,
+    -40
+   ],
+   "rot": 0,
+   "scale": 1.25,
+   "options": {
+    "seed": 6
+   }
+  },
+  {
+   "asset": "rock",
+   "pos": [
+    6.5,
+    4
+   ],
+   "rot": 30,
+   "scale": 1.6
+  },
+  {
+   "asset": "rock",
+   "pos": [
+    -7,
+    -9
+   ],
+   "rot": 70,
+   "scale": 1.2
+  },
+  {
+   "asset": "rock",
+   "pos": [
+    9,
+    -21
+   ],
+   "rot": 10,
+   "scale": 2.0
+  },
+  {
+   "asset": "post",
+   "pos": [
+    5.6,
+    -60
+   ],
+   "rot": 0,
+   "scale": [
+    0.7,
+    1.1,
+    0.7
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    5.6,
+    -48
+   ],
+   "rot": 0,
+   "scale": [
+    0.7,
+    1.1,
+    0.7
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    5.6,
+    -36
+   ],
+   "rot": 0,
+   "scale": [
+    0.7,
+    1.1,
+    0.7
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    5.6,
+    -24
+   ],
+   "rot": 0,
+   "scale": [
+    0.7,
+    1.1,
+    0.7
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    5.6,
+    -12
+   ],
+   "rot": 0,
+   "scale": [
+    0.7,
+    1.1,
+    0.7
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    5.6,
+    0
+   ],
+   "rot": 0,
+   "scale": [
+    0.7,
+    1.1,
+    0.7
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    5.6,
+    12
+   ],
+   "rot": 0,
+   "scale": [
+    0.7,
+    1.1,
+    0.7
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    5.6,
+    24
+   ],
+   "rot": 0,
+   "scale": [
+    0.7,
+    1.1,
+    0.7
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    5.6,
+    36
+   ],
+   "rot": 0,
+   "scale": [
+    0.7,
+    1.1,
+    0.7
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    5.6,
+    48
+   ],
+   "rot": 0,
+   "scale": [
+    0.7,
+    1.1,
+    0.7
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    5.6,
+    60
+   ],
+   "rot": 0,
+   "scale": [
+    0.7,
+    1.1,
+    0.7
+   ]
+  }
+ ],
+ "cameras": {
+  "hero": {
+   "pos": [
+    1.6,
+    1.45,
+    1.7
+   ],
+   "target": [
+    -1.8,
+    0.92,
+    -0.2
+   ],
+   "fov": 42
+  },
+  "card": {
+   "pos": [
+    1.6,
+    1.45,
+    1.7
+   ],
+   "target": [
+    -1.8,
+    0.92,
+    -0.2
+   ],
+   "fov": 42
+  },
+  "through_windshield": {
+   "pos": [
+    -1.5,
+    1.45,
+    2.3
+   ],
+   "target": [
+    -1.68,
+    1.0,
+    0.0
+   ],
+   "fov": 36
+  },
+  "passenger_pov": {
+   "pos": [
+    -2.22,
+    1.16,
+    -0.14
+   ],
+   "target": [
+    -1.4,
+    1.0,
+    0.3
+   ],
+   "fov": 56
+  },
+  "side_window": {
+   "pos": [
+    0.2,
+    1.25,
+    0.25
+   ],
+   "target": [
+    -1.43,
+    1.1,
+    -0.02
+   ],
+   "fov": 34
+  },
+  "rear_seat_pov": {
+   "pos": [
+    -1.72,
+    1.24,
+    -0.88
+   ],
+   "target": [
+    -1.38,
+    0.98,
+    2.4
+   ],
+   "fov": 58
+  },
+  "start": {
+   "pos": [
+    -1.2,
+    1.5,
+    8.0
+   ],
+   "target": [
+    -1.65,
+    1.0,
+    0.0
+   ],
+   "fov": 34
+  },
+  "end": {
+   "pos": [
+    -1.5,
+    1.45,
+    2.3
+   ],
+   "target": [
+    -1.68,
+    1.0,
+    0.0
+   ],
+   "fov": 36
+  }
+ },
+ "cameraNotes": {
+  "through_windshield": "front of the car, looking in at the driver through the glass",
+  "passenger_pov": "eye height in the front passenger seat, looking across at the driver",
+  "side_window": "outside the driver door, looking in through the side glass",
+  "rear_seat_pov": "behind the driver, over the shoulder, out through the windshield"
+ }
+}

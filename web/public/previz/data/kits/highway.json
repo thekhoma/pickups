@@ -1,0 +1,945 @@
+{
+ "id": "highway",
+ "order": 13,
+ "label": "Highway",
+ "move": "Follow from behind",
+ "world": {
+  "shadowExtent": 50,
+  "shadowCenter": [
+   0,
+   0,
+   0
+  ],
+  "keyDist": 110,
+  "grid": false,
+  "fogNear": 50,
+  "fogFar": 200,
+  "skyScale": 3
+ },
+ "geometry": [
+  {
+   "type": "ground",
+   "radius": 220
+  },
+  {
+   "type": "road",
+   "name": "highway_N",
+   "points": [
+    [
+     3.5,
+     90
+    ],
+    [
+     3.5,
+     -90
+    ]
+   ],
+   "width": 7
+  },
+  {
+   "type": "road",
+   "name": "highway_S",
+   "points": [
+    [
+     -3.5,
+     90
+    ],
+    [
+     -3.5,
+     -90
+    ]
+   ],
+   "width": 7
+  },
+  {
+   "type": "box",
+   "name": "median",
+   "size": [
+    0.6,
+    0.8,
+    180
+   ],
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "material": "set",
+   "radius": 0.05
+  },
+  {
+   "type": "box",
+   "name": "gas_apron",
+   "size": [
+    16,
+    0.03,
+    12
+   ],
+   "pos": [
+    20,
+    0,
+    -3
+   ],
+   "material": "path",
+   "radius": 0.01,
+   "cast": false
+  },
+  {
+   "type": "road",
+   "name": "gas_ramp",
+   "points": [
+    [
+     7,
+     -9
+    ],
+    [
+     12,
+     -6
+    ],
+    [
+     13,
+     -3
+    ]
+   ],
+   "width": 4,
+   "centerLine": false
+  },
+  {
+   "type": "box",
+   "name": "canopy",
+   "size": [
+    14,
+    0.6,
+    7
+   ],
+   "pos": [
+    21,
+    4.6,
+    -3
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "canopy_col_A",
+   "size": [
+    0.4,
+    4.6,
+    0.4
+   ],
+   "pos": [
+    15.5,
+    0,
+    -3
+   ],
+   "material": "post"
+  },
+  {
+   "type": "box",
+   "name": "canopy_col_B",
+   "size": [
+    0.4,
+    4.6,
+    0.4
+   ],
+   "pos": [
+    26.5,
+    0,
+    -3
+   ],
+   "material": "post"
+  },
+  {
+   "type": "box",
+   "name": "kiosk",
+   "size": [
+    7,
+    3.2,
+    5
+   ],
+   "pos": [
+    21,
+    0,
+    -13
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "lot",
+   "size": [
+    14,
+    0.03,
+    20
+   ],
+   "pos": [
+    -17,
+    0,
+    -4
+   ],
+   "material": "road",
+   "radius": 0.01,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "bay_0",
+   "size": [
+    5.2,
+    0.006,
+    0.1
+   ],
+   "pos": [
+    -17,
+    0.03,
+    -13.5
+   ],
+   "material": "foam",
+   "radius": 0.002,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "bay_1",
+   "size": [
+    5.2,
+    0.006,
+    0.1
+   ],
+   "pos": [
+    -17,
+    0.03,
+    -10.5
+   ],
+   "material": "foam",
+   "radius": 0.002,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "bay_2",
+   "size": [
+    5.2,
+    0.006,
+    0.1
+   ],
+   "pos": [
+    -17,
+    0.03,
+    -7.5
+   ],
+   "material": "foam",
+   "radius": 0.002,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "bay_3",
+   "size": [
+    5.2,
+    0.006,
+    0.1
+   ],
+   "pos": [
+    -17,
+    0.03,
+    -4.5
+   ],
+   "material": "foam",
+   "radius": 0.002,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "bay_4",
+   "size": [
+    5.2,
+    0.006,
+    0.1
+   ],
+   "pos": [
+    -17,
+    0.03,
+    -1.5
+   ],
+   "material": "foam",
+   "radius": 0.002,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "bay_5",
+   "size": [
+    5.2,
+    0.006,
+    0.1
+   ],
+   "pos": [
+    -17,
+    0.03,
+    1.5
+   ],
+   "material": "foam",
+   "radius": 0.002,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "bay_6",
+   "size": [
+    5.2,
+    0.006,
+    0.1
+   ],
+   "pos": [
+    -17,
+    0.03,
+    4.5
+   ],
+   "material": "foam",
+   "radius": 0.002,
+   "cast": false
+  },
+  {
+   "type": "road",
+   "name": "lot_ramp",
+   "points": [
+    [
+     -7,
+     -6
+    ],
+    [
+     -10.5,
+     -6
+    ]
+   ],
+   "width": 4,
+   "centerLine": false
+  },
+  {
+   "type": "box",
+   "name": "tunnel_wall_L",
+   "size": [
+    3,
+    9,
+    6
+   ],
+   "pos": [
+    -9.5,
+    0,
+    -88
+   ],
+   "material": "setDark"
+  },
+  {
+   "type": "box",
+   "name": "tunnel_wall_R",
+   "size": [
+    3,
+    9,
+    6
+   ],
+   "pos": [
+    9.5,
+    0,
+    -88
+   ],
+   "material": "setDark"
+  },
+  {
+   "type": "box",
+   "name": "tunnel_lintel",
+   "size": [
+    22,
+    2.6,
+    6
+   ],
+   "pos": [
+    0,
+    6.4,
+    -88
+   ],
+   "material": "setDark"
+  },
+  {
+   "type": "box",
+   "name": "tunnel_hill",
+   "size": [
+    70,
+    14,
+    20
+   ],
+   "pos": [
+    0,
+    0,
+    -101
+   ],
+   "material": "set",
+   "radius": 2.0
+  },
+  {
+   "type": "box",
+   "name": "garage_deck0",
+   "size": [
+    18,
+    0.4,
+    24
+   ],
+   "pos": [
+    -28,
+    3.0,
+    26
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "garage_deck1",
+   "size": [
+    18,
+    0.4,
+    24
+   ],
+   "pos": [
+    -28,
+    6.0,
+    26
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "garage_roof",
+   "size": [
+    18,
+    0.4,
+    24
+   ],
+   "pos": [
+    -28,
+    9.0,
+    26
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "garage_col_00",
+   "size": [
+    0.5,
+    9.0,
+    0.5
+   ],
+   "pos": [
+    -36,
+    0,
+    15
+   ],
+   "material": "post"
+  },
+  {
+   "type": "box",
+   "name": "garage_col_01",
+   "size": [
+    0.5,
+    9.0,
+    0.5
+   ],
+   "pos": [
+    -36,
+    0,
+    26
+   ],
+   "material": "post"
+  },
+  {
+   "type": "box",
+   "name": "garage_col_02",
+   "size": [
+    0.5,
+    9.0,
+    0.5
+   ],
+   "pos": [
+    -36,
+    0,
+    37
+   ],
+   "material": "post"
+  },
+  {
+   "type": "box",
+   "name": "garage_col_10",
+   "size": [
+    0.5,
+    9.0,
+    0.5
+   ],
+   "pos": [
+    -28,
+    0,
+    15
+   ],
+   "material": "post"
+  },
+  {
+   "type": "box",
+   "name": "garage_col_11",
+   "size": [
+    0.5,
+    9.0,
+    0.5
+   ],
+   "pos": [
+    -28,
+    0,
+    26
+   ],
+   "material": "post"
+  },
+  {
+   "type": "box",
+   "name": "garage_col_12",
+   "size": [
+    0.5,
+    9.0,
+    0.5
+   ],
+   "pos": [
+    -28,
+    0,
+    37
+   ],
+   "material": "post"
+  },
+  {
+   "type": "box",
+   "name": "garage_col_20",
+   "size": [
+    0.5,
+    9.0,
+    0.5
+   ],
+   "pos": [
+    -20,
+    0,
+    15
+   ],
+   "material": "post"
+  },
+  {
+   "type": "box",
+   "name": "garage_col_21",
+   "size": [
+    0.5,
+    9.0,
+    0.5
+   ],
+   "pos": [
+    -20,
+    0,
+    26
+   ],
+   "material": "post"
+  },
+  {
+   "type": "box",
+   "name": "garage_col_22",
+   "size": [
+    0.5,
+    9.0,
+    0.5
+   ],
+   "pos": [
+    -20,
+    0,
+    37
+   ],
+   "material": "post"
+  }
+ ],
+ "items": [
+  {
+   "asset": "car",
+   "pos": [
+    1.75,
+    6
+   ],
+   "rot": 0,
+   "id": "hero_car"
+  },
+  {
+   "asset": "suv",
+   "pos": [
+    -1.75,
+    -18
+   ],
+   "rot": 180,
+   "options": {
+    "interior": false
+   }
+  },
+  {
+   "asset": "truck",
+   "pos": [
+    5.25,
+    30
+   ],
+   "rot": 0,
+   "options": {
+    "interior": false
+   }
+  },
+  {
+   "asset": "van",
+   "pos": [
+    -5.25,
+    14
+   ],
+   "rot": 180,
+   "options": {
+    "interior": false
+   }
+  },
+  {
+   "asset": "car",
+   "pos": [
+    5.25,
+    -10
+   ],
+   "rot": 0,
+   "options": {
+    "interior": false
+   }
+  },
+  {
+   "asset": "bus",
+   "pos": [
+    -1.75,
+    40
+   ],
+   "rot": 180,
+   "options": {
+    "interior": false
+   }
+  },
+  {
+   "asset": "sign",
+   "pos": [
+    9.5,
+    18
+   ],
+   "rot": -90,
+   "scale": [
+    2.2,
+    1.6,
+    2.2
+   ]
+  },
+  {
+   "asset": "sign",
+   "pos": [
+    -9.5,
+    -6
+   ],
+   "rot": 90,
+   "scale": [
+    1.0,
+    1.3,
+    1.0
+   ]
+  },
+  {
+   "asset": "sign",
+   "pos": [
+    9.5,
+    -4
+   ],
+   "rot": -90,
+   "scale": [
+    1.0,
+    1.3,
+    1.0
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    8.6,
+    -60
+   ],
+   "rot": 0,
+   "scale": [
+    0.8,
+    5,
+    0.8
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    8.6,
+    -45
+   ],
+   "rot": 0,
+   "scale": [
+    0.8,
+    5,
+    0.8
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    8.6,
+    -30
+   ],
+   "rot": 0,
+   "scale": [
+    0.8,
+    5,
+    0.8
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    8.6,
+    -15
+   ],
+   "rot": 0,
+   "scale": [
+    0.8,
+    5,
+    0.8
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    8.6,
+    0
+   ],
+   "rot": 0,
+   "scale": [
+    0.8,
+    5,
+    0.8
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    8.6,
+    15
+   ],
+   "rot": 0,
+   "scale": [
+    0.8,
+    5,
+    0.8
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    8.6,
+    30
+   ],
+   "rot": 0,
+   "scale": [
+    0.8,
+    5,
+    0.8
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    8.6,
+    45
+   ],
+   "rot": 0,
+   "scale": [
+    0.8,
+    5,
+    0.8
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    8.6,
+    60
+   ],
+   "rot": 0,
+   "scale": [
+    0.8,
+    5,
+    0.8
+   ]
+  },
+  {
+   "asset": "car",
+   "pos": [
+    18,
+    -4.5
+   ],
+   "rot": 90,
+   "id": "gas_car",
+   "options": {
+    "interior": false
+   }
+  },
+  {
+   "id": "fueler",
+   "asset": "person",
+   "pos": [
+    18.2,
+    -2.9
+   ],
+   "rot": 180,
+   "pose": "hold"
+  },
+  {
+   "asset": "post",
+   "pos": [
+    18,
+    -1.7
+   ],
+   "rot": 0,
+   "scale": [
+    3.0,
+    1.4,
+    1.6
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    24,
+    -1.7
+   ],
+   "rot": 0,
+   "scale": [
+    3.0,
+    1.4,
+    1.6
+   ]
+  },
+  {
+   "asset": "sign",
+   "pos": [
+    13,
+    -12
+   ],
+   "rot": -90,
+   "scale": [
+    1.6,
+    1.4,
+    1.6
+   ]
+  },
+  {
+   "asset": "car",
+   "pos": [
+    -17,
+    -12
+   ],
+   "rot": 90,
+   "options": {
+    "interior": false
+   }
+  },
+  {
+   "asset": "van",
+   "pos": [
+    -17,
+    -6
+   ],
+   "rot": 90,
+   "options": {
+    "interior": false
+   }
+  },
+  {
+   "asset": "car",
+   "pos": [
+    -17,
+    -3
+   ],
+   "rot": 90,
+   "options": {
+    "interior": false
+   }
+  },
+  {
+   "asset": "suv",
+   "pos": [
+    -17,
+    3
+   ],
+   "rot": 90,
+   "options": {
+    "interior": false
+   }
+  },
+  {
+   "id": "parker",
+   "asset": "person",
+   "pos": [
+    -14.2,
+    -4.5
+   ],
+   "rot": 120,
+   "pose": "carry",
+   "options": {
+    "preset": "crowd"
+   },
+   "props": {
+    "hand_R": "bag_box"
+   }
+  }
+ ],
+ "cameras": {
+  "hero": {
+   "pos": [
+    16,
+    9,
+    26
+   ],
+   "target": [
+    0,
+    1.0,
+    -2
+   ],
+   "fov": 42
+  },
+  "start": {
+   "pos": [
+    1.75,
+    2.4,
+    14.5
+   ],
+   "target": [
+    1.75,
+    1.0,
+    2
+   ],
+   "fov": 44
+  },
+  "end": {
+   "pos": [
+    1.75,
+    2.6,
+    8.5
+   ],
+   "target": [
+    1.75,
+    0.8,
+    -30
+   ],
+   "fov": 44
+  }
+ }
+}

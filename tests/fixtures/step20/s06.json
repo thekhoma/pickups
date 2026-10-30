@@ -1,0 +1,143 @@
+{
+ "spec": {
+  "notes": "Three friends dancing on a rooftop. The camera cranes down.",
+  "duration_s": 4.041666666666667,
+  "lens": {
+   "focal_mm": 35.0,
+   "film_gauge_mm": 36
+  },
+  "camera": {
+   "keys": [
+    {
+     "pos": [
+      3.35,
+      1.435,
+      3.977
+     ],
+     "look": [
+      0.0,
+      1.085,
+      0.0
+     ]
+    },
+    {
+     "pos": [
+      1.063,
+      1.435,
+      2.912
+     ],
+     "look": [
+      0.0,
+      1.085,
+      0.0
+     ]
+    }
+   ],
+   "handheld": null
+  },
+  "subjects": [
+   {
+    "kind": "humanoid",
+    "pos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  ]
+ },
+ "framing": {
+  "subject": [
+   0.2964,
+   0.1943,
+   0.5009,
+   0.7099
+  ],
+  "horizon": -0.4067,
+  "view": {
+   "share": {
+    "walls": 0.038,
+    "trees": 0.016,
+    "a bench": 0.008,
+    "a table": 0.016,
+    "buildings": 0.173
+   },
+   "outside": [
+    "a fence",
+    "a post",
+    "people",
+    "the road"
+   ],
+   "actors": [
+    0,
+    1,
+    2
+   ],
+   "x": {
+    "walls": 0.18,
+    "trees": 0.15,
+    "a bench": 0.82,
+    "a table": 0.81,
+    "buildings": 0.22
+   },
+   "blocked": 0.0,
+   "bare": 0.71
+  },
+  "place": "Rooftop",
+  "camera": {
+   "height_m": 4.35,
+   "pitch_deg": -32.0,
+   "focal_mm": 30
+  },
+  "subjects": [
+   {
+    "kind": "person",
+    "x": 0.41,
+    "distance_m": 6.8,
+    "in_view": true,
+    "doing": "dance",
+    "word": "friends"
+   },
+   {
+    "kind": "person",
+    "x": 0.51,
+    "distance_m": 6.5,
+    "in_view": true
+   },
+   {
+    "kind": "person",
+    "x": 0.61,
+    "distance_m": 6.1,
+    "in_view": true
+   }
+  ],
+  "light": {
+   "dir": "camera right"
+  }
+ },
+ "cast": [
+  {
+   "id": "cast_5f95823859",
+   "name": "Ana",
+   "kind": "person",
+   "line": "a woman in her 20s with curly black hair in a high puff, oversized pink blazer, white top, black wide-leg trousers"
+  },
+  {
+   "id": "cast_4a2993071b",
+   "name": "Kofi",
+   "kind": "person",
+   "line": "a man in his 30s with a shaved head, white t-shirt, black jeans, black bucket hat, gold chain"
+  },
+  {
+   "id": "cast_02a89ee3f3",
+   "name": "Jun",
+   "kind": "person",
+   "line": "a man in his 20s with straight black hair and round glasses, bright orange hoodie, gray sweatpants"
+  }
+ ],
+ "user_look": "Low golden-hour sun from camera right, just above the skyline, rakes across the rooftop. The light falls directly on Kofi, Ana and Jun and on the roof surface around them, and the parapet in the foreground catches warm side light.",
+ "before": {
+  "positive": "A real photograph, a still frame from a live-action commercial shot on a large-format 65mm digital cinema camera. EXACTLY 3 people in frame: Ana on the left, Kofi in the centre, person 3 on the right.\n\nAna: left of frame, about 7 metres from camera, dancing. Kofi: centre of frame, about 6 metres from camera, standing naturally, weight on one leg, hands relaxed. Person 3: right of frame, about 6 metres from camera, standing naturally, weight on one leg, hands relaxed. Every grey figure in the layout is a real person and every grey shape is a real object: buildings, walls, trees, a table, a bench.\n\nCamera at about 4.3 metres above the ground, a high angle looking down, 30mm lens, natural perspective, background slightly soft.\n\nAna is the one in image 3: a woman in her 20s with curly black hair in a high puff, oversized pink blazer, white top, black wide-leg trousers. Kofi is the one in image 4: a man in his 30s with a shaved head, white t-shirt, black jeans, black bucket hat, gold chain. Each person looks clearly different, with their own face, age, hair and everyday clothing in distinct colours.\n\nLow golden-hour sun from camera right, just above the skyline, rakes across the rooftop. The light falls directly on Kofi, Ana and Jun and on the roof surface around them, and the parapet in the foreground catches warm side light.\n\nTar and gravel roof surface with stains, weathered concrete parapet with rust streaks, galvanised metal vents, weathered concrete, real trees with rough bark, a scuffed metal table, a park bench of weathered timber slats on cast-iron legs.\n\nLate-afternoon sun from camera right, about 30 degrees high. The light falls directly on the subjects and the ground around them. Exposed for the main subject; shadows stay open, with readable texture in the ground and foreground, never pure black.\n\nTactile realism: readable colour, soft highlight roll-off, truthful skin colour, restrained fine grain over a sharp image. Texture comes from real surfaces and light, never a filter. Any signs or screens have no readable letters.\n\nIf any surface looks clean, plastic, grey, untextured or rendered, the image is wrong.",
+  "motion": "Three friends dancing on a rooftop. The camera tracks to the left and pushes in."
+ }
+}

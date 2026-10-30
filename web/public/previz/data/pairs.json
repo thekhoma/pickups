@@ -1,0 +1,294 @@
+{
+ "pairs": {
+  "hug": {
+   "a": {
+    "pose": "hug",
+    "offset": [
+     0,
+     0,
+     0
+    ],
+    "facing": 0
+   },
+   "b": {
+    "pose": "hug",
+    "offset": [
+     0,
+     0,
+     0.44
+    ],
+    "facing": 180
+   },
+   "offset_frame": "person a local frame (meters, +Z = a faces); b facing in degrees about +Y relative to a",
+   "helper": "placePair(id, a, b) in assets/person.js (exported from assets/index.js); kit item { id, pair: '<id>', pos, rot } builds <id>_a and <id>_b",
+   "note": "same pose for both (mirrored by the 180 facing); 0.44 m apart, heads to the side",
+   "phrases": [
+    "hug",
+    "hugs",
+    "hugging",
+    "embrace",
+    "embraces",
+    "embracing",
+    "cuddle",
+    "cuddling",
+    "holding each other",
+    "in each others arms",
+    "bear hug",
+    "reunion",
+    "reunite",
+    "reunited"
+   ],
+   "since": "1.4.0"
+  },
+  "kiss": {
+   "a": {
+    "pose": "kiss",
+    "offset": [
+     0,
+     0,
+     0
+    ],
+    "facing": 0
+   },
+   "b": {
+    "pose": "kiss",
+    "offset": [
+     0,
+     0,
+     0.5
+    ],
+    "facing": 180
+   },
+   "offset_frame": "person a local frame (meters, +Z = a faces); b facing in degrees about +Y relative to a",
+   "helper": "placePair(id, a, b) in assets/person.js (exported from assets/index.js); kit item { id, pair: '<id>', pos, rot } builds <id>_a and <id>_b",
+   "note": "same pose for both; 0.5 m apart, heads tilted",
+   "phrases": [
+    "kiss",
+    "kisses",
+    "kissing",
+    "first kiss",
+    "kissing couple",
+    "newlyweds kissing",
+    "kiss the bride",
+    "smooch",
+    "making out"
+   ],
+   "since": "1.4.0"
+  },
+  "shake_hands": {
+   "a": {
+    "pose": "shake_hands",
+    "offset": [
+     0,
+     0,
+     0
+    ],
+    "facing": 0
+   },
+   "b": {
+    "pose": "shake_hands",
+    "offset": [
+     0,
+     0,
+     0.9
+    ],
+    "facing": 180
+   },
+   "offset_frame": "person a local frame (meters, +Z = a faces); b facing in degrees about +Y relative to a",
+   "helper": "placePair(id, a, b) in assets/person.js (exported from assets/index.js); kit item { id, pair: '<id>', pos, rot } builds <id>_a and <id>_b",
+   "note": "same pose for both; right hands meet between them",
+   "phrases": [
+    "shake hands",
+    "shaking hands",
+    "shakes hands",
+    "handshake",
+    "hand shake",
+    "shake on it",
+    "greet each other",
+    "greeting each other",
+    "meet and greet",
+    "close the deal"
+   ],
+   "since": "1.4.0"
+  },
+  "fight": {
+   "a": {
+    "pose": "fight_punch",
+    "offset": [
+     0,
+     0,
+     0
+    ],
+    "facing": 0
+   },
+   "b": {
+    "pose": "fight_guard",
+    "offset": [
+     0,
+     0,
+     0.95
+    ],
+    "facing": 180
+   },
+   "offset_frame": "person a local frame (meters, +Z = a faces); b facing in degrees about +Y relative to a",
+   "helper": "placePair(id, a, b) in assets/person.js (exported from assets/index.js); kit item { id, pair: '<id>', pos, rot } builds <id>_a and <id>_b",
+   "note": "a throws fight_punch, b holds fight_guard; the punch stops at the guard",
+   "phrases": [
+    "fight",
+    "fights",
+    "fighting",
+    "brawl",
+    "brawling",
+    "punch",
+    "punching",
+    "boxing",
+    "boxers",
+    "boxing match",
+    "sparring",
+    "spar",
+    "fistfight",
+    "fist fight",
+    "scuffle",
+    "martial arts",
+    "karate",
+    "kickboxing",
+    "wrestle",
+    "wrestling"
+   ],
+   "since": "1.4.0"
+  },
+  "couple": {
+   "a": {
+    "pose": "stand",
+    "offset": [
+     0,
+     0,
+     0
+    ],
+    "facing": 0
+   },
+   "b": {
+    "pose": "stand",
+    "offset": [
+     0.55,
+     0,
+     0
+    ],
+    "facing": 0
+   },
+   "offset_frame": "person a local frame (meters, +Z = a faces); b facing in degrees about +Y relative to a",
+   "helper": "placePair(id, a, b) in assets/person.js (exported from assets/index.js); kit item { id, pair: '<id>', pos, rot } builds <id>_a and <id>_b",
+   "note": "side by side, both stand facing the same way; swap in walk, sit or wave as the text says",
+   "phrases": [
+    "couple",
+    "a couple",
+    "the couple",
+    "newlyweds",
+    "newly weds",
+    "bride and groom",
+    "husband and wife",
+    "man and wife",
+    "lovers",
+    "sweethearts",
+    "date",
+    "on a date",
+    "boyfriend and girlfriend",
+    "pair of people",
+    "two people",
+    "side by side",
+    "holding hands",
+    "walking together"
+   ],
+   "since": "1.4.0"
+  }
+ },
+ "pair_phrases": {
+  "a couple": "couple",
+  "bear hug": "hug",
+  "boxers": "fight",
+  "boxing": "fight",
+  "boxing match": "fight",
+  "boyfriend and girlfriend": "couple",
+  "brawl": "fight",
+  "brawling": "fight",
+  "bride and groom": "couple",
+  "close the deal": "shake_hands",
+  "couple": "couple",
+  "cuddle": "hug",
+  "cuddling": "hug",
+  "date": "couple",
+  "embrace": "hug",
+  "embraces": "hug",
+  "embracing": "hug",
+  "fight": "fight",
+  "fighting": "fight",
+  "fights": "fight",
+  "first kiss": "kiss",
+  "fist fight": "fight",
+  "fistfight": "fight",
+  "greet each other": "shake_hands",
+  "greeting each other": "shake_hands",
+  "hand shake": "shake_hands",
+  "handshake": "shake_hands",
+  "holding each other": "hug",
+  "holding hands": "couple",
+  "hug": "hug",
+  "hugging": "hug",
+  "hugs": "hug",
+  "husband and wife": "couple",
+  "in each others arms": "hug",
+  "karate": "fight",
+  "kickboxing": "fight",
+  "kiss": "kiss",
+  "kiss the bride": "kiss",
+  "kisses": "kiss",
+  "kissing": "kiss",
+  "kissing couple": "kiss",
+  "lovers": "couple",
+  "making out": "kiss",
+  "man and wife": "couple",
+  "martial arts": "fight",
+  "meet and greet": "shake_hands",
+  "newly weds": "couple",
+  "newlyweds": "couple",
+  "newlyweds kissing": "kiss",
+  "on a date": "couple",
+  "pair of people": "couple",
+  "punch": "fight",
+  "punching": "fight",
+  "reunion": "hug",
+  "reunite": "hug",
+  "reunited": "hug",
+  "scuffle": "fight",
+  "shake hands": "shake_hands",
+  "shake on it": "shake_hands",
+  "shakes hands": "shake_hands",
+  "shaking hands": "shake_hands",
+  "side by side": "couple",
+  "smooch": "kiss",
+  "spar": "fight",
+  "sparring": "fight",
+  "sweethearts": "couple",
+  "the couple": "couple",
+  "two people": "couple",
+  "walking together": "couple",
+  "wrestle": "fight",
+  "wrestling": "fight"
+ },
+ "subject_swap": {
+  "rule": "buildKit(layout, { subject: { pose, props } }) drops every kit item whose subjectSwap equals the subject's pose id or one of its prop asset ids (props as an array or a slot map); the dropped ids are in root.userData.dropped. Use it when the prompt subject brings its own ball (kick, throw, catch) so the kit ball does not double up.",
+  "kits": {
+   "sports_field": [
+    {
+     "id": "striker",
+     "swap": "kick"
+    },
+    {
+     "id": "ball",
+     "swap": "ball"
+    }
+   ]
+  },
+  "since": "1.4.0"
+ }
+}

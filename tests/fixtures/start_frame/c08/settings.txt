@@ -1,0 +1,27 @@
+Shot c08  run v2  (2026-10-23 14:56:03 PT)
+Prompt file: FOR_DIRECTOR/c08/prompt_v2.txt (used verbatim)
+Negative file: FOR_DIRECTOR/c08/negative.txt
+Negative: 3D render, CGI, clay render, grey mannequin, plastic skin, untextured surfaces, flat even lighting, video game, illustration, HDR, oversharpened, smeared face, text, letters, logos, watermark, rain, fog, haze, extra people, extra fingers, parked car, static background, car on a white background
+Seed: 1234
+Model: UNET qwen_image_2.1_int8_convrot + QwenImage21Cache; CLIP qwen3vl_8b_int8_convrot (qwen_image); VAE qwen_image_2.1_vae_bf16
+Canny control: rd_sf_test/c08_canny_soft.png = canny_soft full strength (no director note)
+Control strength note: Qwen 2.1 reference latents have no per-image strength input; depth is full strength, canny weight is baked into the PNG brightness.
+Arm A: old_start_frame.png copied as-is, no regen.
+
+[B] Fresh: image_1 depth, image_2 canny (weighted as below), image_3+ refs (identity). euler / simple, 30 steps, CFG 3.0, denoise 1.0, TextEncodeQwenImage21 resolution 1536
+  output: FOR_DIRECTOR/c08/c08_B_seed1234.png
+  prompt_id: 46621fb2-9429-47fb-830e-c546170676bb  status: success
+  exec time: 124.706 s  wall: 125.5 s  peak device VRAM (polled 2 s, includes resident models): 22.9 GB
+  run API JSON: workflows/run_v2/c08_v2_B_api.json
+
+[C1] Hybrid C1: steps 1-21 of 30 with depth + canny + refs, steps 22-30 refs only (DisableNoise, same latent). euler / simple, CFG 3.0 both stages, resolution 1536
+  output: FOR_DIRECTOR/c08/c08_C1_seed1234.png
+  prompt_id: 97fa06a1-4e26-4467-a37c-e1effad04840  status: success
+  exec time: 113.384 s  wall: 113.9 s  peak device VRAM (polled 2 s, includes resident models): 23.6 GB
+  run API JSON: workflows/run_v2/c08_v2_C1_api.json
+
+[A2] A2: Qwen 2.1 edit, image_1 previz frame0, then refs. euler / simple, 25 steps, CFG 3.0 (raised from A's 1.0 so the negative applies), resolution 1536
+  output: FOR_DIRECTOR/c08/c08_A2_seed1234.png
+  prompt_id: 918f9e1e-18a3-4a46-9718-2737792bc976  status: success
+  exec time: 79.346 s  wall: 81.0 s  peak device VRAM (polled 2 s, includes resident models): 21.7 GB
+  run API JSON: workflows/run_v2/c08_v2_A2_api.json

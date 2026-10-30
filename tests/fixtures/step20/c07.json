@@ -1,0 +1,110 @@
+{
+ "spec": {
+  "notes": "A car driving on the highway. Tracking shot.",
+  "duration_s": 4.041666666666667,
+  "lens": {
+   "focal_mm": 35.0,
+   "film_gauge_mm": 36
+  },
+  "camera": {
+   "keys": [
+    {
+     "pos": [
+      3.35,
+      1.25,
+      6.177
+     ],
+     "look": [
+      0.0,
+      0.9,
+      2.2
+     ]
+    },
+    {
+     "pos": [
+      1.063,
+      1.25,
+      5.112
+     ],
+     "look": [
+      0.0,
+      0.9,
+      2.2
+     ]
+    }
+   ],
+   "handheld": null
+  },
+  "subjects": [
+   {
+    "kind": "car",
+    "pos": [
+     0.0,
+     0.0,
+     2.2
+    ]
+   }
+  ]
+ },
+ "framing": {
+  "subject": [
+   0.1636,
+   0.3419,
+   0.8333,
+   0.719
+  ],
+  "horizon": 0.3718,
+  "view": {
+   "share": {
+    "cars": 0.052,
+    "the road": 0.357
+   },
+   "outside": [
+    "a post",
+    "a tunnel",
+    "boxes",
+    "people"
+   ],
+   "actors": [
+    0
+   ],
+   "x": {
+    "cars": 0.39,
+    "the road": 0.49
+   },
+   "blocked": 0.0,
+   "bare": 0.445
+  },
+  "place": "Highway",
+  "camera": {
+   "height_m": 1.35,
+   "pitch_deg": -5.1,
+   "focal_mm": 30
+  },
+  "subjects": [
+   {
+    "kind": "vehicle",
+    "x": 0.5,
+    "distance_m": 7.0,
+    "in_view": true,
+    "word": "car"
+   }
+  ],
+  "light": {
+   "dir": "camera left"
+  }
+ },
+ "cast": [
+  {
+   "id": "cast_e0ab2be5be",
+   "name": "Green coupe car",
+   "kind": "prop",
+   "line": "Car reference sheet on a plain light gray studio background: the same dark green 1970s fastback muscle coupe with chrome bumpers shown three"
+  }
+ ],
+ "user_look": "",
+ "before": {
+  "positive": "A real photograph, a still frame from a live-action commercial shot on a large-format 65mm digital cinema camera. EXACTLY 1 vehicle in frame: Green coupe car in the centre.\n\nGreen coupe car: centre of frame, about 7 metres from camera. Every grey vehicle in the layout is a real car on a real road, and every other grey shape is a real object: the road, cars.\n\nCamera at about 1.4 metres above the ground, level, 30mm lens, natural perspective, background slightly soft, filmed from a camera car driving alongside at about 80 km/h, road and background streaking with motion blur, wheels blurred.\n\nGreen coupe car is the one in image 3: Car reference sheet on a plain light gray studio background: the same dark green 1970s fastback muscle coupe with chrome bumpers shown three.\n\nWorn asphalt with tyre marks and cracks, concrete barriers with grime, dry roadside grass, painted metal bodywork with reflections and road dust on the lower panels.\n\nLate-afternoon sun from camera left, about 30 degrees high. The light falls directly on the subjects and the ground around them. Exposed for the main subject; shadows stay open, with readable texture in the ground and foreground, never pure black.\n\nTactile realism: readable colour, soft highlight roll-off, truthful skin colour, restrained fine grain over a sharp image. Texture comes from real surfaces and light, never a filter. Any signs or screens have no readable letters.\n\nIf any surface looks clean, plastic, grey, untextured or rendered, the image is wrong.",
+  "motion": "A car driving on the highway. Filmed from a camera car driving alongside at the same speed, the road and background streaming past."
+ }
+}

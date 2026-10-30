@@ -1,0 +1,215 @@
+{
+ "spec": {
+  "version": 1,
+  "template": "described",
+  "duration_s": 4.041666666666667,
+  "fps": 24,
+  "size": [
+   1920,
+   1088
+  ],
+  "lens": {
+   "focal_mm": 35.0,
+   "film_gauge_mm": 36
+  },
+  "environment": {
+   "ground": "plane",
+   "sky": "gradient",
+   "fog": [
+    20.0,
+    90.0
+   ],
+   "props": [
+    "city"
+   ]
+  },
+  "subjects": [
+   {
+    "id": "person",
+    "kind": "humanoid",
+    "height_m": 1.75,
+    "pos": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "anim": "dance",
+    "speed": null
+   }
+  ],
+  "camera": {
+   "interp": "catmull_rom",
+   "ease": "in_out",
+   "speed": 1.0,
+   "taper": 1.0,
+   "distance": 1.0,
+   "frame": null,
+   "free": false,
+   "pick": null,
+   "keys": [
+    {
+     "t": 0.0,
+     "pos": [
+      3.35,
+      1.435,
+      3.977
+     ],
+     "look": [
+      0.0,
+      1.085,
+      0.0
+     ],
+     "focal_mm": 35.0,
+     "roll": null
+    },
+    {
+     "t": 1.0,
+     "pos": [
+      1.063,
+      1.435,
+      2.912
+     ],
+     "look": [
+      0.0,
+      1.085,
+      0.0
+     ],
+     "focal_mm": 35.0,
+     "roll": null
+    }
+   ],
+   "segments": [],
+   "handheld": null
+  },
+  "beats": [],
+  "seed": 749388479,
+  "speed": 1.0,
+  "notes": "Three friends dancing on a rooftop. The camera cranes down."
+ },
+ "framing": {
+  "subject": [
+   0.2964,
+   0.1943,
+   0.5009,
+   0.7099
+  ],
+  "horizon": -0.4067,
+  "view": {
+   "share": {
+    "walls": 0.048,
+    "a bench": 0.008,
+    "a table": 0.016,
+    "buildings": 0.173
+   },
+   "outside": [
+    "a fence",
+    "a post",
+    "people",
+    "the road",
+    "trees"
+   ],
+   "actors": [
+    0,
+    1,
+    2
+   ],
+   "x": {
+    "walls": 0.17,
+    "a bench": 0.82,
+    "a table": 0.81,
+    "buildings": 0.22
+   },
+   "blocked": 0.0,
+   "bare": 0.716
+  },
+  "place": "Rooftop",
+  "camera": {
+   "height_m": 4.35,
+   "pitch_deg": -32.0,
+   "focal_mm": 30
+  },
+  "subjects": [
+   {
+    "kind": "person",
+    "x": 0.41,
+    "distance_m": 6.8,
+    "in_view": true,
+    "doing": "dance",
+    "word": "friends",
+    "facing": "camera",
+    "w": 0.204,
+    "h": 0.516
+   },
+   {
+    "kind": "person",
+    "x": 0.51,
+    "distance_m": 6.5,
+    "in_view": true,
+    "facing": "camera",
+    "w": 0.203,
+    "h": 0.553
+   },
+   {
+    "kind": "person",
+    "x": 0.61,
+    "distance_m": 6.1,
+    "in_view": true,
+    "facing": "camera",
+    "w": 0.213,
+    "h": 0.554
+   }
+  ],
+  "light": {
+   "dir": "camera right"
+  },
+  "move": {
+   "start": {
+    "pos": [
+     -3.756,
+     4.346,
+     -8.779
+    ],
+    "look": [
+     -0.026,
+     0.986,
+     -4.261
+    ]
+   },
+   "end": {
+    "pos": [
+     -3.488,
+     1.134,
+     -8.35
+    ],
+    "look": [
+     -0.022,
+     0.982,
+     -4.21
+    ]
+   }
+  }
+ },
+ "cast": [
+  {
+   "id": "cast_ana",
+   "name": "Ana",
+   "kind": "person",
+   "line": "a woman in her 20s with curly black hair in a high puff, an oversized pink blazer, a white top and black wide-leg trousers"
+  },
+  {
+   "id": "cast_kofi",
+   "name": "Kofi",
+   "kind": "person",
+   "line": "a man in his 30s in a white t-shirt, black jeans, a black bucket hat pulled low and a gold chain"
+  },
+  {
+   "id": "cast_jun",
+   "name": "Jun",
+   "kind": "person",
+   "line": "a young man with black hair and round wire glasses, in an orange pullover hoodie over a white tee, charcoal sweatpants and white sneakers"
+  }
+ ],
+ "user_look": "A tar and gravel roof with patched seams and galvanised vents, edged by a concrete parapet with rust streaks, with the far rooftops across the top of the frame. At frame right stand a scuffed metal table with a small speaker and paper cups and a plain wooden bench. The three friends dance in a loose row, evenly spaced with clear floor between them, each with both arms raised, loose and joyful. Low golden-hour sun from frame right rakes across the roof, throws long shadows of all three toward frame left and warms their faces. Golden low sun, warm tar and gravel, bright fabric.",
+ "positive": "A real photograph in the look of a large-format 65mm commercial film frame, natural colour, sharp and clean. EXACTLY 3 people in frame: Ana on the left, Kofi in the centre, Jun on the right.\n\nAna: left of frame, about 7 metres from the viewer, facing the viewer, face toward the viewer, dancing. Ana's head is about 7 percent of the frame height. Kofi: centre of frame, about 6 metres from the viewer, facing the viewer, face toward the viewer, dancing. Kofi's head is about 7 percent of the frame height. Jun: right of frame, about 6 metres from the viewer, facing the viewer, face toward the viewer, dancing. Jun's head is about 7 percent of the frame height. These three are the only people on the roof; the rest of the roof is open tar, gravel and sky.\n\nViewpoint at about 4.3 metres above the ground, a high angle looking down, 30mm lens, natural perspective, background slightly soft.\n\nAna: a woman in her 20s with curly black hair in a high puff, an oversized pink blazer, a white top and black wide-leg trousers. Kofi: a man in his 30s in a white t-shirt, black jeans, a black bucket hat pulled low and a gold chain. Jun: a young man with black hair and round wire glasses, in an orange pullover hoodie over a white tee, charcoal sweatpants and white sneakers.\n\nA tar and gravel roof with patched seams and galvanised vents, edged by a concrete parapet with rust streaks, with the far rooftops across the top of the frame. At frame right stand a scuffed metal table with a small speaker and paper cups and a plain wooden bench. The three friends dance in a loose row, evenly spaced with clear floor between them, each with both arms raised, loose and joyful.\n\nLow golden-hour sun from frame right rakes across the roof, throws long shadows of all three toward frame left and warms their faces. Golden low sun, warm tar and gravel, bright fabric. Exposed for the main subject; shadows stay open, with readable texture in the ground and foreground.\n\nTactile realism: readable colour, soft highlight roll-off, truthful skin colour, restrained fine grain over a sharp image. Texture comes from real surfaces and light.",
+ "negative": "3D render, CGI, clay render, grey mannequin, plastic skin, untextured surfaces, flat even lighting, video game, illustration, HDR, oversharpened, smeared face, text, letters, logos, watermark, rain, fog, haze, extra people, extra fingers, underexposed, crushed shadows, black foreground, camera, film camera, camera rig, tripod, film crew, duplicate person, twins, clone"
+}

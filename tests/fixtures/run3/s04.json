@@ -1,0 +1,175 @@
+{
+ "spec": {
+  "version": 1,
+  "template": "described",
+  "duration_s": 4.041666666666667,
+  "fps": 24,
+  "size": [
+   1920,
+   1088
+  ],
+  "lens": {
+   "focal_mm": 35.0,
+   "film_gauge_mm": 36
+  },
+  "environment": {
+   "ground": "plane",
+   "sky": "gradient",
+   "fog": [
+    14.0,
+    70.0
+   ],
+   "props": [
+    "park",
+    "bench"
+   ]
+  },
+  "subjects": [
+   {
+    "id": "person",
+    "kind": "humanoid",
+    "height_m": 1.75,
+    "pos": [
+     0.0,
+     0.46,
+     0.0
+    ],
+    "anim": "sit",
+    "speed": null
+   }
+  ],
+  "camera": {
+   "interp": "catmull_rom",
+   "ease": "in_out",
+   "speed": 1.0,
+   "taper": 1.0,
+   "distance": 1.0,
+   "frame": null,
+   "free": false,
+   "pick": null,
+   "keys": [
+    {
+     "t": 0.0,
+     "pos": [
+      3.35,
+      1.685,
+      3.977
+     ],
+     "look": [
+      0.0,
+      1.335,
+      0.0
+     ],
+     "focal_mm": 35.0,
+     "roll": null
+    },
+    {
+     "t": 1.0,
+     "pos": [
+      1.063,
+      1.685,
+      2.912
+     ],
+     "look": [
+      0.0,
+      1.335,
+      0.0
+     ],
+     "focal_mm": 35.0,
+     "roll": null
+    }
+   ],
+   "segments": [],
+   "handheld": null
+  },
+  "beats": [],
+  "seed": 741144365,
+  "speed": 1.0,
+  "notes": "A man sitting on a bench in the park. The camera pushes in."
+ },
+ "framing": {
+  "subject": [
+   0.4747,
+   0.4346,
+   0.5249,
+   0.5737
+  ],
+  "horizon": 0.3218,
+  "view": {
+   "share": {
+    "a path": 0.089
+   },
+   "outside": [
+    "trees"
+   ],
+   "actors": [
+    0,
+    1
+   ],
+   "x": {
+    "a path": 0.63
+   },
+   "blocked": 0.0,
+   "bare": 0.906
+  },
+  "place": "Park",
+  "camera": {
+   "height_m": 2.56,
+   "pitch_deg": -7.0,
+   "focal_mm": 30
+  },
+  "subjects": [
+   {
+    "kind": "person",
+    "x": 0.5,
+    "distance_m": 15.1,
+    "in_view": true,
+    "doing": "sit",
+    "word": "man",
+    "facing": "right",
+    "w": 0.05,
+    "h": 0.139
+   }
+  ],
+  "light": {
+   "dir": "behind camera"
+  },
+  "move": {
+   "start": {
+    "pos": [
+     -14.052,
+     2.558,
+     6.301
+    ],
+    "look": [
+     -0.555,
+     0.687,
+     -0.282
+    ]
+   },
+   "end": {
+    "pos": [
+     -9.262,
+     1.904,
+     3.965
+    ],
+    "look": [
+     -0.555,
+     0.687,
+     -0.282
+    ]
+   }
+  }
+ },
+ "cast": [
+  {
+   "id": "cast_marcus",
+   "name": "Marcus",
+   "kind": "person",
+   "line": "a man in his 60s with a short grey beard, a navy wool peacoat, a grey flat cap, brown corduroy trousers and brown leather shoes"
+  }
+ ],
+ "user_look": "He sits alone on a weathered wooden park bench beside a gravel path in a city park in autumn, holding a paper coffee cup in both hands, elbows on his knees. The lawn between viewer and bench is real grass, a little long, scattered with yellow and rust plane-tree leaves, and a raked gravel path curves from the bottom of the frame toward the bench. Mature plane trees with mottled bark and full, irregular canopies of turning leaves stand to his left and right. Beyond the trees, at the far edge of the park, a row of brick townhouses. Clear morning sun from frame left, low in the sky, lights the lawn, the bench and the man, with long tree shadows across the grass toward frame right. Low autumn sun, dark bark, dry leaves, wool.",
+ "positive": "A real photograph in the look of a large-format 65mm commercial film frame, natural colour, sharp and clean. EXACTLY 1 person in frame: Marcus in the centre.\n\nMarcus: centre of frame, far across the park, a small figure with the bench, lawn and trees filling the frame around him.\n\nViewpoint at about 2.6 metres above the ground, level, 30mm lens, natural perspective, background slightly soft.\n\nMarcus: a small distant man in a navy peacoat and grey flat cap, sitting on the bench.\n\nHe sits alone on a weathered wooden park bench beside a gravel path in a city park in autumn, holding a paper coffee cup in both hands, elbows on his knees. The lawn between viewer and bench is real grass, a little long, scattered with yellow and rust plane-tree leaves, and a raked gravel path curves from the bottom of the frame toward the bench. Mature plane trees with mottled bark and full, irregular canopies of turning leaves stand to his left and right. Beyond the trees, at the far edge of the park, a row of brick townhouses.\n\nClear morning sun from frame left, low in the sky, lights the lawn, the bench and the man, with long tree shadows across the grass toward frame right. Low autumn sun, dark bark, dry leaves, wool. Exposed for the main subject; shadows stay open, with readable texture in the ground and foreground.\n\nTactile realism: readable colour, soft highlight roll-off, truthful skin colour, restrained fine grain over a sharp image. Texture comes from real surfaces and light.",
+ "negative": "3D render, CGI, clay render, grey mannequin, plastic skin, untextured surfaces, flat even lighting, video game, illustration, HDR, oversharpened, smeared face, text, letters, logos, watermark, rain, fog, haze, extra people, extra fingers, underexposed, crushed shadows, black foreground, camera, film camera, camera rig, tripod, film crew"
+}

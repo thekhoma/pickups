@@ -1,0 +1,511 @@
+{
+ "id": "station",
+ "order": 14,
+ "label": "Station",
+ "move": "Slow push along the platform",
+ "world": {
+  "shadowExtent": 30,
+  "shadowCenter": [
+   0,
+   0,
+   0
+  ],
+  "keyDist": 70,
+  "grid": false,
+  "fogNear": 30,
+  "fogFar": 140,
+  "skyScale": 2
+ },
+ "geometry": [
+  {
+   "type": "ground",
+   "radius": 160
+  },
+  {
+   "type": "box",
+   "name": "platform",
+   "size": [
+    7,
+    1.1,
+    50
+   ],
+   "pos": [
+    3.2,
+    0,
+    0
+   ],
+   "material": "set",
+   "radius": 0.02
+  },
+  {
+   "type": "box",
+   "name": "platform_edge",
+   "size": [
+    0.3,
+    0.006,
+    50
+   ],
+   "pos": [
+    -0.15,
+    1.1,
+    0
+   ],
+   "material": "foam",
+   "radius": 0.002,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "canopy",
+   "size": [
+    6,
+    0.25,
+    34
+   ],
+   "pos": [
+    3.4,
+    4.4,
+    0
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "canopy_back",
+   "size": [
+    0.2,
+    4.4,
+    34
+   ],
+   "pos": [
+    6.6,
+    1.1,
+    0
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "trackbed_A",
+   "size": [
+    3.6,
+    0.12,
+    120
+   ],
+   "pos": [
+    -3.0,
+    0,
+    0
+   ],
+   "material": "road",
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "trackbed_B",
+   "size": [
+    3.6,
+    0.12,
+    120
+   ],
+   "pos": [
+    -8.0,
+    0,
+    0
+   ],
+   "material": "road",
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "rail_A1",
+   "size": [
+    0.08,
+    0.16,
+    120
+   ],
+   "pos": [
+    -3.72,
+    0.12,
+    0
+   ],
+   "material": "post",
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "rail_A2",
+   "size": [
+    0.08,
+    0.16,
+    120
+   ],
+   "pos": [
+    -2.28,
+    0.12,
+    0
+   ],
+   "material": "post",
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "rail_B1",
+   "size": [
+    0.08,
+    0.16,
+    120
+   ],
+   "pos": [
+    -8.72,
+    0.12,
+    0
+   ],
+   "material": "post",
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "rail_B2",
+   "size": [
+    0.08,
+    0.16,
+    120
+   ],
+   "pos": [
+    -7.28,
+    0.12,
+    0
+   ],
+   "material": "post",
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "platform_far",
+   "size": [
+    5,
+    1.1,
+    50
+   ],
+   "pos": [
+    -13.2,
+    0,
+    0
+   ],
+   "material": "set",
+   "radius": 0.02
+  },
+  {
+   "type": "box",
+   "name": "station_hall",
+   "size": [
+    16,
+    8,
+    10
+   ],
+   "pos": [
+    12,
+    0,
+    -30
+   ],
+   "material": "set"
+  }
+ ],
+ "items": [
+  {
+   "asset": "train",
+   "pos": [
+    -3.0,
+    -4
+   ],
+   "rot": 0,
+   "id": "train"
+  },
+  {
+   "id": "waiter_1",
+   "asset": "person",
+   "pos": [
+    1.2,
+    1.1,
+    2.0
+   ],
+   "rot": -90,
+   "pose": "hold",
+   "options": {
+    "preset": "crowd"
+   },
+   "props": {
+    "hand_R": "bag_box"
+   }
+  },
+  {
+   "id": "reader",
+   "asset": "person",
+   "pos": [
+    2.8,
+    1.1,
+    -2.5
+   ],
+   "rot": -100,
+   "pose": "read",
+   "props": {
+    "hand_L": "book"
+   }
+  },
+  {
+   "id": "phone_guy",
+   "asset": "person",
+   "pos": [
+    3.4,
+    1.1,
+    5.5
+   ],
+   "rot": -120,
+   "pose": "hold_phone",
+   "options": {
+    "preset": "crowd"
+   },
+   "props": {
+    "hand_R": "phone"
+   }
+  },
+  {
+   "id": "runner",
+   "asset": "person",
+   "pos": [
+    1.6,
+    1.1,
+    10.5
+   ],
+   "rot": 180,
+   "pose": "run"
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    4.6,
+    1.1,
+    -6.5
+   ],
+   "rot": -90,
+   "id": "pbench"
+  },
+  {
+   "id": "bench_sitter",
+   "asset": "person",
+   "seat": {
+    "on": "pbench",
+    "slot": 0
+   },
+   "pose": "sit",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "asset": "airplane",
+   "pos": [
+    -48,
+    -70
+   ],
+   "rot": 60,
+   "id": "plane"
+  },
+  {
+   "asset": "sign",
+   "pos": [
+    4.9,
+    1.1,
+    1.0
+   ],
+   "rot": -90,
+   "scale": [
+    1.2,
+    1.2,
+    1.2
+   ]
+  },
+  {
+   "asset": "sign",
+   "pos": [
+    4.9,
+    1.1,
+    9.0
+   ],
+   "rot": -90,
+   "scale": [
+    1.2,
+    1.2,
+    1.2
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    5.5,
+    1.1,
+    -12
+   ],
+   "rot": 0,
+   "scale": [
+    0.6,
+    3.6,
+    0.6
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    5.5,
+    1.1,
+    -4
+   ],
+   "rot": 0,
+   "scale": [
+    0.6,
+    3.6,
+    0.6
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    5.5,
+    1.1,
+    4
+   ],
+   "rot": 0,
+   "scale": [
+    0.6,
+    3.6,
+    0.6
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    5.5,
+    1.1,
+    12
+   ],
+   "rot": 0,
+   "scale": [
+    0.6,
+    3.6,
+    0.6
+   ]
+  },
+  {
+   "id": "pax0",
+   "asset": "person",
+   "pos": [
+    2.0,
+    1.1,
+    -9.0
+   ],
+   "rot": -90,
+   "pose": "stand",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "pax1",
+   "asset": "person",
+   "pos": [
+    2.9,
+    1.1,
+    -10.3
+   ],
+   "rot": -73,
+   "pose": "stand",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "pax2",
+   "asset": "person",
+   "pos": [
+    3.8,
+    1.1,
+    -11.6
+   ],
+   "rot": -56,
+   "pose": "stand",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "pax3",
+   "asset": "person",
+   "pos": [
+    2.0,
+    1.1,
+    -12.9
+   ],
+   "rot": -39,
+   "pose": "stand",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "pax4",
+   "asset": "person",
+   "pos": [
+    2.9,
+    1.1,
+    -14.2
+   ],
+   "rot": -22,
+   "pose": "stand",
+   "options": {
+    "preset": "crowd"
+   }
+  }
+ ],
+ "cameras": {
+  "hero": {
+   "pos": [
+    5.8,
+    3.4,
+    18
+   ],
+   "target": [
+    0,
+    1.6,
+    -2
+   ],
+   "fov": 42
+  },
+  "start": {
+   "pos": [
+    3.0,
+    2.8,
+    20
+   ],
+   "target": [
+    1.0,
+    2.0,
+    0
+   ],
+   "fov": 42
+  },
+  "end": {
+   "pos": [
+    3.0,
+    2.75,
+    7.5
+   ],
+   "target": [
+    1.0,
+    1.9,
+    -6
+   ],
+   "fov": 42
+  }
+ }
+}

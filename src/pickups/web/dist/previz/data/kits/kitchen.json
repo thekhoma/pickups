@@ -1,0 +1,344 @@
+{
+ "id": "kitchen",
+ "order": 21,
+ "label": "Kitchen",
+ "move": "Slow push in",
+ "world": {
+  "shadowExtent": 8,
+  "shadowCenter": [
+   0,
+   0,
+   0
+  ],
+  "keyDist": 30,
+  "grid": false,
+  "fogNear": 20,
+  "fogFar": 80
+ },
+ "geometry": [
+  {
+   "type": "ground",
+   "radius": 70
+  },
+  {
+   "type": "box",
+   "name": "floor",
+   "size": [
+    7.2,
+    0.05,
+    5.6
+   ],
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "material": "path",
+   "radius": 0.01,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "wall_back",
+   "size": [
+    7.2,
+    3.0,
+    0.2
+   ],
+   "pos": [
+    0,
+    0,
+    -2.9
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "wall_left",
+   "size": [
+    0.2,
+    3.0,
+    5.6
+   ],
+   "pos": [
+    -3.7,
+    0,
+    0
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "wall_right",
+   "size": [
+    0.2,
+    3.0,
+    5.6
+   ],
+   "pos": [
+    3.7,
+    0,
+    0
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "wall_cabinets_back",
+   "size": [
+    2.4,
+    0.7,
+    0.36
+   ],
+   "pos": [
+    -2.3,
+    1.62,
+    -2.62
+   ],
+   "material": "path",
+   "radius": 0.02
+  },
+  {
+   "type": "box",
+   "name": "hood",
+   "size": [
+    0.9,
+    0.5,
+    0.5
+   ],
+   "pos": [
+    -1.4,
+    1.75,
+    -2.55
+   ],
+   "material": "setDark"
+  }
+ ],
+ "items": [
+  {
+   "asset": "counter",
+   "pos": [
+    -0.8,
+    -2.16
+   ],
+   "rot": 0,
+   "id": "run_back"
+  },
+  {
+   "asset": "counter",
+   "pos": [
+    2.96,
+    0.4
+   ],
+   "rot": -90,
+   "id": "run_side",
+   "options": {
+    "hob": false
+   }
+  },
+  {
+   "id": "cook",
+   "asset": "person",
+   "pos": [
+    -1.4,
+    -1.4
+   ],
+   "rot": 180,
+   "pose": "cook"
+  },
+  {
+   "id": "helper",
+   "asset": "person",
+   "pos": [
+    2.1,
+    0.0
+   ],
+   "rot": 90,
+   "pose": "hold",
+   "props": {
+    "hand_R": "plate_food"
+   }
+  },
+  {
+   "asset": "produce",
+   "onTop": {
+    "of": "run_back",
+    "offset": [
+     0.5,
+     0.14
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "produce",
+   "onTop": {
+    "of": "run_back",
+    "offset": [
+     0.62,
+     0.1
+    ]
+   },
+   "rot": 70
+  },
+  {
+   "asset": "plate_food",
+   "onTop": {
+    "of": "run_side",
+    "offset": [
+     0.3,
+     0.12
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "cup",
+   "onTop": {
+    "of": "run_side",
+    "offset": [
+     -0.4,
+     0.12
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "table",
+   "pos": [
+    -0.6,
+    1.6
+   ],
+   "rot": 0,
+   "id": "ktable",
+   "scale": [
+    0.9,
+    1,
+    0.9
+   ]
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    -0.6,
+    2.4
+   ],
+   "rot": 180,
+   "id": "kbench",
+   "scale": [
+    0.3,
+    1,
+    1
+   ]
+  },
+  {
+   "id": "eater",
+   "asset": "person",
+   "seat": {
+    "on": "kbench",
+    "slot": 1
+   },
+   "pose": "sit"
+  },
+  {
+   "asset": "plate_food",
+   "onTop": {
+    "of": "ktable",
+    "offset": [
+     0,
+     0.15
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "window_panel",
+   "pos": [
+    -0.25,
+    1.2,
+    -2.79
+   ],
+   "rot": 0,
+   "scale": [
+    1.4,
+    0.75,
+    1
+   ]
+  },
+  {
+   "asset": "cat",
+   "pos": [
+    1.6,
+    1.8
+   ],
+   "rot": -60,
+   "pose": "sit"
+  },
+  {
+   "asset": "cabinet",
+   "pos": [
+    -3.1,
+    -2.4
+   ],
+   "rot": 0,
+   "id": "fridge",
+   "scale": [
+    0.89,
+    1.08,
+    1.17
+   ]
+  },
+  {
+   "asset": "vase",
+   "onTop": {
+    "of": "ktable",
+    "offset": [
+     0.3,
+     -0.1
+    ]
+   },
+   "rot": 0
+  }
+ ],
+ "cameras": {
+  "hero": {
+   "pos": [
+    1.2,
+    2.5,
+    5.6
+   ],
+   "target": [
+    -0.4,
+    0.95,
+    -1.0
+   ],
+   "fov": 50
+  },
+  "start": {
+   "pos": [
+    0.4,
+    1.6,
+    5.2
+   ],
+   "target": [
+    -0.6,
+    1.1,
+    -1.6
+   ],
+   "fov": 44
+  },
+  "end": {
+   "pos": [
+    0.1,
+    1.5,
+    1.7
+   ],
+   "target": [
+    -0.9,
+    1.05,
+    -2.0
+   ],
+   "fov": 44
+  }
+ }
+}

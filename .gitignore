@@ -1,0 +1,57 @@
+# Python / uv
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.venv
+
+# Secrets and local config never enter the repo (keys live in the OS keychain)
+.env
+.env.*
+!.env.example
+*.key
+config.toml
+
+# User data, renders, caches, logs (these live in ~/.pickups, never here)
+*.db
+*.sqlite
+renders/
+cache/
+runs/
+*.log
+*.exr
+*.mov
+*.mp4
+!samples/**
+!examples/**
+
+# OS
+.DS_Store
+
+# The built web UI is committed (served by the Python package)
+!src/pickups/web/dist/
+!src/pickups/web/dist/**
+
+# Local tool config
+.claude/
+
+# Shipped on purpose: the built UI (so `uv run pickups` works without Node) and the demo-mode media (real example
+# clips, small web encodes) it plays.
+!src/pickups/web/dist/
+!src/pickups/web/dist/**
+!web/public/mock/**
+
+# Cursor scratch: unused vendor copy and stale data, not part of the app
+_archive/
+
+# The examples pack, when dropped next to the app (it is installed from there, never committed)
+pickups_examples*.zip
+pickups_examples*.zip.sha256
+examples_pack/
+
+# Local scratch, QC output and handoff notes (kept on disk, never committed)
+.scratch*/
+test_outputs/
+HANDOFF*.md

@@ -1,0 +1,329 @@
+{
+ "rule": "If a person and a vehicle (car, suv, truck, van, bus or any of their words) appear with 'in', 'inside', 'into', 'driving', 'drives', 'driver', 'behind the wheel', 'passenger', 'back seat', or a sit verb right before the vehicle ('sitting a car', missing 'in'), SEAT the person with seatInVehicle(person, vehicle, seat, pose) instead of placing them beside the vehicle. 'next to', 'beside', 'by', 'near', 'outside', 'leaning on', 'against', 'on the hood' and 'behind the <vehicle>' keep the person outside. 'driver' / 'driving' with no vehicle word adds a car. A child alone in a vehicle goes to the back seat. 'on the bus' seats a bus passenger.",
+ "defaults": {
+  "first person": "driver / drive",
+  "second person": "passenger / sit_passenger",
+  "third person": "rear_R / sit_passenger",
+  "child alone": "rear_R / sit_passenger",
+  "bus rider": "passenger (row0_R_win) or row<i>_<L|R>_<win|aisle>"
+ },
+ "seats": {
+  "car": [
+   "driver",
+   "passenger",
+   "rear_L",
+   "rear_R"
+  ],
+  "suv": [
+   "driver",
+   "passenger",
+   "rear_L",
+   "rear_R"
+  ],
+  "truck": [
+   "driver",
+   "passenger"
+  ],
+  "van": [
+   "driver",
+   "passenger",
+   "rear_L",
+   "rear_R"
+  ],
+  "bus": [
+   "driver",
+   "passenger",
+   "rear_L",
+   "rear_R",
+   "row<0-4>_<L|R>_<win|aisle>"
+  ]
+ },
+ "poses": [
+  "drive",
+  "sit_passenger",
+  "lean_window"
+ ],
+ "attach_points": [
+  "attach_seat_<seat>",
+  "attach_wheel_grip_L",
+  "attach_wheel_grip_R",
+  "attach_pedal_gas",
+  "attach_pedal_brake",
+  "attach_footrest",
+  "attach_seat (alias of the driver seat)"
+ ],
+ "phrases": {
+  "in a car": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "vehicle": "car"
+  },
+  "in the car": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "vehicle": "car"
+  },
+  "inside a car": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "vehicle": "car"
+  },
+  "inside the car": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "vehicle": "car"
+  },
+  "sitting in a car": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "vehicle": "car"
+  },
+  "sitting in the car": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "vehicle": "car"
+  },
+  "sitting a car": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "vehicle": "car",
+   "note": "missing \"in\" still means inside"
+  },
+  "sits in a car": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "vehicle": "car"
+  },
+  "seated in a car": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "vehicle": "car"
+  },
+  "in a parked car": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "vehicle": "car"
+  },
+  "into the car": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "vehicle": "car"
+  },
+  "driving": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "note": "no vehicle word: add a car"
+  },
+  "drives": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "note": "no vehicle word: add a car"
+  },
+  "drive": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "note": "no vehicle word: add a car"
+  },
+  "driver": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "note": "job word: seated driver; no vehicle word: add a car"
+  },
+  "behind the wheel": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "note": "no vehicle word: add a car"
+  },
+  "at the wheel": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive"
+  },
+  "in the driver's seat": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive"
+  },
+  "drivers seat": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive"
+  },
+  "passenger": {
+   "helper": "seatInVehicle",
+   "seat": "passenger",
+   "pose": "sit_passenger"
+  },
+  "in the passenger seat": {
+   "helper": "seatInVehicle",
+   "seat": "passenger",
+   "pose": "sit_passenger"
+  },
+  "front seat": {
+   "helper": "seatInVehicle",
+   "seat": "passenger",
+   "pose": "sit_passenger"
+  },
+  "riding shotgun": {
+   "helper": "seatInVehicle",
+   "seat": "passenger",
+   "pose": "sit_passenger"
+  },
+  "in the back seat": {
+   "helper": "seatInVehicle",
+   "seat": "rear_R",
+   "pose": "sit_passenger",
+   "note": "bus: last row"
+  },
+  "in the backseat": {
+   "helper": "seatInVehicle",
+   "seat": "rear_R",
+   "pose": "sit_passenger"
+  },
+  "back seat": {
+   "helper": "seatInVehicle",
+   "seat": "rear_R",
+   "pose": "sit_passenger"
+  },
+  "rear seat": {
+   "helper": "seatInVehicle",
+   "seat": "rear_R",
+   "pose": "sit_passenger"
+  },
+  "in the back": {
+   "helper": "seatInVehicle",
+   "seat": "rear_R",
+   "pose": "sit_passenger"
+  },
+  "taxi driver": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "vehicle": "car",
+   "note": "taxi = the car model"
+  },
+  "cab driver": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "vehicle": "car"
+  },
+  "cabbie": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "vehicle": "car"
+  },
+  "uber driver": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "vehicle": "car"
+  },
+  "chauffeur": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "vehicle": "car"
+  },
+  "bus driver": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "vehicle": "bus"
+  },
+  "truck driver": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "vehicle": "truck"
+  },
+  "trucker": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "vehicle": "truck"
+  },
+  "van driver": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "vehicle": "van"
+  },
+  "delivery driver": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "drive",
+   "vehicle": "van"
+  },
+  "on the bus": {
+   "helper": "seatInVehicle",
+   "seat": "passenger",
+   "pose": "sit_passenger",
+   "vehicle": "bus",
+   "note": "bus rows: passenger = row0_R_win"
+  },
+  "on a bus": {
+   "helper": "seatInVehicle",
+   "seat": "passenger",
+   "pose": "sit_passenger",
+   "vehicle": "bus"
+  },
+  "riding the bus": {
+   "helper": "seatInVehicle",
+   "seat": "passenger",
+   "pose": "sit_passenger",
+   "vehicle": "bus"
+  },
+  "bus passenger": {
+   "helper": "seatInVehicle",
+   "seat": "passenger",
+   "pose": "sit_passenger",
+   "vehicle": "bus"
+  },
+  "leaning out the window": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "lean_window"
+  },
+  "arm out the window": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "lean_window"
+  },
+  "elbow on the window": {
+   "helper": "seatInVehicle",
+   "seat": "driver",
+   "pose": "lean_window"
+  },
+  "kid in the back seat": {
+   "helper": "seatInVehicle",
+   "seat": "rear_R",
+   "pose": "sit_passenger",
+   "preset": "child"
+  },
+  "child in the back seat": {
+   "helper": "seatInVehicle",
+   "seat": "rear_R",
+   "pose": "sit_passenger",
+   "preset": "child"
+  }
+ },
+ "lod": "createAsset(id, { interior: false }) or exports/glb/<id>__exterior.glb: the sealed v1.1 exterior with opaque black glass, for far or crowd use"
+}

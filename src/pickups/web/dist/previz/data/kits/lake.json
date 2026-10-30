@@ -1,0 +1,499 @@
+{
+ "id": "lake",
+ "order": 9,
+ "label": "Lake",
+ "move": "Low dolly along the shoreline",
+ "world": {
+  "shadowExtent": 28,
+  "shadowCenter": [
+   0,
+   0,
+   -6
+  ],
+  "keyDist": 60,
+  "grid": false,
+  "fogNear": 30,
+  "fogFar": 130,
+  "skyScale": 2
+ },
+ "geometry": [
+  {
+   "type": "ground",
+   "radius": 160
+  },
+  {
+   "type": "water",
+   "name": "lake",
+   "shape": "ellipse",
+   "size": [
+    19,
+    13
+   ],
+   "pos": [
+    0,
+    -14
+   ],
+   "lines": 16,
+   "lineYaw": 10
+  },
+  {
+   "type": "path",
+   "name": "shore_path",
+   "points": [
+    [
+     -24,
+     8
+    ],
+    [
+     -10,
+     5.6
+    ],
+    [
+     0,
+     5.4
+    ],
+    [
+     10,
+     5.8
+    ],
+    [
+     24,
+     9
+    ]
+   ],
+   "width": 1.6
+  }
+ ],
+ "items": [
+  {
+   "asset": "bench",
+   "pos": [
+    -3.5,
+    4.0
+   ],
+   "rot": 180,
+   "id": "lb"
+  },
+  {
+   "id": "lake_sitter",
+   "asset": "person",
+   "seat": {
+    "on": "lb",
+    "slot": 1
+   },
+   "pose": "sit"
+  },
+  {
+   "asset": "dog",
+   "pos": [
+    -1.9,
+    3.4
+   ],
+   "rot": 200,
+   "pose": "sit"
+  },
+  {
+   "asset": "boat",
+   "pos": [
+    3.5,
+    -11
+   ],
+   "rot": 70,
+   "id": "rowboat"
+  },
+  {
+   "id": "rower",
+   "asset": "person",
+   "rider": "rowboat"
+  },
+  {
+   "id": "shore_walker",
+   "asset": "person",
+   "pos": [
+    0.6,
+    1.4
+   ],
+   "rot": -90,
+   "pose": "walk"
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    25.99,
+    -14.1
+   ],
+   "scale": 1.23,
+   "options": {
+    "seed": 0
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    26.67,
+    -10.39
+   ],
+   "scale": 0.84,
+   "options": {
+    "seed": 1
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    24.62,
+    -6.31
+   ],
+   "scale": 0.99,
+   "options": {
+    "seed": 2
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    19.34,
+    0.48
+   ],
+   "scale": 0.88,
+   "options": {
+    "seed": 3
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    14.38,
+    1.6
+   ],
+   "scale": 1.26,
+   "options": {
+    "seed": 4
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -15.88,
+    0.65
+   ],
+   "scale": 1.24,
+   "options": {
+    "seed": 9
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -18.45,
+    -2.5
+   ],
+   "scale": 1.05,
+   "options": {
+    "seed": 10
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -22.37,
+    -2.14
+   ],
+   "scale": 0.86,
+   "options": {
+    "seed": 11
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -23.36,
+    -9.5
+   ],
+   "scale": 1.25,
+   "options": {
+    "seed": 12
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -23.04,
+    -13.21
+   ],
+   "scale": 1.07,
+   "options": {
+    "seed": 13
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -23.36,
+    -17.19
+   ],
+   "scale": 1.26,
+   "options": {
+    "seed": 14
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -23.34,
+    -23.28
+   ],
+   "scale": 0.85,
+   "options": {
+    "seed": 15
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -18.04,
+    -27.63
+   ],
+   "scale": 1.28,
+   "options": {
+    "seed": 16
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -17.16,
+    -29.8
+   ],
+   "scale": 0.87,
+   "options": {
+    "seed": 17
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -12.04,
+    -35.18
+   ],
+   "scale": 0.86,
+   "options": {
+    "seed": 18
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -2.69,
+    -31.59
+   ],
+   "scale": 1.11,
+   "options": {
+    "seed": 19
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    1.24,
+    -34.7
+   ],
+   "scale": 1.1,
+   "options": {
+    "seed": 20
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    9.37,
+    -30.93
+   ],
+   "scale": 1.23,
+   "options": {
+    "seed": 21
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    15.41,
+    -29.34
+   ],
+   "scale": 1.29,
+   "options": {
+    "seed": 22
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    17.51,
+    -28.13
+   ],
+   "scale": 0.96,
+   "options": {
+    "seed": 23
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    21.75,
+    -23.06
+   ],
+   "scale": 0.96,
+   "options": {
+    "seed": 24
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    26.72,
+    -19.06
+   ],
+   "scale": 1.19,
+   "options": {
+    "seed": 25
+   }
+  },
+  {
+   "asset": "rock",
+   "pos": [
+    -13.29,
+    -30.51
+   ],
+   "scale": 1.28,
+   "rot": 89.37390151448191,
+   "options": {
+    "seed": 70
+   }
+  },
+  {
+   "asset": "rock",
+   "pos": [
+    6.65,
+    -30.2
+   ],
+   "scale": 0.61,
+   "rot": 273.86610496286636,
+   "options": {
+    "seed": 71
+   }
+  },
+  {
+   "asset": "rock",
+   "pos": [
+    0.28,
+    -31.22
+   ],
+   "scale": 0.82,
+   "rot": 249.3524001805375,
+   "options": {
+    "seed": 72
+   }
+  },
+  {
+   "asset": "rock",
+   "pos": [
+    10.51,
+    0.9
+   ],
+   "scale": 1.57,
+   "rot": 62.19221483667097,
+   "options": {
+    "seed": 73
+   }
+  },
+  {
+   "asset": "rock",
+   "pos": [
+    12.5,
+    2.01
+   ],
+   "scale": 0.51,
+   "rot": 21.927856520992655,
+   "options": {
+    "seed": 74
+   }
+  },
+  {
+   "asset": "rock",
+   "pos": [
+    -8.16,
+    -30.91
+   ],
+   "scale": 0.52,
+   "rot": 287.5269923182666,
+   "options": {
+    "seed": 75
+   }
+  },
+  {
+   "asset": "rock",
+   "pos": [
+    -6.02,
+    -30.38
+   ],
+   "scale": 0.65,
+   "rot": 31.17177418693601,
+   "options": {
+    "seed": 76
+   }
+  },
+  {
+   "asset": "rock",
+   "pos": [
+    13.57,
+    0.93
+   ],
+   "scale": 1.0,
+   "rot": 253.38379980842151,
+   "options": {
+    "seed": 77
+   }
+  }
+ ],
+ "cameras": {
+  "hero": {
+   "pos": [
+    2,
+    3.6,
+    14
+   ],
+   "target": [
+    0,
+    0.6,
+    -7
+   ],
+   "fov": 42
+  },
+  "start": {
+   "pos": [
+    -6.5,
+    0.45,
+    2.7
+   ],
+   "target": [
+    -0.6,
+    0.8,
+    -2.0
+   ],
+   "fov": 40
+  },
+  "end": {
+   "pos": [
+    6.5,
+    0.45,
+    2.7
+   ],
+   "target": [
+    1.6,
+    0.8,
+    -2.0
+   ],
+   "fov": 40
+  }
+ }
+}

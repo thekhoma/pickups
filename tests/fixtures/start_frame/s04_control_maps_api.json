@@ -1,0 +1,117 @@
+{
+ "img": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "rd_sf_test/s04_frame0.png"
+  }
+ },
+ "da3m": {
+  "class_type": "LoadDA3Model",
+  "inputs": {
+   "model_name": "depth_anything_3_mono_large.safetensors",
+   "weight_dtype": "default"
+  }
+ },
+ "da3": {
+  "class_type": "DA3Inference",
+  "inputs": {
+   "da3_model": [
+    "da3m",
+    0
+   ],
+   "image": [
+    "img",
+    0
+   ],
+   "resolution": 1512,
+   "resize_method": "upper_bound_resize",
+   "mode": "mono"
+  }
+ },
+ "dep": {
+  "class_type": "DA3Render",
+  "inputs": {
+   "da3_geometry": [
+    "da3",
+    0
+   ],
+   "output": "depth",
+   "output.normalization": "v2_style",
+   "output.apply_sky_clip": false
+  }
+ },
+ "depmm": {
+  "class_type": "DA3Render",
+  "inputs": {
+   "da3_geometry": [
+    "da3",
+    0
+   ],
+   "output": "depth",
+   "output.normalization": "min_max",
+   "output.apply_sky_clip": true
+  }
+ },
+ "can": {
+  "class_type": "Canny",
+  "inputs": {
+   "image": [
+    "img",
+    0
+   ],
+   "low_threshold": 0.2,
+   "high_threshold": 0.5
+  }
+ },
+ "cans": {
+  "class_type": "Canny",
+  "inputs": {
+   "image": [
+    "img",
+    0
+   ],
+   "low_threshold": 0.08,
+   "high_threshold": 0.25
+  }
+ },
+ "s1": {
+  "class_type": "SaveImage",
+  "inputs": {
+   "images": [
+    "dep",
+    0
+   ],
+   "filename_prefix": "rd_sf_test/s04_depth"
+  }
+ },
+ "s2": {
+  "class_type": "SaveImage",
+  "inputs": {
+   "images": [
+    "depmm",
+    0
+   ],
+   "filename_prefix": "rd_sf_test/s04_depth_minmax_skyclip"
+  }
+ },
+ "s3": {
+  "class_type": "SaveImage",
+  "inputs": {
+   "images": [
+    "can",
+    0
+   ],
+   "filename_prefix": "rd_sf_test/s04_canny"
+  }
+ },
+ "s4": {
+  "class_type": "SaveImage",
+  "inputs": {
+   "images": [
+    "cans",
+    0
+   ],
+   "filename_prefix": "rd_sf_test/s04_canny_soft"
+  }
+ }
+}

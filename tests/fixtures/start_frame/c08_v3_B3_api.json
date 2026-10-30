@@ -1,0 +1,215 @@
+{
+ "q21": {
+  "class_type": "UNETLoader",
+  "inputs": {
+   "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+   "weight_dtype": "default"
+  },
+  "_meta": {
+   "title": "q21"
+  }
+ },
+ "q21cache": {
+  "class_type": "QwenImage21Cache",
+  "inputs": {
+   "model": [
+    "q21",
+    0
+   ],
+   "device": "auto",
+   "dtype": "default"
+  },
+  "_meta": {
+   "title": "q21cache"
+  }
+ },
+ "q21clip": {
+  "class_type": "CLIPLoader",
+  "inputs": {
+   "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+   "type": "qwen_image",
+   "device": "default"
+  },
+  "_meta": {
+   "title": "q21clip"
+  }
+ },
+ "q21vae": {
+  "class_type": "VAELoader",
+  "inputs": {
+   "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+  },
+  "_meta": {
+   "title": "q21vae"
+  }
+ },
+ "seed": {
+  "class_type": "RandomNoise",
+  "inputs": {
+   "noise_seed": 1234
+  },
+  "_meta": {
+   "title": "seed"
+  }
+ },
+ "sampler": {
+  "class_type": "KSamplerSelect",
+  "inputs": {
+   "sampler_name": "euler"
+  },
+  "_meta": {
+   "title": "sampler"
+  }
+ },
+ "depth": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "rd_sf_test/c08_depth.png"
+  },
+  "_meta": {
+   "title": "depth"
+  }
+ },
+ "canny": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "rd_sf_test/c08_canny_soft_subjmask.png"
+  },
+  "_meta": {
+   "title": "canny"
+  }
+ },
+ "ref1": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "rd_sf_test/c08_ref_Red_sedan_ref.png"
+  },
+  "_meta": {
+   "title": "ref1"
+  }
+ },
+ "enc": {
+  "class_type": "TextEncodeQwenImage21",
+  "inputs": {
+   "clip": [
+    "q21clip",
+    0
+   ],
+   "prompt": "A real photograph, a still frame from a live-action commercial car shoot on a large-format 65mm digital cinema camera, mounted low on a chase car following at highway speed. EXACTLY ONE CAR close in frame.\n\nA low shot from directly behind a red modern sports sedan as it speeds away down an open highway. The car sits in the centre of the frame, in the middle lane, about 8 metres ahead. A tall concrete median barrier runs along the right side of the road and recedes to the horizon. On the left shoulder, two tall dark light poles and a small sign on a post stand beside the road. The highway runs straight ahead to a distant vanishing point, past flat dry grassland, with a low line of hills far off under a wide sky.\n\nSeen from about 50 cm above the road, level, following the car. 35mm lens, natural perspective, straight lines. The sedan is sharp, while the road surface rushing under the camera blurs with motion and the lane markings streak toward the car.\n\nThe car is the one in the reference image: same model and body, glossy red paint, black wheels, and slim full-width tail lights glowing red. The paint shows real reflections of the sky and the barrier.\n\nThe road is worn grey asphalt with tyre polish in the lane, sealed cracks and faded dashed lane paint. The median barrier is weathered concrete with tyre scuffs and dirt streaks along its base. The shoulder is gravel with dry weeds.\n\nLight: clear late-afternoon sun from high camera left lays a long highlight across the sedan's roof and boot and throws its shadow to the right under the barrier. The sky is clear and pale blue, brighter toward the horizon. Exposed for the car.\n\nTactile realism: Exposed for the subject's face; shadows stay open, with readable texture in the ground and foreground, never pure black., soft highlight roll-off, truthful colour, restrained fine grain over a sharp image. Texture comes from real surfaces and light, never a filter. The sign and the number plate have no readable letters.\n\nIf any surface looks clean, plastic, grey, untextured or rendered, or the car looks parked, the image is wrong.\n",
+   "negative_prompt": "3D render, CGI, clay render, grey mannequin, plastic skin, untextured surfaces, flat even lighting, video game, illustration, HDR, oversharpened, smeared face, text, letters, logos, watermark, rain, fog, haze, extra people, extra fingers, parked car, static background, car on a white background, underexposed, crushed shadows, black foreground",
+   "resolution": 1536,
+   "vae": [
+    "q21vae",
+    0
+   ],
+   "images.image_1": [
+    "depth",
+    0
+   ],
+   "images.image_2": [
+    "canny",
+    0
+   ],
+   "images.image_3": [
+    "ref1",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "enc"
+  }
+ },
+ "B_guider": {
+  "class_type": "CFGGuider",
+  "inputs": {
+   "model": [
+    "q21cache",
+    0
+   ],
+   "positive": [
+    "enc",
+    0
+   ],
+   "negative": [
+    "enc",
+    1
+   ],
+   "cfg": 3.0
+  },
+  "_meta": {
+   "title": "B_guider"
+  }
+ },
+ "B_sigmas": {
+  "class_type": "BasicScheduler",
+  "inputs": {
+   "model": [
+    "q21cache",
+    0
+   ],
+   "scheduler": "simple",
+   "steps": 30,
+   "denoise": 1.0
+  },
+  "_meta": {
+   "title": "B_sigmas"
+  }
+ },
+ "B_sample": {
+  "class_type": "SamplerCustomAdvanced",
+  "inputs": {
+   "noise": [
+    "seed",
+    0
+   ],
+   "guider": [
+    "B_guider",
+    0
+   ],
+   "sampler": [
+    "sampler",
+    0
+   ],
+   "sigmas": [
+    "B_sigmas",
+    0
+   ],
+   "latent_image": [
+    "enc",
+    2
+   ]
+  },
+  "_meta": {
+   "title": "B_sample"
+  }
+ },
+ "out_dec": {
+  "class_type": "VAEDecode",
+  "inputs": {
+   "samples": [
+    "B_sample",
+    0
+   ],
+   "vae": [
+    "q21vae",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "out_dec"
+  }
+ },
+ "out": {
+  "class_type": "SaveImage",
+  "inputs": {
+   "images": [
+    "out_dec",
+    0
+   ],
+   "filename_prefix": "rd_sf_test/run_b3/c08_B3_"
+  },
+  "_meta": {
+   "title": "out"
+  }
+ }
+}

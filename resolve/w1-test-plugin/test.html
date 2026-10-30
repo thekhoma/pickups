@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'">
+<style>
+  :root { --bg:#141417; --bg2:#1b1b1f; --text:#e7e7ea; --dim:#a6a6ad; --accent:#8b7cf6; }
+  html, body { margin:0; height:100%; background:var(--bg); color:var(--text); font:13px/1.35 system-ui, sans-serif; }
+  header { padding:12px 16px; border-bottom:1px solid rgba(255,255,255,.07); display:flex; gap:12px; align-items:baseline; }
+  header b { font-size:15px; }
+  #pad { margin:16px; height:calc(100% - 140px); background:var(--bg2); border-radius:8px; position:relative; cursor:crosshair; }
+  #log { margin:0 16px; color:var(--dim); font-family:ui-monospace, monospace; font-size:12px; white-space:pre; height:48px; overflow:hidden; }
+  .dot { position:absolute; width:10px; height:10px; margin:-5px; border-radius:50%; background:var(--accent); }
+</style>
+</head>
+<body>
+<header><b id="title">Pickups</b><span>Click in the box and press J, K, L, Space, T, R, E.</span></header>
+<div id="pad" tabindex="0"></div>
+<div id="log">waiting…</div>
+<script>
+  const kind = new URLSearchParams(location.search).get('kind') || 'window';
+  document.getElementById('title').textContent = 'Pickups · ' + kind + ' window';
+  const pad = document.getElementById('pad'), log = document.getElementById('log');
+  const lines = [];
+  function note(s) { lines.unshift(new Date().toLocaleTimeString() + '  ' + s); log.textContent = lines.slice(0, 3).join('\n'); }
+  pad.addEventListener('mousedown', e => {
+    const r = pad.getBoundingClientRect(), d = document.createElement('div');
+    d.className = 'dot'; d.style.left = (e.clientX - r.left) + 'px'; d.style.top = (e.clientY - r.top) + 'px';
+    pad.appendChild(d); note(`click ${Math.round(e.clientX - r.left)},${Math.round(e.clientY - r.top)} button ${e.button}`);
+  });
+  window.addEventListener('keydown', e => note(`key "${e.key}" code ${e.code}${e.metaKey ? ' +cmd' : ''}${e.altKey ? ' +opt' : ''}`));
+  pad.focus();
+</script>
+</body>
+</html>

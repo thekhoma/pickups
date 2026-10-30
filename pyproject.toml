@@ -1,0 +1,35 @@
+[project]
+name = "pickups"
+version = "0.1.0"
+description = "Power your creativity, locally: remove, recast, change the weather, render previz and finish footage with open models on ComfyUI."
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = [
+    "comfy-api-proxy>=0.1.6",
+    "comfy-sdk>=0.5.0",
+    "fastapi>=0.143.3",
+    "numpy>=2.5.4",
+    "openexr>=3.5.2",
+    "pillow>=12.3.0",
+    "python-multipart>=0.0.32",
+    "segno>=1.6.6",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+pickups = "pickups:main"
+
+[build-system]
+requires = ["uv_build>=0.11.3,<0.12.0"]
+build-backend = "uv_build"
+
+[tool.ruff]
+line-length = 130
+
+[tool.ruff.lint]
+# Real errors only: undefined names, unused variables and imports, syntax.
+select = ["E4", "E7", "E9", "F"]
+ignore = ["E702", "E741"]  # short one-line pairs and `l` loop names are house style here

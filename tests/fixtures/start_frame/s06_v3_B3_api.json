@@ -1,0 +1,241 @@
+{
+ "q21": {
+  "class_type": "UNETLoader",
+  "inputs": {
+   "unet_name": "qwen_image_2.1_int8_convrot.safetensors",
+   "weight_dtype": "default"
+  },
+  "_meta": {
+   "title": "q21"
+  }
+ },
+ "q21cache": {
+  "class_type": "QwenImage21Cache",
+  "inputs": {
+   "model": [
+    "q21",
+    0
+   ],
+   "device": "auto",
+   "dtype": "default"
+  },
+  "_meta": {
+   "title": "q21cache"
+  }
+ },
+ "q21clip": {
+  "class_type": "CLIPLoader",
+  "inputs": {
+   "clip_name": "qwen3vl_8b_int8_convrot.safetensors",
+   "type": "qwen_image",
+   "device": "default"
+  },
+  "_meta": {
+   "title": "q21clip"
+  }
+ },
+ "q21vae": {
+  "class_type": "VAELoader",
+  "inputs": {
+   "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+  },
+  "_meta": {
+   "title": "q21vae"
+  }
+ },
+ "seed": {
+  "class_type": "RandomNoise",
+  "inputs": {
+   "noise_seed": 1234
+  },
+  "_meta": {
+   "title": "seed"
+  }
+ },
+ "sampler": {
+  "class_type": "KSamplerSelect",
+  "inputs": {
+   "sampler_name": "euler"
+  },
+  "_meta": {
+   "title": "sampler"
+  }
+ },
+ "depth": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "rd_sf_test/s06_depth.png"
+  },
+  "_meta": {
+   "title": "depth"
+  }
+ },
+ "canny": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "rd_sf_test/s06_canny_soft_subjmask.png"
+  },
+  "_meta": {
+   "title": "canny"
+  }
+ },
+ "ref1": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "rd_sf_test/s06_ref_Kofi_sheet.jpg"
+  },
+  "_meta": {
+   "title": "ref1"
+  }
+ },
+ "ref2": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "rd_sf_test/s06_ref_Ana_sheet.jpg"
+  },
+  "_meta": {
+   "title": "ref2"
+  }
+ },
+ "ref3": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "rd_sf_test/s06_ref_Jun_sheet.jpg"
+  },
+  "_meta": {
+   "title": "ref3"
+  }
+ },
+ "enc": {
+  "class_type": "TextEncodeQwenImage21",
+  "inputs": {
+   "clip": [
+    "q21clip",
+    0
+   ],
+   "prompt": "A real photograph, a still frame from a live-action commercial shot on a large-format 65mm digital cinema camera. EXACTLY THREE PEOPLE in frame.\n\nA high wide shot looking down onto a flat city rooftop. Three friends dance side by side in a loose line across the centre of the roof, about 8 metres from camera and small in frame, each mid-move with arms stretched wide and raised, each friend's hands nearly touching their neighbour's, nobody standing in front of another. On the right is a plain outdoor metal table with a folding bench and a single coffee cup on the table. On the left is a round clipped shrub in a large concrete planter. A low parapet wall with a weathered concrete cap runs across the bottom of the frame, close to camera, and the roof spreads out beyond it. On the far side of the roof is a taller plant room block at the back left. Past the parapet, the city spreads out to the horizon: a dense skyline of mid-rise and high-rise towers with water tanks and antennas on their roofs.\n\nSeen from about 6 metres up, looking down at about 35 degrees. 28mm lens, straight vertical lines with no fisheye bend, deep focus, the three dancers and the roof both sharp, and the skyline slightly soft.\n\nOn the left is the man from the Kofi reference: same face, black bucket hat, white T-shirt, gold chain, black jeans and white sneakers. In the middle is the woman from the Ana reference: same face, natural hair in a high puff, pink blazer and black trousers. On the right is the man from the Jun reference: same face, round glasses, bright orange hoodie and grey joggers.\n\nThe roof is grey bitumen membrane with patched seams, puddle stains and scuffed walkway pavers. The parapet has a weathered concrete cap with rust streaks under its steel railing bolts. The table is powder-coated metal, chipped at the corners.\n\nLight: golden hour, with the low sun behind the skyline at frame right, out of frame. Warm rim light runs along the dancers' shoulders and hair, and long shadows reach toward camera across the roof. The faces sit in soft, open shade that's still readable. The sky is warm amber at the horizon, fading to pale blue overhead. Exposed for the dancers.\n\nTactile realism: Exposed for the subject's face; shadows stay open, with readable texture in the ground and foreground, never pure black., soft highlight roll-off, truthful skin colour, restrained fine grain over a sharp image. Texture comes from real surfaces and light, never a filter. Any signs on the buildings have no readable letters.\n\nIf any surface looks clean, plastic, grey, untextured or rendered, the image is wrong.\n",
+   "negative_prompt": "3D render, CGI, clay render, grey mannequin, plastic skin, untextured surfaces, flat even lighting, video game, illustration, HDR, oversharpened, smeared face, text, letters, logos, watermark, rain, fog, haze, extra people, extra fingers, underexposed, crushed shadows, black foreground",
+   "resolution": 1536,
+   "vae": [
+    "q21vae",
+    0
+   ],
+   "images.image_1": [
+    "depth",
+    0
+   ],
+   "images.image_2": [
+    "canny",
+    0
+   ],
+   "images.image_3": [
+    "ref1",
+    0
+   ],
+   "images.image_4": [
+    "ref2",
+    0
+   ],
+   "images.image_5": [
+    "ref3",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "enc"
+  }
+ },
+ "B_guider": {
+  "class_type": "CFGGuider",
+  "inputs": {
+   "model": [
+    "q21cache",
+    0
+   ],
+   "positive": [
+    "enc",
+    0
+   ],
+   "negative": [
+    "enc",
+    1
+   ],
+   "cfg": 3.0
+  },
+  "_meta": {
+   "title": "B_guider"
+  }
+ },
+ "B_sigmas": {
+  "class_type": "BasicScheduler",
+  "inputs": {
+   "model": [
+    "q21cache",
+    0
+   ],
+   "scheduler": "simple",
+   "steps": 30,
+   "denoise": 1.0
+  },
+  "_meta": {
+   "title": "B_sigmas"
+  }
+ },
+ "B_sample": {
+  "class_type": "SamplerCustomAdvanced",
+  "inputs": {
+   "noise": [
+    "seed",
+    0
+   ],
+   "guider": [
+    "B_guider",
+    0
+   ],
+   "sampler": [
+    "sampler",
+    0
+   ],
+   "sigmas": [
+    "B_sigmas",
+    0
+   ],
+   "latent_image": [
+    "enc",
+    2
+   ]
+  },
+  "_meta": {
+   "title": "B_sample"
+  }
+ },
+ "out_dec": {
+  "class_type": "VAEDecode",
+  "inputs": {
+   "samples": [
+    "B_sample",
+    0
+   ],
+   "vae": [
+    "q21vae",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "out_dec"
+  }
+ },
+ "out": {
+  "class_type": "SaveImage",
+  "inputs": {
+   "images": [
+    "out_dec",
+    0
+   ],
+   "filename_prefix": "rd_sf_test/run_b3/s06_B3_"
+  },
+  "_meta": {
+   "title": "out"
+  }
+ }
+}

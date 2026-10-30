@@ -1,0 +1,735 @@
+{
+ "id": "river",
+ "order": 10,
+ "label": "River",
+ "move": "Crane up to reveal the river",
+ "world": {
+  "shadowExtent": 30,
+  "shadowCenter": [
+   0,
+   0,
+   2
+  ],
+  "keyDist": 60,
+  "grid": false,
+  "fogNear": 30,
+  "fogFar": 130,
+  "skyScale": 2
+ },
+ "geometry": [
+  {
+   "type": "ground",
+   "radius": 160
+  },
+  {
+   "type": "water",
+   "name": "river",
+   "shape": "path",
+   "points": [
+    [
+     -70,
+     -4
+    ],
+    [
+     -35,
+     2
+    ],
+    [
+     0,
+     -1.5
+    ],
+    [
+     30,
+     3
+    ],
+    [
+     55,
+     -5
+    ],
+    [
+     85,
+     7
+    ],
+    [
+     120,
+     -6
+    ],
+    [
+     160,
+     5
+    ]
+   ],
+   "width": 9,
+   "lines": 18
+  },
+  {
+   "type": "path",
+   "name": "bank_path",
+   "points": [
+    [
+     -50,
+     9.5
+    ],
+    [
+     -20,
+     7.8
+    ],
+    [
+     0,
+     7.6
+    ],
+    [
+     20,
+     9
+    ],
+    [
+     50,
+     9.5
+    ]
+   ],
+   "width": 1.8
+  },
+  {
+   "type": "box",
+   "name": "bridge_deck",
+   "size": [
+    3.2,
+    0.3,
+    15
+   ],
+   "pos": [
+    12,
+    1.15,
+    0.2
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "bridge_rail_L",
+   "size": [
+    0.12,
+    1.0,
+    15
+   ],
+   "pos": [
+    13.55,
+    1.45,
+    0.2
+   ],
+   "material": "setDark"
+  },
+  {
+   "type": "box",
+   "name": "bridge_rail_R",
+   "size": [
+    0.12,
+    1.0,
+    15
+   ],
+   "pos": [
+    10.45,
+    1.45,
+    0.2
+   ],
+   "material": "setDark"
+  },
+  {
+   "type": "box",
+   "name": "bridge_pier_N",
+   "size": [
+    2.6,
+    1.15,
+    0.6
+   ],
+   "pos": [
+    12,
+    0,
+    -3.2
+   ],
+   "material": "setDark"
+  },
+  {
+   "type": "box",
+   "name": "bridge_pier_S",
+   "size": [
+    2.6,
+    1.15,
+    0.6
+   ],
+   "pos": [
+    12,
+    0,
+    3.8
+   ],
+   "material": "setDark"
+  },
+  {
+   "type": "box",
+   "name": "bridge_ramp_N",
+   "size": [
+    3.2,
+    1.15,
+    2.0
+   ],
+   "pos": [
+    12,
+    0,
+    -7.3
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "bridge_ramp_S",
+   "size": [
+    3.2,
+    1.15,
+    2.0
+   ],
+   "pos": [
+    12,
+    0,
+    7.7
+   ],
+   "material": "set"
+  }
+ ],
+ "items": [
+  {
+   "id": "river_walker",
+   "asset": "person",
+   "pos": [
+    -4,
+    7.7
+   ],
+   "rot": 92,
+   "pose": "walk"
+  },
+  {
+   "asset": "dog",
+   "pos": [
+    -2.6,
+    7.5
+   ],
+   "rot": 92,
+   "id": "rdog",
+   "pose": "walk"
+  },
+  {
+   "asset": "boat",
+   "pos": [
+    -18,
+    0.8
+   ],
+   "rot": 95,
+   "id": "rboat"
+  },
+  {
+   "id": "rower",
+   "asset": "person",
+   "rider": "rboat"
+  },
+  {
+   "asset": "bench",
+   "pos": [
+    6,
+    10.6
+   ],
+   "rot": 180,
+   "id": "rbench"
+  },
+  {
+   "id": "bench_sitter",
+   "asset": "person",
+   "seat": {
+    "on": "rbench",
+    "slot": 0
+   },
+   "pose": "sit"
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -45.53,
+    -11.83
+   ],
+   "scale": 0.98,
+   "options": {
+    "seed": 0
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -42.59,
+    13.53
+   ],
+   "scale": 0.98,
+   "options": {
+    "seed": 1
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -37.96,
+    -17.4
+   ],
+   "scale": 1.14,
+   "options": {
+    "seed": 2
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -36.26,
+    17.29
+   ],
+   "scale": 0.92,
+   "options": {
+    "seed": 3
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -33.25,
+    -11.85
+   ],
+   "scale": 0.9,
+   "options": {
+    "seed": 4
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -28.65,
+    19.63
+   ],
+   "scale": 1.16,
+   "options": {
+    "seed": 5
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -25.8,
+    -12.55
+   ],
+   "scale": 0.94,
+   "options": {
+    "seed": 6
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -23.05,
+    18.86
+   ],
+   "scale": 1.18,
+   "options": {
+    "seed": 7
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -19.44,
+    -11.69
+   ],
+   "scale": 1.07,
+   "options": {
+    "seed": 8
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -16.76,
+    17.05
+   ],
+   "scale": 0.88,
+   "options": {
+    "seed": 9
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -14.05,
+    -11.71
+   ],
+   "scale": 1.22,
+   "options": {
+    "seed": 10
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -10.17,
+    17.38
+   ],
+   "scale": 0.94,
+   "options": {
+    "seed": 11
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -6.98,
+    -15.58
+   ],
+   "scale": 1.2,
+   "options": {
+    "seed": 12
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -4.0,
+    17.07
+   ],
+   "scale": 0.99,
+   "options": {
+    "seed": 13
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -1.4,
+    -14.45
+   ],
+   "scale": 0.87,
+   "options": {
+    "seed": 14
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    1.11,
+    19.5
+   ],
+   "scale": 0.82,
+   "options": {
+    "seed": 15
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    3.69,
+    -16.01
+   ],
+   "scale": 0.93,
+   "options": {
+    "seed": 16
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    10.49,
+    -18.98
+   ],
+   "scale": 0.89,
+   "options": {
+    "seed": 18
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    17.27,
+    -13.21
+   ],
+   "scale": 0.96,
+   "options": {
+    "seed": 20
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    20.59,
+    15.57
+   ],
+   "scale": 1.05,
+   "options": {
+    "seed": 21
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    24.01,
+    -11.81
+   ],
+   "scale": 0.83,
+   "options": {
+    "seed": 22
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    25.76,
+    19.12
+   ],
+   "scale": 1.08,
+   "options": {
+    "seed": 23
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    28.87,
+    -13.65
+   ],
+   "scale": 0.88,
+   "options": {
+    "seed": 24
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    32.42,
+    13.34
+   ],
+   "scale": 1.11,
+   "options": {
+    "seed": 25
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    36.39,
+    -18.64
+   ],
+   "scale": 1.13,
+   "options": {
+    "seed": 26
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    39.62,
+    13.15
+   ],
+   "scale": 0.93,
+   "options": {
+    "seed": 27
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    42.73,
+    -17.2
+   ],
+   "scale": 0.98,
+   "options": {
+    "seed": 28
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    45.79,
+    17.96
+   ],
+   "scale": 1.17,
+   "options": {
+    "seed": 29
+   }
+  },
+  {
+   "asset": "rock",
+   "pos": [
+    -12.4,
+    5.67
+   ],
+   "scale": 0.66,
+   "rot": 90.01705450854051,
+   "options": {
+    "seed": 90
+   }
+  },
+  {
+   "asset": "rock",
+   "pos": [
+    5.93,
+    5.0
+   ],
+   "scale": 0.41,
+   "rot": 16.12698945196509,
+   "options": {
+    "seed": 91
+   }
+  },
+  {
+   "asset": "rock",
+   "pos": [
+    -19.83,
+    -5.4
+   ],
+   "scale": 0.91,
+   "rot": 158.1576373683625,
+   "options": {
+    "seed": 92
+   }
+  },
+  {
+   "asset": "rock",
+   "pos": [
+    -17.57,
+    4.74
+   ],
+   "scale": 0.46,
+   "rot": 265.3637109750606,
+   "options": {
+    "seed": 93
+   }
+  },
+  {
+   "asset": "rock",
+   "pos": [
+    5.73,
+    5.33
+   ],
+   "scale": 0.89,
+   "rot": 209.75942618892427,
+   "options": {
+    "seed": 94
+   }
+  },
+  {
+   "asset": "rock",
+   "pos": [
+    -10.71,
+    4.75
+   ],
+   "scale": 0.88,
+   "rot": 278.5651650941824,
+   "options": {
+    "seed": 95
+   }
+  },
+  {
+   "asset": "rock",
+   "pos": [
+    -5.44,
+    5.17
+   ],
+   "scale": 0.62,
+   "rot": 147.82409591300723,
+   "options": {
+    "seed": 96
+   }
+  },
+  {
+   "asset": "rock",
+   "pos": [
+    -27.79,
+    -6.07
+   ],
+   "scale": 0.98,
+   "rot": 154.02129515392306,
+   "options": {
+    "seed": 97
+   }
+  },
+  {
+   "asset": "rock",
+   "pos": [
+    -17.06,
+    4.64
+   ],
+   "scale": 0.63,
+   "rot": 87.26008466812794,
+   "options": {
+    "seed": 98
+   }
+  },
+  {
+   "asset": "rock",
+   "pos": [
+    -17.52,
+    5.1
+   ],
+   "scale": 0.64,
+   "rot": 117.00506522103055,
+   "options": {
+    "seed": 99
+   }
+  }
+ ],
+ "links": [
+  {
+   "type": "leash",
+   "from": [
+    "river_walker",
+    "attach_hand_R"
+   ],
+   "to": [
+    "rdog",
+    "attach_leash"
+   ],
+   "sag": 0.18
+  }
+ ],
+ "cameras": {
+  "hero": {
+   "pos": [
+    -9.5,
+    3.4,
+    15.5
+   ],
+   "target": [
+    -2.5,
+    0.9,
+    5.2
+   ],
+   "fov": 42
+  },
+  "start": {
+   "pos": [
+    -6.6,
+    0.7,
+    10.6
+   ],
+   "target": [
+    -3.6,
+    1.15,
+    7.7
+   ],
+   "fov": 40
+  },
+  "end": {
+   "pos": [
+    -12,
+    17,
+    16
+   ],
+   "target": [
+    16,
+    0,
+    0
+   ],
+   "fov": 46
+  }
+ }
+}

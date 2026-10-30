@@ -1,0 +1,669 @@
+{
+ "id": "stage",
+ "order": 20,
+ "label": "Stage",
+ "move": "Push in over the crowd",
+ "world": {
+  "shadowExtent": 12,
+  "shadowCenter": [
+   0,
+   0,
+   0
+  ],
+  "keyDist": 30,
+  "grid": false,
+  "fogNear": 20,
+  "fogFar": 80
+ },
+ "geometry": [
+  {
+   "type": "ground",
+   "radius": 70
+  },
+  {
+   "type": "box",
+   "name": "floor",
+   "size": [
+    18,
+    0.05,
+    16
+   ],
+   "pos": [
+    0,
+    0,
+    1
+   ],
+   "material": "path",
+   "radius": 0.01,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "stage",
+   "size": [
+    13,
+    1.0,
+    6
+   ],
+   "pos": [
+    0,
+    0,
+    -2.6
+   ],
+   "material": "setDark",
+   "radius": 0.02
+  },
+  {
+   "type": "box",
+   "name": "amp_L",
+   "size": [
+    1.0,
+    1.3,
+    0.7
+   ],
+   "pos": [
+    -4.8,
+    1.0,
+    -3.4
+   ],
+   "material": "post"
+  },
+  {
+   "type": "box",
+   "name": "amp_R",
+   "size": [
+    1.0,
+    1.3,
+    0.7
+   ],
+   "pos": [
+    4.8,
+    1.0,
+    -3.4
+   ],
+   "material": "post"
+  },
+  {
+   "type": "box",
+   "name": "stage_back",
+   "size": [
+    14,
+    7,
+    0.3
+   ],
+   "pos": [
+    0,
+    0,
+    -5.8
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "truss_L",
+   "size": [
+    0.4,
+    6.5,
+    0.4
+   ],
+   "pos": [
+    -6.6,
+    0,
+    -1.4
+   ],
+   "material": "post"
+  },
+  {
+   "type": "box",
+   "name": "truss_R",
+   "size": [
+    0.4,
+    6.5,
+    0.4
+   ],
+   "pos": [
+    6.6,
+    0,
+    -1.4
+   ],
+   "material": "post"
+  },
+  {
+   "type": "box",
+   "name": "truss_top",
+   "size": [
+    13.6,
+    0.4,
+    0.4
+   ],
+   "pos": [
+    0,
+    6.5,
+    -1.4
+   ],
+   "material": "post"
+  },
+  {
+   "type": "box",
+   "name": "wall_left",
+   "size": [
+    0.2,
+    7,
+    16
+   ],
+   "pos": [
+    -9.1,
+    0,
+    1
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "wall_right",
+   "size": [
+    0.2,
+    7,
+    16
+   ],
+   "pos": [
+    9.1,
+    0,
+    1
+   ],
+   "material": "set"
+  }
+ ],
+ "items": [
+  {
+   "id": "singer",
+   "asset": "person",
+   "pos": [
+    0,
+    1.0,
+    -2.2
+   ],
+   "rot": 0,
+   "pose": "sing",
+   "props": {
+    "hand_R": "microphone"
+   }
+  },
+  {
+   "id": "guitarist",
+   "asset": "person",
+   "pos": [
+    -2.6,
+    1.0,
+    -3.0
+   ],
+   "rot": 15,
+   "pose": "play_guitar",
+   "props": {
+    "strap": "guitar"
+   }
+  },
+  {
+   "id": "bassist",
+   "asset": "person",
+   "pos": [
+    2.6,
+    1.0,
+    -3.0
+   ],
+   "rot": -15,
+   "pose": "play_guitar",
+   "options": {
+    "preset": "crowd"
+   },
+   "props": {
+    "strap": "guitar"
+   }
+  },
+  {
+   "asset": "post",
+   "pos": [
+    0,
+    1.0,
+    -1.6
+   ],
+   "rot": 0,
+   "scale": [
+    0.25,
+    1.0,
+    0.25
+   ]
+  },
+  {
+   "id": "fan0",
+   "asset": "person",
+   "pos": [
+    -5.8,
+    1.68
+   ],
+   "rot": 185,
+   "pose": "stand",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan1",
+   "asset": "person",
+   "pos": [
+    -4.01,
+    1.49
+   ],
+   "rot": 192,
+   "pose": "dance",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan2",
+   "asset": "person",
+   "pos": [
+    -2.22,
+    1.6
+   ],
+   "rot": 180,
+   "pose": "wave",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan3",
+   "asset": "person",
+   "pos": [
+    -0.96,
+    1.4
+   ],
+   "rot": 175,
+   "pose": "stand",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan4",
+   "asset": "person",
+   "pos": [
+    0.85,
+    1.43
+   ],
+   "rot": 192,
+   "pose": "point",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan5",
+   "asset": "person",
+   "pos": [
+    2.24,
+    1.49
+   ],
+   "rot": 162,
+   "pose": "stand",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan6",
+   "asset": "person",
+   "pos": [
+    4.3,
+    1.7
+   ],
+   "rot": 195,
+   "pose": "dance",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan7",
+   "asset": "person",
+   "pos": [
+    5.67,
+    1.41
+   ],
+   "rot": 173,
+   "pose": "wave",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan8",
+   "asset": "person",
+   "pos": [
+    -4.8,
+    2.7
+   ],
+   "rot": 198,
+   "pose": "stand",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan9",
+   "asset": "person",
+   "pos": [
+    -3.28,
+    2.71
+   ],
+   "rot": 193,
+   "pose": "point",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan10",
+   "asset": "person",
+   "pos": [
+    -1.83,
+    3.02
+   ],
+   "rot": 178,
+   "pose": "stand",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan11",
+   "asset": "person",
+   "pos": [
+    0.03,
+    2.79
+   ],
+   "rot": 179,
+   "pose": "dance",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan12",
+   "asset": "person",
+   "pos": [
+    1.41,
+    2.66
+   ],
+   "rot": 195,
+   "pose": "wave",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan13",
+   "asset": "person",
+   "pos": [
+    3.04,
+    2.96
+   ],
+   "rot": 168,
+   "pose": "stand",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan14",
+   "asset": "person",
+   "pos": [
+    5.08,
+    3.01
+   ],
+   "rot": 190,
+   "pose": "point",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan15",
+   "asset": "person",
+   "pos": [
+    6.56,
+    2.88
+   ],
+   "rot": 189,
+   "pose": "stand",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan16",
+   "asset": "person",
+   "pos": [
+    -5.83,
+    4.09
+   ],
+   "rot": 193,
+   "pose": "dance",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan17",
+   "asset": "person",
+   "pos": [
+    -4.18,
+    4.27
+   ],
+   "rot": 196,
+   "pose": "wave",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan18",
+   "asset": "person",
+   "pos": [
+    -2.45,
+    4.05
+   ],
+   "rot": 178,
+   "pose": "stand",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan19",
+   "asset": "person",
+   "pos": [
+    -0.87,
+    4.3
+   ],
+   "rot": 175,
+   "pose": "point",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan20",
+   "asset": "person",
+   "pos": [
+    0.52,
+    3.94
+   ],
+   "rot": 189,
+   "pose": "stand",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan21",
+   "asset": "person",
+   "pos": [
+    2.7,
+    4.1
+   ],
+   "rot": 180,
+   "pose": "dance",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan22",
+   "asset": "person",
+   "pos": [
+    4.03,
+    4.2
+   ],
+   "rot": 169,
+   "pose": "wave",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan23",
+   "asset": "person",
+   "pos": [
+    5.67,
+    4.12
+   ],
+   "rot": 185,
+   "pose": "stand",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan24",
+   "asset": "person",
+   "pos": [
+    -4.99,
+    5.22
+   ],
+   "rot": 174,
+   "pose": "point",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan25",
+   "asset": "person",
+   "pos": [
+    -2.94,
+    5.29
+   ],
+   "rot": 184,
+   "pose": "stand",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan26",
+   "asset": "person",
+   "pos": [
+    -1.72,
+    5.19
+   ],
+   "rot": 163,
+   "pose": "dance",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan27",
+   "asset": "person",
+   "pos": [
+    0.19,
+    5.46
+   ],
+   "rot": 175,
+   "pose": "wave",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan28",
+   "asset": "person",
+   "pos": [
+    1.71,
+    5.42
+   ],
+   "rot": 196,
+   "pose": "stand",
+   "options": {
+    "preset": "crowd"
+   }
+  },
+  {
+   "id": "fan29",
+   "asset": "person",
+   "pos": [
+    3.47,
+    5.31
+   ],
+   "rot": 200,
+   "pose": "point",
+   "options": {
+    "preset": "crowd"
+   }
+  }
+ ],
+ "cameras": {
+  "hero": {
+   "pos": [
+    3.4,
+    3.1,
+    7.8
+   ],
+   "target": [
+    0,
+    1.9,
+    -2.6
+   ],
+   "fov": 46
+  },
+  "start": {
+   "pos": [
+    0.4,
+    2.6,
+    9.6
+   ],
+   "target": [
+    0,
+    2.1,
+    -2.2
+   ],
+   "fov": 42
+  },
+  "end": {
+   "pos": [
+    0.2,
+    2.3,
+    2.4
+   ],
+   "target": [
+    0,
+    2.2,
+    -2.2
+   ],
+   "fov": 42
+  }
+ }
+}

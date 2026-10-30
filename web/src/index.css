@@ -1,0 +1,256 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --ivory: #eee9e0;
+    --tally: #f5301e;
+  }
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    @apply bg-bg font-sans text-ink antialiased;
+    font-size: 14px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+    overflow: clip;
+  }
+  #root {
+    overflow: hidden;
+    overflow: clip;
+  }
+  ::selection {
+    background: rgba(238, 233, 224, 0.22);
+  }
+  :focus {
+    outline: none;
+  }
+  :focus-visible {
+    outline: 1.5px solid var(--ivory);
+    outline-offset: 2px;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    color: #857f77;
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #3a3631 transparent;
+  }
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: #3a3631;
+    border-radius: 999px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+  }
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+@layer components {
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+  /* Titles: Instrument Sans, the same face as the rest of the app. */
+  .display {
+    @apply font-sans font-normal text-ivory;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    hanging-punctuation: first;
+  }
+  /* Burn-in slate: 11 px mono, 0.08em tracking, ivory 70%. */
+  .slate {
+    @apply font-mono uppercase;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.08em;
+    color: rgb(238 233 224 / 0.7);
+    font-variant-numeric: tabular-nums;
+  }
+  .mono {
+    @apply font-mono;
+    font-variant-numeric: tabular-nums;
+  }
+  .tally {
+    background: var(--tally);
+    box-shadow: 0 0 6px rgba(245, 48, 30, 0.55);
+  }
+  .skeleton {
+    background: linear-gradient(90deg, #171614 0px, #1f1d1a 160px, #171614 320px);
+    background-size: 800px 100%;
+    @apply animate-shimmer;
+  }
+  .field {
+    @apply h-10 w-full rounded-card border border-line bg-bg px-3 text-[14px] text-ink transition-colors duration-150 ease-out placeholder:text-ink3 hover:border-line2 focus-visible:border-ivory/60;
+  }
+  .kbd {
+    @apply inline-flex h-[16px] min-w-[16px] items-center justify-center rounded-[3px] border border-line2 px-1 font-mono text-[10px] leading-none text-ink3;
+  }
+  .hairline-frame {
+    box-shadow: inset 0 0 0 1px rgba(238, 233, 224, 0.08);
+  }
+  /* Face first: a cropped picture keeps its top, where heads and faces are, instead of its middle. Only a picture taller
+     than its frame moves; a wide plate in a 16:9 thumb stays as it was. Thumb (MediaCard, Assets, Trash, project and
+     shot cards) uses it for portrait and square pictures and keeps video frames centred; cast cards and pickers,
+     references and avatars use it on their img. */
+  .thumb-face {
+    object-fit: cover;
+    object-position: 50% 15%;
+  }
+}
+
+/* The signature: a 1 px ivory wipe line with a black outer stroke, so it holds over any footage. */
+.wipe-line {
+  width: 1px;
+  background: var(--ivory);
+  box-shadow:
+    -1px 0 0 #000,
+    1px 0 0 #000;
+}
+
+/* Reshoot's Amount slider. */
+.range {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  width: 100%;
+  height: 24px;
+}
+.range::-webkit-slider-runnable-track {
+  height: 1px;
+  background: linear-gradient(to right, var(--ivory) var(--fill, 50%), #3a3631 var(--fill, 50%));
+}
+.range::-moz-range-track {
+  height: 1px;
+  background: #3a3631;
+}
+.range::-moz-range-progress {
+  height: 1px;
+  background: var(--ivory);
+}
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -7px;
+  width: 15px;
+  height: 15px;
+  border-radius: 999px;
+  background: var(--ivory);
+  border: 3px solid #0d0c0b;
+}
+.range::-moz-range-thumb {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  background: var(--ivory);
+  border: 3px solid #0d0c0b;
+}
+
+/* Reshoot move previews: small animated arrows. */
+@keyframes push-in {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(0.74); }
+}
+@keyframes pull-out {
+  0%, 100% { transform: scale(0.74); }
+  50% { transform: scale(1); }
+}
+@keyframes orbit-left {
+  0%, 100% { transform: translateX(3px); }
+  50% { transform: translateX(-3px); }
+}
+@keyframes orbit-right {
+  0%, 100% { transform: translateX(-3px); }
+  50% { transform: translateX(3px); }
+}
+@keyframes crane-up {
+  0%, 100% { transform: translateY(3px); }
+  50% { transform: translateY(-3px); }
+}
+.anim-push_in { animation: push-in 1.8s ease-in-out infinite; }
+.anim-pull_out { animation: pull-out 1.8s ease-in-out infinite; }
+.anim-orbit_left { animation: orbit-left 1.8s ease-in-out infinite; }
+.anim-orbit_right { animation: orbit-right 1.8s ease-in-out infinite; }
+.anim-crane_up { animation: crane-up 1.8s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin {
+    animation-duration: 1.2s !important;
+    animation-iteration-count: infinite !important;
+  }
+  *:not(.animate-spin),
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* The transport sizes itself to the viewer, not the window (the rail takes 348–392 px): as the viewer narrows it
+   drops the "Left" label, the key hints, the duration, the left-take picker, then the frame steps and Approve's word,
+   and on a phone the timecode and some spacing, so its controls never run under the rail or off the screen. */
+.transport {
+  container-type: inline-size;
+}
+@container (max-width: 990px) {
+  .transport .tp-left-label { display: none; }
+  .transport .tp-left-select { max-width: 128px; }
+}
+@container (max-width: 900px) {
+  .transport .kbd { display: none; }
+}
+@container (max-width: 830px) {
+  .transport .tp-duration { display: none; }
+}
+@container (max-width: 720px) {
+  .transport .tp-left { display: none; }
+}
+@container (max-width: 580px) {
+  .transport .tp-step { display: none; }
+  .transport .tp-approve-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+}
+@container (max-width: 440px) {
+  .transport .tp-time { display: none; }
+}
+@container (max-width: 380px) {
+  .transport .tp-tools { gap: 2px; }
+  .transport .tp-approve { margin-left: 0; padding-inline: 10px; }
+}
+
+/* Run 14 (walkthrough 27): on a desktop screen (1280 px and up) the small type steps up one pixel everywhere, so labels,
+   buttons and hints read at full screen. The app's sizes are fixed pixels (text-[13px] and the like), so the step is
+   made here, once, instead of in every component. Phones keep their sizes. */
+@media (min-width: 1280px) {
+  body { font-size: 15px; }
+  .slate { font-size: 12px; line-height: 17px; }
+  .text-\[10px\] { font-size: 11px; }
+  .text-\[11px\] { font-size: 12px; }
+  .text-\[12px\] { font-size: 13px; }
+  .text-\[13px\] { font-size: 14px; }
+  .text-\[14px\] { font-size: 15px; }
+  .text-\[15px\] { font-size: 16px; }
+  .field { font-size: 15px; }
+}

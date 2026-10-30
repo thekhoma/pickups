@@ -1,0 +1,131 @@
+{
+ "spec": {
+  "notes": "A woman standing by the lake waving. The camera orbits around.",
+  "duration_s": 4.041666666666667,
+  "lens": {
+   "focal_mm": 35.0,
+   "film_gauge_mm": 36
+  },
+  "camera": {
+   "keys": [
+    {
+     "pos": [
+      3.107,
+      1.435,
+      -3.392
+     ],
+     "look": [
+      0.0,
+      1.085,
+      0.0
+     ]
+    },
+    {
+     "pos": [
+      3.915,
+      1.835,
+      1.522
+     ],
+     "look": [
+      0.0,
+      1.085,
+      0.0
+     ]
+    },
+    {
+     "pos": [
+      0.715,
+      1.435,
+      3.528
+     ],
+     "look": [
+      0.0,
+      1.085,
+      0.0
+     ]
+    }
+   ],
+   "handheld": null
+  },
+  "subjects": [
+   {
+    "kind": "humanoid",
+    "pos": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  ]
+ },
+ "framing": {
+  "subject": [
+   0.412,
+   0.1024,
+   0.5824,
+   0.8531
+  ],
+  "horizon": 0.3218,
+  "view": {
+   "share": {
+    "trees": 0.027,
+    "a path": 0.041,
+    "rocks": 0.003
+   },
+   "outside": [
+    "a fence",
+    "a post",
+    "water"
+   ],
+   "actors": [
+    0
+   ],
+   "x": {
+    "trees": 0.07,
+    "a path": 0.68,
+    "rocks": 0.06
+   },
+   "blocked": 0.0,
+   "bare": 0.898
+  },
+  "place": "Lake",
+  "reveals": [
+   {
+    "word": "water",
+    "at_s": 2.0,
+    "side": "left"
+   }
+  ],
+  "camera": {
+   "height_m": 1.49,
+   "pitch_deg": -7.0,
+   "focal_mm": 30
+  },
+  "subjects": [
+   {
+    "kind": "person",
+    "x": 0.5,
+    "distance_m": 4.4,
+    "in_view": true,
+    "doing": "wave",
+    "word": "woman"
+   }
+  ],
+  "light": {
+   "dir": "camera right"
+  }
+ },
+ "cast": [
+  {
+   "id": "cast_49de18b174",
+   "name": "Lena",
+   "kind": "person",
+   "line": "a woman in her 40s with long wavy auburn hair, cream chunky knit sweater, olive green linen trousers, tan ankle boots"
+  }
+ ],
+ "user_look": "",
+ "before": {
+  "positive": "A real photograph, a still frame from a live-action commercial shot on a large-format 65mm digital cinema camera. EXACTLY 1 person in frame: Lena in the centre.\n\nLena: centre of frame, about 4 metres from camera, waving. Every grey figure in the layout is a real person and every grey shape is a real object: a path, trees.\n\nCamera at about 1.5 metres above the ground, level, 30mm lens, natural perspective, background slightly soft.\n\nLena is the one in image 3: a woman in her 40s with long wavy auburn hair, cream chunky knit sweater, olive green linen trousers, tan ankle boots.\n\nCracked asphalt with faded lane paint, scuffed concrete kerbs and pavement, weathered building walls with stains and patched render, real trees with rough bark.\n\nLate-afternoon sun from camera right, about 30 degrees high. The light falls directly on the subjects and the ground around them. Exposed for the main subject; shadows stay open, with readable texture in the ground and foreground, never pure black.\n\nTactile realism: readable colour, soft highlight roll-off, truthful skin colour, restrained fine grain over a sharp image. Texture comes from real surfaces and light, never a filter. Any signs or screens have no readable letters.\n\nIf any surface looks clean, plastic, grey, untextured or rendered, the image is wrong.",
+  "motion": "A woman standing by the lake waving. The camera orbits to the left around them and pushes in. Water comes into view on the left at about 2 s."
+ }
+}

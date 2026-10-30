@@ -1,0 +1,606 @@
+{
+ "id": "suburbs",
+ "order": 1,
+ "label": "Suburbs",
+ "move": "From behind, around to the front",
+ "world": {
+  "shadowExtent": 34,
+  "shadowCenter": [
+   0,
+   0,
+   0
+  ],
+  "keyDist": 70,
+  "grid": true,
+  "fogNear": 30,
+  "fogFar": 110,
+  "skyScale": 2
+ },
+ "geometry": [
+  {
+   "type": "ground",
+   "radius": 140
+  },
+  {
+   "type": "road",
+   "points": [
+    [
+     -60,
+     0
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     60,
+     0
+    ]
+   ],
+   "width": 7
+  },
+  {
+   "type": "path",
+   "name": "sidewalk_N",
+   "points": [
+    [
+     -60,
+     -5
+    ],
+    [
+     60,
+     -5
+    ]
+   ],
+   "width": 2
+  },
+  {
+   "type": "path",
+   "name": "sidewalk_S",
+   "points": [
+    [
+     -60,
+     5
+    ],
+    [
+     60,
+     5
+    ]
+   ],
+   "width": 2
+  },
+  {
+   "type": "path",
+   "name": "drive",
+   "points": [
+    [
+     -22.8,
+     -6
+    ],
+    [
+     -22.8,
+     -10.5
+    ]
+   ],
+   "width": 2.8
+  },
+  {
+   "type": "path",
+   "name": "drive",
+   "points": [
+    [
+     -9.8,
+     -6
+    ],
+    [
+     -9.8,
+     -10.5
+    ]
+   ],
+   "width": 2.8
+  },
+  {
+   "type": "path",
+   "name": "drive",
+   "points": [
+    [
+     3.2,
+     -6
+    ],
+    [
+     3.2,
+     -10.5
+    ]
+   ],
+   "width": 2.8
+  },
+  {
+   "type": "path",
+   "name": "drive",
+   "points": [
+    [
+     16.2,
+     -6
+    ],
+    [
+     16.2,
+     -10.5
+    ]
+   ],
+   "width": 2.8
+  },
+  {
+   "type": "path",
+   "name": "drive",
+   "points": [
+    [
+     29.2,
+     -6
+    ],
+    [
+     29.2,
+     -10.5
+    ]
+   ],
+   "width": 2.8
+  },
+  {
+   "type": "path",
+   "name": "drive",
+   "points": [
+    [
+     -22.7,
+     6
+    ],
+    [
+     -22.7,
+     10.5
+    ]
+   ],
+   "width": 2.8
+  },
+  {
+   "type": "path",
+   "name": "drive",
+   "points": [
+    [
+     -9.7,
+     6
+    ],
+    [
+     -9.7,
+     10.5
+    ]
+   ],
+   "width": 2.8
+  },
+  {
+   "type": "path",
+   "name": "drive",
+   "points": [
+    [
+     3.3,
+     6
+    ],
+    [
+     3.3,
+     10.5
+    ]
+   ],
+   "width": 2.8
+  },
+  {
+   "type": "path",
+   "name": "drive",
+   "points": [
+    [
+     16.3,
+     6
+    ],
+    [
+     16.3,
+     10.5
+    ]
+   ],
+   "width": 2.8
+  }
+ ],
+ "items": [
+  {
+   "asset": "house",
+   "pos": [
+    -26,
+    -15
+   ],
+   "rot": 0,
+   "options": {
+    "storeys": 2
+   }
+  },
+  {
+   "asset": "house",
+   "pos": [
+    -13,
+    -15
+   ],
+   "rot": 0,
+   "options": {
+    "storeys": 1
+   }
+  },
+  {
+   "asset": "house",
+   "pos": [
+    0,
+    -15
+   ],
+   "rot": 0,
+   "options": {
+    "storeys": 2
+   }
+  },
+  {
+   "asset": "house",
+   "pos": [
+    13,
+    -15
+   ],
+   "rot": 0,
+   "options": {
+    "storeys": 1
+   }
+  },
+  {
+   "asset": "house",
+   "pos": [
+    26,
+    -15
+   ],
+   "rot": 0,
+   "options": {
+    "storeys": 2
+   }
+  },
+  {
+   "asset": "house",
+   "pos": [
+    -19.5,
+    15
+   ],
+   "rot": 180,
+   "options": {
+    "storeys": 1
+   }
+  },
+  {
+   "asset": "house",
+   "pos": [
+    -6.5,
+    15
+   ],
+   "rot": 180,
+   "options": {
+    "storeys": 2
+   }
+  },
+  {
+   "asset": "house",
+   "pos": [
+    6.5,
+    15
+   ],
+   "rot": 180,
+   "options": {
+    "storeys": 1
+   }
+  },
+  {
+   "asset": "house",
+   "pos": [
+    19.5,
+    15
+   ],
+   "rot": 180,
+   "options": {
+    "storeys": 2
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -32.5,
+    -7.6
+   ],
+   "scale": 0.8,
+   "options": {
+    "seed": -3.25
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -19.5,
+    -7.6
+   ],
+   "scale": 0.8,
+   "options": {
+    "seed": -1.9500000000000002
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -6.5,
+    -7.6
+   ],
+   "scale": 0.8,
+   "options": {
+    "seed": -0.65
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    6.5,
+    -7.6
+   ],
+   "scale": 0.8,
+   "options": {
+    "seed": 0.65
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    19.5,
+    -7.6
+   ],
+   "scale": 0.8,
+   "options": {
+    "seed": 1.9500000000000002
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    32.5,
+    -7.6
+   ],
+   "scale": 0.8,
+   "options": {
+    "seed": 3.25
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -26,
+    7.6
+   ],
+   "scale": 0.75,
+   "options": {
+    "seed": -5.2
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    -13,
+    7.6
+   ],
+   "scale": 0.75,
+   "options": {
+    "seed": -2.6
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    0,
+    7.6
+   ],
+   "scale": 0.75,
+   "options": {
+    "seed": 0.0
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    13,
+    7.6
+   ],
+   "scale": 0.75,
+   "options": {
+    "seed": 2.6
+   }
+  },
+  {
+   "asset": "tree",
+   "pos": [
+    26,
+    7.6
+   ],
+   "scale": 0.75,
+   "options": {
+    "seed": 5.2
+   }
+  },
+  {
+   "asset": "post",
+   "pos": [
+    -23,
+    -6.4
+   ],
+   "rot": 0,
+   "scale": [
+    2.0,
+    1.25,
+    1.8
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    -10,
+    -6.4
+   ],
+   "rot": 0,
+   "scale": [
+    2.0,
+    1.25,
+    1.8
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    3,
+    -6.4
+   ],
+   "rot": 0,
+   "scale": [
+    2.0,
+    1.25,
+    1.8
+   ]
+  },
+  {
+   "asset": "post",
+   "pos": [
+    16,
+    -6.4
+   ],
+   "rot": 0,
+   "scale": [
+    2.0,
+    1.25,
+    1.8
+   ]
+  },
+  {
+   "asset": "car",
+   "pos": [
+    9,
+    -2.0
+   ],
+   "rot": 90
+  },
+  {
+   "asset": "suv",
+   "pos": [
+    -15,
+    2.0
+   ],
+   "rot": -90
+  },
+  {
+   "asset": "van",
+   "pos": [
+    22,
+    -9.5
+   ],
+   "rot": 0
+  },
+  {
+   "id": "walker",
+   "asset": "person",
+   "pos": [
+    -3.2,
+    5.0
+   ],
+   "rot": 90,
+   "pose": "walk"
+  },
+  {
+   "asset": "dog",
+   "pos": [
+    -1.75,
+    4.85
+   ],
+   "rot": 90,
+   "id": "dog",
+   "pose": "walk"
+  },
+  {
+   "asset": "bicycle",
+   "pos": [
+    -8,
+    -1.8
+   ],
+   "rot": 90,
+   "id": "bike"
+  },
+  {
+   "id": "cyclist",
+   "asset": "person",
+   "rider": "bike"
+  },
+  {
+   "id": "kid",
+   "asset": "person",
+   "pos": [
+    -11.5,
+    -9.0
+   ],
+   "rot": 20,
+   "pose": "wave",
+   "scale": 0.7
+  }
+ ],
+ "links": [
+  {
+   "type": "leash",
+   "from": [
+    "walker",
+    "attach_hand_R"
+   ],
+   "to": [
+    "dog",
+    "attach_leash"
+   ],
+   "sag": 0.18
+  }
+ ],
+ "cameras": {
+  "hero": {
+   "pos": [
+    22,
+    6.0,
+    2.6
+   ],
+   "target": [
+    -2,
+    1.2,
+    1.6
+   ],
+   "fov": 42
+  },
+  "start": {
+   "pos": [
+    -9.5,
+    1.7,
+    6.8
+   ],
+   "target": [
+    -2.5,
+    1.1,
+    5.0
+   ],
+   "fov": 42
+  },
+  "end": {
+   "pos": [
+    2.8,
+    1.6,
+    3.4
+   ],
+   "target": [
+    -3.2,
+    1.0,
+    5.0
+   ],
+   "fov": 42
+  }
+ }
+}

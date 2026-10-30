@@ -1,0 +1,618 @@
+{
+ "id": "store",
+ "order": 17,
+ "label": "Store",
+ "move": "Dolly down the aisle",
+ "world": {
+  "shadowExtent": 9,
+  "shadowCenter": [
+   0,
+   0,
+   0
+  ],
+  "keyDist": 30,
+  "grid": false,
+  "fogNear": 20,
+  "fogFar": 80
+ },
+ "geometry": [
+  {
+   "type": "ground",
+   "radius": 70
+  },
+  {
+   "type": "box",
+   "name": "floor",
+   "size": [
+    10,
+    0.05,
+    9
+   ],
+   "pos": [
+    0,
+    0,
+    0
+   ],
+   "material": "path",
+   "radius": 0.01,
+   "cast": false
+  },
+  {
+   "type": "box",
+   "name": "wall_back",
+   "size": [
+    10,
+    3.0,
+    0.2
+   ],
+   "pos": [
+    0,
+    0,
+    -4.6
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "wall_left",
+   "size": [
+    0.2,
+    3.0,
+    9
+   ],
+   "pos": [
+    -5.1,
+    0,
+    0
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "wall_right",
+   "size": [
+    0.2,
+    3.0,
+    9
+   ],
+   "pos": [
+    5.1,
+    0,
+    0
+   ],
+   "material": "set"
+  },
+  {
+   "type": "box",
+   "name": "wall_front_L",
+   "size": [
+    3.4,
+    3.0,
+    0.2
+   ],
+   "pos": [
+    -3.3,
+    0,
+    4.6
+   ],
+   "material": "set"
+  }
+ ],
+ "items": [
+  {
+   "asset": "counter",
+   "pos": [
+    -3.6,
+    -0.2
+   ],
+   "rot": 0,
+   "id": "shelf00",
+   "scale": [
+    0.75,
+    1.6,
+    1.0
+   ],
+   "options": {
+    "hob": false,
+    "sink": false
+   }
+  },
+  {
+   "asset": "counter",
+   "pos": [
+    -3.6,
+    -1.48
+   ],
+   "rot": 180,
+   "id": "shelf01",
+   "scale": [
+    0.75,
+    1.6,
+    1.0
+   ],
+   "options": {
+    "hob": false,
+    "sink": false
+   }
+  },
+  {
+   "asset": "counter",
+   "pos": [
+    -1.2,
+    -0.2
+   ],
+   "rot": 0,
+   "id": "shelf10",
+   "scale": [
+    0.75,
+    1.6,
+    1.0
+   ],
+   "options": {
+    "hob": false,
+    "sink": false
+   }
+  },
+  {
+   "asset": "counter",
+   "pos": [
+    -1.2,
+    -1.48
+   ],
+   "rot": 180,
+   "id": "shelf11",
+   "scale": [
+    0.75,
+    1.6,
+    1.0
+   ],
+   "options": {
+    "hob": false,
+    "sink": false
+   }
+  },
+  {
+   "asset": "counter",
+   "pos": [
+    1.2,
+    -0.2
+   ],
+   "rot": 0,
+   "id": "shelf20",
+   "scale": [
+    0.75,
+    1.6,
+    1.0
+   ],
+   "options": {
+    "hob": false,
+    "sink": false
+   }
+  },
+  {
+   "asset": "counter",
+   "pos": [
+    1.2,
+    -1.48
+   ],
+   "rot": 180,
+   "id": "shelf21",
+   "scale": [
+    0.75,
+    1.6,
+    1.0
+   ],
+   "options": {
+    "hob": false,
+    "sink": false
+   }
+  },
+  {
+   "asset": "produce",
+   "onTop": {
+    "of": "shelf00",
+    "offset": [
+     -0.6,
+     0.1
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "bag_box",
+   "onTop": {
+    "of": "shelf01",
+    "offset": [
+     -0.6,
+     -0.1
+    ]
+   },
+   "rot": 0,
+   "scale": 0.6
+  },
+  {
+   "asset": "produce",
+   "onTop": {
+    "of": "shelf00",
+    "offset": [
+     -0.2,
+     0.1
+    ]
+   },
+   "rot": 40
+  },
+  {
+   "asset": "bag_box",
+   "onTop": {
+    "of": "shelf01",
+    "offset": [
+     -0.2,
+     -0.1
+    ]
+   },
+   "rot": 0,
+   "scale": 0.6
+  },
+  {
+   "asset": "produce",
+   "onTop": {
+    "of": "shelf00",
+    "offset": [
+     0.2,
+     0.1
+    ]
+   },
+   "rot": 80
+  },
+  {
+   "asset": "bag_box",
+   "onTop": {
+    "of": "shelf01",
+    "offset": [
+     0.2,
+     -0.1
+    ]
+   },
+   "rot": 0,
+   "scale": 0.6
+  },
+  {
+   "asset": "produce",
+   "onTop": {
+    "of": "shelf00",
+    "offset": [
+     0.6,
+     0.1
+    ]
+   },
+   "rot": 120
+  },
+  {
+   "asset": "bag_box",
+   "onTop": {
+    "of": "shelf01",
+    "offset": [
+     0.6,
+     -0.1
+    ]
+   },
+   "rot": 0,
+   "scale": 0.6
+  },
+  {
+   "asset": "produce",
+   "onTop": {
+    "of": "shelf10",
+    "offset": [
+     -0.6,
+     0.1
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "bag_box",
+   "onTop": {
+    "of": "shelf11",
+    "offset": [
+     -0.6,
+     -0.1
+    ]
+   },
+   "rot": 0,
+   "scale": 0.6
+  },
+  {
+   "asset": "produce",
+   "onTop": {
+    "of": "shelf10",
+    "offset": [
+     -0.2,
+     0.1
+    ]
+   },
+   "rot": 40
+  },
+  {
+   "asset": "bag_box",
+   "onTop": {
+    "of": "shelf11",
+    "offset": [
+     -0.2,
+     -0.1
+    ]
+   },
+   "rot": 0,
+   "scale": 0.6
+  },
+  {
+   "asset": "produce",
+   "onTop": {
+    "of": "shelf10",
+    "offset": [
+     0.2,
+     0.1
+    ]
+   },
+   "rot": 80
+  },
+  {
+   "asset": "bag_box",
+   "onTop": {
+    "of": "shelf11",
+    "offset": [
+     0.2,
+     -0.1
+    ]
+   },
+   "rot": 0,
+   "scale": 0.6
+  },
+  {
+   "asset": "produce",
+   "onTop": {
+    "of": "shelf10",
+    "offset": [
+     0.6,
+     0.1
+    ]
+   },
+   "rot": 120
+  },
+  {
+   "asset": "bag_box",
+   "onTop": {
+    "of": "shelf11",
+    "offset": [
+     0.6,
+     -0.1
+    ]
+   },
+   "rot": 0,
+   "scale": 0.6
+  },
+  {
+   "asset": "produce",
+   "onTop": {
+    "of": "shelf20",
+    "offset": [
+     -0.6,
+     0.1
+    ]
+   },
+   "rot": 0
+  },
+  {
+   "asset": "bag_box",
+   "onTop": {
+    "of": "shelf21",
+    "offset": [
+     -0.6,
+     -0.1
+    ]
+   },
+   "rot": 0,
+   "scale": 0.6
+  },
+  {
+   "asset": "produce",
+   "onTop": {
+    "of": "shelf20",
+    "offset": [
+     -0.2,
+     0.1
+    ]
+   },
+   "rot": 40
+  },
+  {
+   "asset": "bag_box",
+   "onTop": {
+    "of": "shelf21",
+    "offset": [
+     -0.2,
+     -0.1
+    ]
+   },
+   "rot": 0,
+   "scale": 0.6
+  },
+  {
+   "asset": "produce",
+   "onTop": {
+    "of": "shelf20",
+    "offset": [
+     0.2,
+     0.1
+    ]
+   },
+   "rot": 80
+  },
+  {
+   "asset": "bag_box",
+   "onTop": {
+    "of": "shelf21",
+    "offset": [
+     0.2,
+     -0.1
+    ]
+   },
+   "rot": 0,
+   "scale": 0.6
+  },
+  {
+   "asset": "produce",
+   "onTop": {
+    "of": "shelf20",
+    "offset": [
+     0.6,
+     0.1
+    ]
+   },
+   "rot": 120
+  },
+  {
+   "asset": "bag_box",
+   "onTop": {
+    "of": "shelf21",
+    "offset": [
+     0.6,
+     -0.1
+    ]
+   },
+   "rot": 0,
+   "scale": 0.6
+  },
+  {
+   "asset": "counter",
+   "pos": [
+    3.4,
+    2.8
+   ],
+   "rot": -90,
+   "id": "checkout",
+   "scale": [
+    0.6,
+    1,
+    1
+   ],
+   "options": {
+    "hob": false,
+    "sink": false
+   }
+  },
+  {
+   "id": "cashier",
+   "asset": "person",
+   "pos": [
+    4.3,
+    2.8
+   ],
+   "rot": -90,
+   "pose": "give",
+   "props": {
+    "hand_R": "key_small"
+   }
+  },
+  {
+   "id": "shopper",
+   "asset": "person",
+   "pos": [
+    2.7,
+    2.6
+   ],
+   "rot": 90,
+   "pose": "carry",
+   "props": {
+    "hand_R": "bag_box"
+   }
+  },
+  {
+   "id": "browser",
+   "asset": "person",
+   "pos": [
+    -2.4,
+    1.0
+   ],
+   "rot": 180,
+   "pose": "hold",
+   "props": {
+    "hand_R": "bag_box"
+   }
+  },
+  {
+   "id": "reacher",
+   "asset": "person",
+   "pos": [
+    0.0,
+    -1.3
+   ],
+   "rot": 180,
+   "pose": "stand"
+  },
+  {
+   "asset": "sign",
+   "pos": [
+    4.2,
+    -3.0
+   ],
+   "rot": -60,
+   "scale": 0.7
+  },
+  {
+   "asset": "window_panel",
+   "pos": [
+    2.6,
+    0.0,
+    -4.39
+   ],
+   "rot": 0,
+   "scale": [
+    1.4,
+    1.6,
+    1
+   ]
+  }
+ ],
+ "cameras": {
+  "hero": {
+   "pos": [
+    2.2,
+    3.4,
+    8.8
+   ],
+   "target": [
+    -0.8,
+    0.9,
+    -1.0
+   ],
+   "fov": 50
+  },
+  "start": {
+   "pos": [
+    -2.4,
+    1.6,
+    3.4
+   ],
+   "target": [
+    -2.4,
+    1.1,
+    -3
+   ],
+   "fov": 46
+  },
+  "end": {
+   "pos": [
+    -2.4,
+    1.55,
+    0.2
+   ],
+   "target": [
+    -2.0,
+    1.1,
+    -4
+   ],
+   "fov": 46
+  }
+ }
+}

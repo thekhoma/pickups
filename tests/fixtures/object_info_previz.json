@@ -1,0 +1,455 @@
+{
+ "BasicScheduler": {
+  "input": {
+   "required": {
+    "denoise": "FLOAT",
+    "model": "MODEL",
+    "scheduler": "COMBO",
+    "steps": "INT"
+   }
+  },
+  "output": [
+   "SIGMAS"
+  ]
+ },
+ "CFGGuider": {
+  "input": {
+   "required": {
+    "cfg": "FLOAT",
+    "model": "MODEL",
+    "negative": "CONDITIONING",
+    "positive": "CONDITIONING"
+   }
+  },
+  "output": [
+   "GUIDER"
+  ]
+ },
+ "CLIPLoader": {
+  "input": {
+   "optional": {
+    "device": "COMBO"
+   },
+   "required": {
+    "clip_name": "COMBO",
+    "type": "COMBO"
+   }
+  },
+  "output": [
+   "CLIP"
+  ]
+ },
+ "CLIPTextEncode": {
+  "input": {
+   "required": {
+    "clip": "CLIP",
+    "text": "STRING"
+   }
+  },
+  "output": [
+   "CONDITIONING"
+  ]
+ },
+ "Canny": {
+  "input": {
+   "required": {
+    "high_threshold": "FLOAT",
+    "image": "IMAGE",
+    "low_threshold": "FLOAT"
+   }
+  },
+  "output": [
+   "IMAGE"
+  ]
+ },
+ "ConditioningZeroOut": {
+  "input": {
+   "required": {
+    "conditioning": "CONDITIONING"
+   }
+  },
+  "output": [
+   "CONDITIONING"
+  ]
+ },
+ "DA3Inference": {
+  "input": {
+   "required": {
+    "da3_model": "DA3_MODEL",
+    "image": "IMAGE",
+    "mode": "COMFY_DYNAMICCOMBO_V3",
+    "resize_method": "COMBO",
+    "resolution": "INT"
+   }
+  },
+  "output": [
+   "DA3_GEOMETRY"
+  ]
+ },
+ "DA3Render": {
+  "input": {
+   "required": {
+    "da3_geometry": "DA3_GEOMETRY",
+    "output": "COMFY_DYNAMICCOMBO_V3"
+   }
+  },
+  "output": [
+   "IMAGE"
+  ]
+ },
+ "EmptyLTXVLatentVideo": {
+  "input": {
+   "required": {
+    "batch_size": "INT",
+    "height": "INT",
+    "length": "INT",
+    "width": "INT"
+   }
+  },
+  "output": [
+   "LATENT"
+  ]
+ },
+ "EmptySD3LatentImage": {
+  "input": {
+   "required": {
+    "batch_size": "INT",
+    "height": "INT",
+    "width": "INT"
+   }
+  },
+  "output": [
+   "LATENT"
+  ]
+ },
+ "GetImageSize": {
+  "input": {
+   "required": {
+    "image": "IMAGE"
+   }
+  },
+  "output": [
+   "INT",
+   "INT",
+   "INT"
+  ]
+ },
+ "GetVideoComponents": {
+  "input": {
+   "required": {
+    "video": "VIDEO"
+   }
+  },
+  "output": [
+   "IMAGE",
+   "AUDIO",
+   "FLOAT",
+   "COMBO",
+   "COMBO"
+  ]
+ },
+ "ImageScale": {
+  "input": {
+   "required": {
+    "crop": "COMBO",
+    "height": "INT",
+    "image": "IMAGE",
+    "upscale_method": "COMBO",
+    "width": "INT"
+   }
+  },
+  "output": [
+   "IMAGE"
+  ]
+ },
+ "KSamplerSelect": {
+  "input": {
+   "required": {
+    "sampler_name": "COMBO"
+   }
+  },
+  "output": [
+   "SAMPLER"
+  ]
+ },
+ "LTXAddVideoICLoRAGuide": {
+  "input": {
+   "optional": {
+    "tile_frames": "INT",
+    "use_streaming": "BOOLEAN"
+   },
+   "required": {
+    "crop": "COMBO",
+    "frame_idx": "INT",
+    "image": "IMAGE",
+    "latent": "LATENT",
+    "latent_downscale_factor": "FLOAT",
+    "negative": "CONDITIONING",
+    "positive": "CONDITIONING",
+    "strength": "FLOAT",
+    "tile_overlap": "INT",
+    "tile_size": "INT",
+    "use_tiled_encode": "BOOLEAN",
+    "vae": "VAE"
+   }
+  },
+  "output": [
+   "CONDITIONING",
+   "CONDITIONING",
+   "LATENT"
+  ]
+ },
+ "LTXICLoRALoaderModelOnly": {
+  "input": {
+   "required": {
+    "lora_name": "COMBO",
+    "model": "MODEL",
+    "strength_model": "FLOAT"
+   }
+  },
+  "output": [
+   "MODEL",
+   "FLOAT"
+  ]
+ },
+ "LTXVAddGuide": {
+  "input": {
+   "optional": {
+    "attention_mask": "MASK",
+    "iclora_parameters": "IC_LORA_PARAMETERS"
+   },
+   "required": {
+    "frame_idx": "INT",
+    "image": "IMAGE",
+    "latent": "LATENT",
+    "negative": "CONDITIONING",
+    "positive": "CONDITIONING",
+    "strength": "FLOAT",
+    "vae": "VAE"
+   }
+  },
+  "output": [
+   "CONDITIONING",
+   "CONDITIONING",
+   "LATENT"
+  ]
+ },
+ "LTXVConditioning": {
+  "input": {
+   "required": {
+    "frame_rate": "FLOAT",
+    "negative": "CONDITIONING",
+    "positive": "CONDITIONING"
+   }
+  },
+  "output": [
+   "CONDITIONING",
+   "CONDITIONING"
+  ]
+ },
+ "LTXVCropGuides": {
+  "input": {
+   "required": {
+    "latent": "LATENT",
+    "negative": "CONDITIONING",
+    "positive": "CONDITIONING"
+   }
+  },
+  "output": [
+   "CONDITIONING",
+   "CONDITIONING",
+   "LATENT"
+  ]
+ },
+ "LTXVLatentUpsampler": {
+  "input": {
+   "required": {
+    "samples": "LATENT",
+    "upscale_model": "LATENT_UPSCALE_MODEL",
+    "vae": "VAE"
+   }
+  },
+  "output": [
+   "LATENT"
+  ]
+ },
+ "LatentUpscaleModelLoader": {
+  "input": {
+   "required": {
+    "model_name": "COMBO"
+   }
+  },
+  "output": [
+   "LATENT_UPSCALE_MODEL"
+  ]
+ },
+ "LoadDA3Model": {
+  "input": {
+   "required": {
+    "model_name": "COMBO",
+    "weight_dtype": "COMBO"
+   }
+  },
+  "output": [
+   "DA3_MODEL"
+  ]
+ },
+ "LoadImage": {
+  "input": {
+   "required": {
+    "image": "COMBO"
+   }
+  },
+  "output": [
+   "IMAGE",
+   "MASK"
+  ]
+ },
+ "LoadVideo": {
+  "input": {
+   "required": {
+    "file": "COMBO"
+   }
+  },
+  "output": [
+   "VIDEO"
+  ]
+ },
+ "ManualSigmas": {
+  "input": {
+   "required": {
+    "sigmas": "STRING"
+   }
+  },
+  "output": [
+   "SIGMAS"
+  ]
+ },
+ "ModelPatchLoader": {
+  "input": {
+   "required": {
+    "name": "COMBO"
+   }
+  },
+  "output": [
+   "MODEL_PATCH"
+  ]
+ },
+ "ModelSamplingAuraFlow": {
+  "input": {
+   "optional": {
+    "sampling": "COMBO"
+   },
+   "required": {
+    "model": "MODEL",
+    "shift": "FLOAT"
+   }
+  },
+  "output": [
+   "MODEL"
+  ]
+ },
+ "RandomNoise": {
+  "input": {
+   "required": {
+    "noise_seed": "INT"
+   }
+  },
+  "output": [
+   "NOISE"
+  ]
+ },
+ "SamplerCustomAdvanced": {
+  "input": {
+   "required": {
+    "guider": "GUIDER",
+    "latent_image": "LATENT",
+    "noise": "NOISE",
+    "sampler": "SAMPLER",
+    "sigmas": "SIGMAS"
+   }
+  },
+  "output": [
+   "LATENT",
+   "LATENT"
+  ]
+ },
+ "SaveImage": {
+  "input": {
+   "required": {
+    "filename_prefix": "STRING",
+    "images": "IMAGE"
+   }
+  },
+  "output": [
+   "IMAGE"
+  ]
+ },
+ "UNETLoader": {
+  "input": {
+   "required": {
+    "unet_name": "COMBO",
+    "weight_dtype": "COMBO"
+   }
+  },
+  "output": [
+   "MODEL"
+  ]
+ },
+ "VAEDecode": {
+  "input": {
+   "required": {
+    "samples": "LATENT",
+    "vae": "VAE"
+   }
+  },
+  "output": [
+   "IMAGE"
+  ]
+ },
+ "VAEDecodeTiled": {
+  "input": {
+   "required": {
+    "overlap": "INT",
+    "samples": "LATENT",
+    "temporal_overlap": "INT",
+    "temporal_size": "INT",
+    "tile_size": "INT",
+    "vae": "VAE"
+   }
+  },
+  "output": [
+   "IMAGE"
+  ]
+ },
+ "VAELoader": {
+  "input": {
+   "required": {
+    "vae_name": "COMBO"
+   }
+  },
+  "output": [
+   "VAE"
+  ]
+ },
+ "ZImageFunControlnet": {
+  "input": {
+   "optional": {
+    "end_percent": "FLOAT",
+    "image": "IMAGE",
+    "inpaint_image": "IMAGE",
+    "mask": "MASK",
+    "start_percent": "FLOAT"
+   },
+   "required": {
+    "model": "MODEL",
+    "model_patch": "MODEL_PATCH",
+    "strength": "FLOAT",
+    "vae": "VAE"
+   }
+  },
+  "output": [
+   "MODEL"
+  ]
+ }
+}
